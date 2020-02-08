@@ -1,9 +1,9 @@
 .icons-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
 
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -11,6 +11,8 @@
   color: black;
 
   padding: 1.2em 1.4em;
+  margin: 1rem;
+  
   border-radius: 0.5em;
 
   transition: all 0.2s ease-in-out;
