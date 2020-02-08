@@ -5,18 +5,18 @@
 
   width: 100%;
   margin: 0 auto;
-}
+  & > .icon-container {
+    padding: 1.2em 1.4em;
+    margin: 1rem;
 
-.icon-container {
-  color: black;
+    border-radius: 0.5em;
 
-  padding: 1.2em 1.4em;
-  margin: 1rem;
-  
-  border-radius: 0.5em;
-
-  transition: all 0.2s ease-in-out;
-  animation: raise-container 0.3s forwards 0.8s;
+    transition: all 0.2s ease-in-out;
+    animation: raise-container 0.3s forwards 0.8s;
+    & > a {
+      color: black;
+    }
+  }
 }
 
 @keyframes raise-container {
@@ -25,7 +25,10 @@
     transform: scale(1);
   }
   to {
+    // For #e3e3d3 background
     // box-shadow: -12px -12px 12px 0 rgba(255, 255, 255, 0.6), 12px 12px 12px 0 rgba(0, 0, 0, 0.03);
+
+    // For #fafafa background
     box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px rgba(255, 255, 255, 0.6);
     transform: scale(1.05);
   }

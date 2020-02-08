@@ -26,22 +26,37 @@ const IndexPage = () => (
 
           <div className="icons-container">
             <div className="icon-container">
-              <i className="fab fa-2x fa-instagram" />
+              <a href="https://www.instagram.com/jitendra.nirnejak/" target="_blank">
+                <i className="fab fa-2x fa-instagram" />
+              </a>
             </div>
             <div className="icon-container">
-              <i className="fab fa-2x fa-facebook" />
+              <a href="https://www.facebook.com/nirnejak/" target="_blank">
+                <i className="fab fa-2x fa-facebook" />
+              </a>
             </div>
             <div className="icon-container">
-              <i className="fab fa-2x fa-linkedin" />
+              <a href="https://www.linkedin.com/in/nirnejak/" target="_blank">
+                <i className="fab fa-2x fa-linkedin" />
+              </a>
             </div>
             <div className="icon-container">
-              <i className="fab fa-2x fa-github" />
+              <a href="https://github.com/nirnejak/" target="_blank">
+                <i className="fab fa-2x fa-github" />
+              </a>
             </div>
             <div className="icon-container">
-              <i className="fab fa-2x fa-dribbble" />
+              <a href="https://www.dribbble.com/nirnejak/" target="_blank">
+                <i className="fab fa-2x fa-dribbble" />
+              </a>
             </div>
           </div>
         </div>
+      </div>
+      <div className="hero-foot has-text-centered">
+        <i className="fas fa-angle-double-down" />
+        <br />
+        <br />
       </div>
     </section>
   </>
