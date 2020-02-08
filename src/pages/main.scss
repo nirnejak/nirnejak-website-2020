@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+@import "fonts";
+
+$primary: #027bff;
+$light: rgba(0, 0, 0, 0.1);
+$dark: #000000;
+
+$family-sans-serif: "HelveticaNowText";
+
+$text-color: #797979;
+$text-size: 13px;
+
+$body-background: #e4e4e4;
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: $text-size;
+  color: $text-color;
+  background-color: $body-background;
+
+  &::selection {
+    background-color: $primary;
+    color: white;
+  }
+}
+
+div,
+section {
+  display: block;
+}
+
+@import "utils/layout";
+@import "utils/typography";
+@import "utils/icons";

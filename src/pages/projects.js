@@ -4,14 +4,14 @@ import { Link } from "gatsby"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-const Blogs = () => (
+const Projects = () => (
   <>
-    <SEO title="Blogs" />
+    <SEO title="Projects" />
     <Header />
-    <h1>Hi from the blogs page</h1>
-    <p>Welcome to page 2</p>
+    <h1>Projects</h1>
+    <p>Welcome to projects page</p>
     <Link to="/">Go back to the homepage</Link>
   </>
 )
 
-export default Blogs
+export default Projects

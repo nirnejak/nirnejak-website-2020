@@ -1,0 +1,63 @@
+.has-text-weight-light {
+  font-weight: 200;
+}
+
+.has-text-weight-bold {
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 45px;
+
+  @media (min-width: 1480px) {
+    font-size: 64px;
+  }
+  @media (min-width: 1216px) {
+    font-size: 64px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 50px;
+  }
+}
+
+// Alignment
+.has-text-centered {
+  text-align: center;
+}
+.has-text-justified {
+  text-align: justify;
+}
+.has-text-right {
+  text-align: right;
+}
+.has-text-left {
+  text-align: left;
+}
+
+// Colors
+.has-text-black {
+  color: #000000;
+}
+.has-text-white {
+  color: #ffffff;
+}
+.has-text-primary {
+  color: $primary;
+}
+.has-text-light {
+  color: $light;
+}
+
+// Background
+.has-background-black {
+  background-color: #000000;
+}
+.has-background-white {
+  background-color: #ffffff;
+}
+.has-background-primary {
+  background-color: $primary;
+}
+.has-background-light {
+  background-color: $light;
+}

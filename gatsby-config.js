@@ -1,8 +1,19 @@
+require(`dotenv`).config({
+  path: `.env`,
+})
+
 module.exports = {
   siteMetadata: {
     title: 'Jitendra Nirnejak - Portfolio',
+    siteTitle: 'Jitendra Nirnejak - Portfolio',
     description: 'Portfolio website of Jitendra Nirnejak, a Full-stack developer and UI/UX Designer',
     author: '@nirnejak',
+    twitterUser: 'jeetnirnejak',
+
+    siteUrl: 'https://nirnejak.com',
+    siteLanguage: 'en',
+
+    siteImage: 'https://nirnejak.com/static/jitendra.png',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -13,8 +24,15 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      },
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    'gatsby-plugin-sass',
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
@@ -27,9 +45,16 @@ module.exports = {
         icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
       },
     },
-    'gatsby-plugin-sass',
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // 'gatsby-plugin-offline',
+    {
+      resolve: 'gatsby-plugin-nprogress',
+      options: {
+        color: '#027BFF',
+        showSpinner: false,
+      },
+    },
+    'gatsby-plugin-robots-txt',
+    'gatsby-plugin-sitemap',
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify',
   ],
 }
