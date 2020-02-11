@@ -6,17 +6,18 @@
   font-weight: bold;
 }
 
-h1 {
-  font-size: 45px;
+.is-huge {
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 70px;
 
   @media (min-width: 1480px) {
-    font-size: 64px;
+    font-size: 150px;
   }
   @media (min-width: 1216px) {
-    font-size: 64px;
+    font-size: 150px;
   }
   @media (min-width: 1024px) {
-    font-size: 50px;
+    font-size: 130px;
   }
 }
 
@@ -60,4 +61,50 @@ h1 {
 }
 .has-background-light {
   background-color: $light;
+}
+
+.is-size-1 {
+  font-size: 45px;
+
+  @media (min-width: 1480px) {
+    font-size: 64px;
+  }
+  @media (min-width: 1216px) {
+    font-size: 64px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 64px;
+  }
+}
+
+.is-size-2 {
+  font-size: 19px;
+
+  @media (min-width: 1480px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1216px) {
+    font-size: 35px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 35px;
+  }
+}
+
+.is-size-3 {
+  font-size: 19px;
+
+  @media (min-width: 1480px) {
+    font-size: 23px;
+  }
+  @media (min-width: 1216px) {
+    font-size: 23px;
+  }
+  @media (min-width: 1024px) {
+    font-size: 23px;
+  }
+}
+
+p {
+  padding-bottom: 1rem;
 }

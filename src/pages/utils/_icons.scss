@@ -1,13 +1,14 @@
 .icons-container {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
 
   width: 100%;
   margin: 0 auto;
   & > .icon-container {
-    padding: 1.2em 1.4em;
-    margin: 1rem;
+    padding: 0.8em 1em;
+    margin-right: 1.5rem;
+    margin-top: 1.5rem;
 
     border-radius: 0.5em;
 
