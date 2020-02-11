@@ -17,14 +17,12 @@ const IndexPage = () => (
           <h1 className="is-size-1 has-text-black">Hi, <br />I'm Jitendra Nirnejak.</h1>
           <br />
           <p className="is-size-3 has-text-weight-light">UI/UX Designer, Full-Stack Developer, Tech Blogger</p>
-          <br />
-          <svg width="64" height="5" viewBox="0 0 64 5" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect width="64" height="5" fill="#027BFF" />
-          </svg>
-          <br />
-          <br />
-          <br />
-          <br />
+
+          <div style={{ margin: "0 30px" }}>
+            <svg width="64" height="5" viewBox="0 0 64 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="5" fill="#027BFF" />
+            </svg>
+          </div>
 
           <div className="icons-container">
             <div className="icon-container">
@@ -102,27 +100,27 @@ const IndexPage = () => (
           <br /><br />
           <div className="skills-container">
             <div className="skill-container">
-              <img src={require("../images/skills/nodejs.png")} alt="Node.js" />
+              <img src={require("../images/skills/nodejs.svg")} alt="Node.js" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/reactjs.png")} alt="React.js" />
+              <img src={require("../images/skills/reactjs.svg")} alt="React.js" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/vuejs.png")} alt="Vue.js" />
+              <img src={require("../images/skills/vuejs.svg")} alt="Vue.js" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/gatsby.png")} alt="Gatsby" />
+              <img src={require("../images/skills/gatsby.svg")} alt="Gatsby" />
             </div>
           </div>
           <div className="skills-container">
             <div className="skill-container">
-              <img src={require("../images/skills/figma.png")} alt="Figma" />
+              <img src={require("../images/skills/figma.svg")} alt="Figma" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/adobe-xd.png")} alt="Adobe XD" />
+              <img src={require("../images/skills/adobe-xd.svg")} alt="Adobe XD" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/adobe-photoshop.png")} alt="Adobe Photoshop" />
+              <img src={require("../images/skills/adobe-photoshop.svg")} alt="Adobe Photoshop" />
             </div>
           </div>
         </div>
