@@ -76,7 +76,7 @@ const IndexPage = () => (
               </a>
             </div>
             <div className="blog-container">
-              <a href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/">
+              <a href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/">
                 <GatsbyPluginBlogImage />
                 <br /><br />
                 <p className="has-text-black has-text-weight-bold">Must have Gatsby plugins for a great blog</p>
@@ -84,7 +84,7 @@ const IndexPage = () => (
               </a>
             </div>
             <div className="blog-container">
-              <a href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/">
+              <a href="https://www.inkoop.io/blog/building-custom-plugins-for-vue/">
                 <VuePluginBlogImage />
                 <br /><br />
                 <p className="has-text-black has-text-weight-bold">Building custom plugins for Vue.js | Supercharge your Vue.js Development</p>
