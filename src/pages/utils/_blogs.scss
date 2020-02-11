@@ -1,21 +1,30 @@
-.icons-container {
+.blogs-container {
   display: flex;
   justify-content: flex-start;
-  flex-wrap: wrap;
 
   width: 100%;
   margin: 0 auto;
-  & > .icon-container {
-    padding: 0.8em 1em;
-    margin-right: 1.5rem;
-    margin-top: 1.5rem;
+
+  flex-direction: column;
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  .blog-container {
+    flex: 1;
+
+    padding: 1em;
+    margin: 1.5rem;
 
     border-radius: 0.5em;
+
+    background-color: #fafafa;
 
     transition: all 0.2s ease-in-out;
     animation: raise-container 0.3s forwards 0.8s;
     & > a {
       color: black;
+      text-decoration: none;
     }
   }
 }
@@ -26,7 +35,7 @@
     transform: scale(1);
   }
   to {
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0), -7px -7px 10px rgba(255, 255, 255, 0.6);
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px rgba(255, 255, 255, 0.6);
     transform: scale(1.05);
   }
 }

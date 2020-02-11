@@ -11,7 +11,7 @@ $family-sans-serif: "HelveticaNowText";
 $text-color: #797979;
 $text-size: 13px;
 
-$body-background: #e4e4e4;
+$body-background: #fafafa;
 // $body-background: #fafafa;
 
 * {
@@ -46,3 +46,4 @@ section {
 @import "utils/layout";
 @import "utils/typography";
 @import "utils/icons";
+@import "utils/blogs";
