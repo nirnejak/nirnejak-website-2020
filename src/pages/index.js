@@ -18,7 +18,7 @@ const IndexPage = () => (
           <br />
           <p className="is-size-3 has-text-weight-light">UI/UX Designer, Full-Stack Developer, Tech Blogger</p>
 
-          <div style={{ margin: "0 30px" }}>
+          <div style={{ margin: "30 0px" }}>
             <svg width="64" height="5" viewBox="0 0 64 5" fill="none" xmlns="http://www.w3.org/2000/svg">
               <rect width="64" height="5" fill="#027BFF" />
             </svg>
