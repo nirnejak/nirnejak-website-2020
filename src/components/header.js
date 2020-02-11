@@ -22,7 +22,9 @@ const Header = ({ siteTitle }) => {
   )
 }
 
-Header.propTypes = {}
+Header.propTypes = {
+  isExpanded: PropTypes.bool.isRequired
+}
 
 Header.defaultProps = {}
 

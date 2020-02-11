@@ -1,5 +1,4 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 
@@ -29,27 +28,27 @@ const IndexPage = () => (
 
           <div className="icons-container">
             <div className="icon-container">
-              <a href="https://github.com/nirnejak/" target="_blank">
+              <a href="https://github.com/nirnejak/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-2x fa-github" />
               </a>
             </div>
             <div className="icon-container">
-              <a href="https://codepen.io/nirnejak" target="_blank">
+              <a href="https://codepen.io/nirnejak" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-2x fa-codepen" />
               </a>
             </div>
             <div className="icon-container">
-              <a href="https://www.dribbble.com/nirnejak/" target="_blank">
+              <a href="https://www.dribbble.com/nirnejak/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-2x fa-dribbble" />
               </a>
             </div>
             <div className="icon-container">
-              <a href="https://www.behance.net/nirnejak" target="_blank">
+              <a href="https://www.behance.net/nirnejak" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-2x fa-behance-square" />
               </a>
             </div>
             <div className="icon-container">
-              <a href="https://www.linkedin.com/in/nirnejak/" target="_blank">
+              <a href="https://www.linkedin.com/in/nirnejak/" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-2x fa-linkedin" />
               </a>
             </div>
