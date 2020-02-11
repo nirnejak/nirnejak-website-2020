@@ -43,7 +43,9 @@ section {
   display: block;
 }
 
+@import "utils/animations";
 @import "utils/layout";
 @import "utils/typography";
 @import "utils/icons";
 @import "utils/blogs";
+@import "utils/skills";

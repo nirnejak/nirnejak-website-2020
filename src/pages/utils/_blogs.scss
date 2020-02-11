@@ -28,14 +28,3 @@
     }
   }
 }
-
-@keyframes raise-container {
-  from {
-    box-shadow: none;
-    transform: scale(1);
-  }
-  to {
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px rgba(255, 255, 255, 0.6);
-    transform: scale(1.05);
-  }
-}

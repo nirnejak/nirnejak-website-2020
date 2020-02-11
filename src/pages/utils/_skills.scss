@@ -1,0 +1,32 @@
+.skills-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  width: 100%;
+  margin: 0 auto;
+  
+  & > .skill-container {
+    min-width: 100px;
+    max-width: 100px;
+    min-height: 100px;
+    max-height: 100px;
+
+    display: flex;
+
+    flex: 1;
+
+    border-radius: 0.5em;
+    margin: 1rem;
+
+    transition: all 0.2s ease-in-out;
+    animation: raise-container 0.3s forwards 0.8s;
+
+    & > a {
+      color: black;
+    }
+    & > img {
+      margin: auto;
+    }
+  }
+}

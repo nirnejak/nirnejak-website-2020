@@ -100,6 +100,32 @@ const IndexPage = () => (
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Skills</h2>
+          <br /><br />
+          <div className="skills-container">
+            <div className="skill-container">
+              <img src={require("../images/skills/nodejs.png")} alt="Node.js" />
+            </div>
+            <div className="skill-container">
+              <img src={require("../images/skills/reactjs.png")} alt="React.js" />
+            </div>
+            <div className="skill-container">
+              <img src={require("../images/skills/vuejs.png")} alt="Vue.js" />
+            </div>
+            <div className="skill-container">
+              <img src={require("../images/skills/gatsby.png")} alt="Gatsby" />
+            </div>
+          </div>
+          <div className="skills-container">
+            <div className="skill-container">
+              <img src={require("../images/skills/figma.png")} alt="Figma" />
+            </div>
+            <div className="skill-container">
+              <img src={require("../images/skills/adobe-xd.png")} alt="Adobe XD" />
+            </div>
+            <div className="skill-container">
+              <img src={require("../images/skills/adobe-photoshop.png")} alt="Adobe Photoshop" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
