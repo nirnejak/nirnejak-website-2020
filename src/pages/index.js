@@ -1,10 +1,15 @@
 import React from "react"
 
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 
 import FormBlogImage from "../components/blogs/form_blog"
 import GatsbyPluginBlogImage from "../components/blogs/gatsby_plugins"
 import VuePluginBlogImage from "../components/blogs/vue_plugin"
+
+import GitProImage from "../components/works/gitpro"
+import SwiftUIAppImage from "../components/works/swiftui"
+import TellMeImage from "../components/works/tellme"
 
 import './main.scss'
 
@@ -64,8 +69,8 @@ const IndexPage = () => (
         <div className="container">
           <h2 className="is-huge">Blogs</h2>
           <br /><br />
-          <div className="blogs-container">
-            <div className="blog-container">
+          <div className="image-contents-container">
+            <div className="image-content-container">
               <a href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/">
                 <FormBlogImage />
                 <br />
@@ -73,7 +78,7 @@ const IndexPage = () => (
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A guide to building input forms that are easy to use and aesthetically pleasing.</p>
               </a>
             </div>
-            <div className="blog-container">
+            <div className="image-content-container">
               <a href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/">
                 <GatsbyPluginBlogImage />
                 <br />
@@ -81,7 +86,7 @@ const IndexPage = () => (
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A comprehensive list of extremely useful Gatsby Plugins that can help you build, deploy and monitor a great blog.</p>
               </a>
             </div>
-            <div className="blog-container">
+            <div className="image-content-container">
               <a href="https://www.inkoop.io/blog/building-custom-plugins-for-vue/">
                 <VuePluginBlogImage />
                 <br />
@@ -130,6 +135,33 @@ const IndexPage = () => (
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Work</h2>
+          <br /><br />
+          <div className="image-contents-container">
+            <div className="image-content-container">
+              <a href="http://gitpro.app/">
+                <GitProImage />
+                <br />
+                <p className="has-text-black has-text-weight-bold">GitPro</p>
+                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A platform to make repository management and developer activity tracking easier.</p>
+              </a>
+            </div>
+            <div className="image-content-container">
+              <a href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard">
+                <TellMeImage />
+                <br />
+                <p className="has-text-black has-text-weight-bold">TellMe</p>
+                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>Application to collect and analyse irrigation data to reduce water wastage.</p>
+              </a>
+            </div>
+            <div className="image-content-container">
+              <a href="https://github.com/nirnejak/swift-tab-app">
+                <SwiftUIAppImage />
+                <br />
+                <p className="has-text-black has-text-weight-bold">SwiftUI Tab App</p>
+                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A SwiftUI app for iOS for Task Management.</p>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -142,6 +174,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+    <Footer />
   </>
 )
 
