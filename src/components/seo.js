@@ -134,14 +134,7 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.siteImage
         },
       ].concat(meta)}
-    >
-      <script
-        defer
-        src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous"
-      />
-    </Helmet>
+    />
   )
 }
 
