@@ -87,5 +87,5 @@ $displays: ("block", "flex", "inline", "inline-block", "inline-flex");
 
 .is-raised {
   background-color: $body-background;
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.9), -7px -7px 10px rgba(255, 255, 255, 0.4) !important;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px white;
 }
