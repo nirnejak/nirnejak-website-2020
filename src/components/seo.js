@@ -10,8 +10,6 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
-require(`dotenv`).config({ path: `.env` })
-
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -21,10 +19,16 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
-            social
             siteLanguage
             siteUrl
             siteImage
+            social {
+              twitter
+            }
+            facebook_app {
+              fb_admin_id
+              fb_app_id
+            }
           }
         }
       }
@@ -43,7 +47,7 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           name: 'keywords',
-          content: 'Jitendra, Nirnejak, Portfolio, Web, Developer, Designer, React, Vue, Gatsby, Node, Adobe XD, Figma'
+          content: 'Jitendra, Nirnejak, Portfolio, Developer, Designer, Blogger, React, Vue, Gatsby, Node, Adobe XD, Figma'
         },
         {
           name: 'author',
@@ -51,7 +55,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: 'robots',
-          content: 'follow'
+          content: 'follow'   // 'follow', 'index'?
         },
         {
           name: 'image',
@@ -76,6 +80,10 @@ function SEO({ description, lang, meta, title }) {
         },
         // Open Graph
         {
+          property: `og:url`,
+          content: site.siteMetadata.siteUrl,
+        },
+        {
           property: `og:title`,
           content: title,
         },
@@ -94,11 +102,11 @@ function SEO({ description, lang, meta, title }) {
         // Facebook
         {
           name: 'fb:admins',
-          content: process.env.FB_ADMINS_ID
+          content: site.siteMetadata.facebook_app.fb_admin_id
         },
         {
           name: 'fb:app_id',
-          content: process.env.FB_APP_ID
+          content: site.siteMetadata.facebook_app.fb_app_id
         },
         // Twitter
         {

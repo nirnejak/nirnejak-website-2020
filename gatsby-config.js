@@ -6,6 +6,10 @@ module.exports = {
     description: 'Portfolio website of Jitendra Nirnejak, a Full-stack developer and UI/UX Designer',
     author: '@nirnejak',
 
+    siteLanguage: 'en',
+    siteUrl: 'https://nirnejak.com',
+    siteImage: 'https://nirnejak.com/static/jitendra.png',
+
     social: {
       github: 'nirnejak',
       codepen: 'nirnejak',
@@ -15,9 +19,10 @@ module.exports = {
       twitter: 'jeetnirnejak',
     },
 
-    siteLanguage: 'en',
-    siteUrl: 'https://nirnejak.com',
-    siteImage: 'https://nirnejak.com/static/jitendra.png',
+    facebook_app: {
+      fb_admin_id: process.env.FB_ADMINS_ID,
+      fb_app_id: process.env.FB_APP_ID
+    },
   },
   plugins: [
     'gatsby-plugin-react-helmet',
