@@ -1,18 +1,22 @@
-require(`dotenv`).config({
-  path: `.env`,
-})
+require(`dotenv`).config({ path: `.env` })
 
 module.exports = {
   siteMetadata: {
     title: 'Jitendra Nirnejak - Portfolio',
-    siteTitle: 'Jitendra Nirnejak - Portfolio',
     description: 'Portfolio website of Jitendra Nirnejak, a Full-stack developer and UI/UX Designer',
     author: '@nirnejak',
-    twitterUser: 'jeetnirnejak',
 
-    siteUrl: 'https://nirnejak.com',
+    social: {
+      github: 'nirnejak',
+      codepen: 'nirnejak',
+      dribbble: 'nirnejak',
+      behance: 'nirnejak',
+      linkedin: 'nirnejak',
+      twitter: 'jeetnirnejak',
+    },
+
     siteLanguage: 'en',
-
+    siteUrl: 'https://nirnejak.com',
     siteImage: 'https://nirnejak.com/static/jitendra.png',
   },
   plugins: [

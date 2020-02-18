@@ -2,7 +2,7 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

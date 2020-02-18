@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+require(`dotenv`).config({ path: `.env` })
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -19,6 +21,10 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            social
+            siteLanguage
+            siteUrl
+            siteImage
           }
         }
       }
@@ -36,9 +42,39 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
+          name: 'keywords',
+          content: 'Jitendra, Nirnejak, Portfolio, Web, Developer, Designer, React, Vue, Gatsby, Node, Adobe XD, Figma'
+        },
+        {
+          name: 'author',
+          content: site.siteMetadata.author
+        },
+        {
+          name: 'robots',
+          content: 'follow'
+        },
+        {
+          name: 'image',
+          content: site.siteMetadata.siteImage
+        },
+        {
           name: `description`,
           content: metaDescription,
         },
+        // Schema.org for Google
+        {
+          itemprop: 'name',
+          content: site.siteMetadata.title
+        },
+        {
+          itemprop: 'description',
+          content: metaDescription
+        },
+        {
+          itemprop: 'description',
+          content: site.siteMetadata.siteImage
+        },
+        // Open Graph
         {
           property: `og:title`,
           content: title,
@@ -48,16 +84,26 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
         {
+          property: `og:image`,
+          content: site.siteMetadata.siteImage,
+        },
+        {
           property: `og:type`,
           content: `website`,
         },
+        // Facebook
+        {
+          name: 'fb:admins',
+          content: process.env.FB_ADMINS_ID
+        },
+        {
+          name: 'fb:app_id',
+          content: process.env.FB_APP_ID
+        },
+        // Twitter
         {
           name: `twitter:card`,
           content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
         },
         {
           name: `twitter:title`,
@@ -67,9 +113,26 @@ function SEO({ description, lang, meta, title }) {
           name: `twitter:description`,
           content: metaDescription,
         },
+        {
+          name: `twitter:site`,
+          content: site.siteMetadata.social.twitter,
+        },
+        {
+          name: `twitter:creator`,
+          content: site.siteMetadata.social.twitter,
+        },
+        {
+          name: `twitter:image:src`,
+          content: site.siteMetadata.siteImage
+        },
       ].concat(meta)}
     >
-      <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js" />
+      <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
+        integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous"
+      />
     </Helmet>
   )
 }
