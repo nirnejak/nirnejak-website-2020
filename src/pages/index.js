@@ -207,7 +207,7 @@ const IndexPage = () => (
         <div className="container">
           <h2 className="is-huge">Contact</h2>
           <p className="is-size-2 has-text-right has-text-black has-text-weight-light">7869290297</p>
-          <p className="is-size-2 has-text-right has-text-black has-text-weight-light">jeetnirnejak@gmail.com</p>
+          <p className="is-size-2 has-text-right has-text-black has-text-weight-light">hello@nirnejak.com</p>
         </div>
       </div>
     </section>
