@@ -8,7 +8,7 @@ import './main.scss'
 
 const IndexPage = () => (
   <>
-    <SEO title="Home" />
+    <SEO title="Uses" />
     <section className="hero">
       <div className="hero-head">
         <Header />
