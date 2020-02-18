@@ -26,22 +26,22 @@ const IndexPage = () => (
           </div>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Languages and Frameworks</h2>
-          <p className="is-size-3">Node, React, Vue, Gatsby, Python</p>
+          <p className="is-size-3 has-text-weight-light">Node, React, Vue, Gatsby, Python</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Design Tools</h2>
-          <p className="is-size-3">Figma, Adobe XD, Adobe Photoshop</p>
+          <p className="is-size-3 has-text-weight-light">Figma, Adobe XD, Adobe Photoshop</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Terminal and IDE</h2>
-          <p className="is-size-3">ZSH + Oh-my-zsh, iTerm, VS Code</p>
+          <p className="is-size-3 has-text-weight-light">ZSH + Oh-my-zsh, iTerm, VS Code</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Devices and Platforms</h2>
-          <p className="is-size-3">iPhone, iPad Pro, macOS (Yeah! I'm full in the ecosystem)</p>
+          <p className="is-size-3 has-text-weight-light">iPhone, iPad Pro, macOS (Yeah! I'm full in the ecosystem)</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Podcasts, I listen to</h2>
-          <p className="is-size-3">Syntax, The Vergecast</p>
+          <p className="is-size-3 has-text-weight-light">Syntax, The Vergecast</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>What's for 2020</h2>
-          <p className="is-size-3">Swift and Typescript</p>
+          <p className="is-size-3 has-text-weight-light">Swift and Typescript</p>
 
         </div>
       </div>
