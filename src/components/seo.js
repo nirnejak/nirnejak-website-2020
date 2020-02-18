@@ -101,11 +101,11 @@ function SEO({ description, lang, meta, title }) {
         },
         // Facebook
         {
-          name: 'fb:admins',
+          property: 'fb:admins',
           content: site.siteMetadata.facebook_app.fb_admin_id
         },
         {
-          name: 'fb:app_id',
+          property: 'fb:app_id',
           content: site.siteMetadata.facebook_app.fb_app_id
         },
         // Twitter
