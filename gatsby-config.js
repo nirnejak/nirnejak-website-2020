@@ -3,12 +3,12 @@ require(`dotenv`).config({ path: `.env` })
 module.exports = {
   siteMetadata: {
     title: 'Jitendra Nirnejak - Portfolio',
-    description: 'Portfolio website of Jitendra Nirnejak, a Full-stack developer and UI/UX Designer',
-    author: '@nirnejak',
+    description: 'Portfolio website of Jitendra Nirnejak, I am a full-stack developer, UI/UX Designer, and Tech Blogger.',
+    author: 'Jitendra Nirnejak',
 
     siteLanguage: 'en',
-    siteUrl: 'https://nirnejak.com',
-    siteImage: 'https://nirnejak.com/static/jitendra.png',
+    siteUrl: 'https://nirnejak.netlify.com',
+    siteImage: 'https://nirnejak.netlify.com/public/cover.png',
 
     social: {
       github: 'nirnejak',
