@@ -142,27 +142,27 @@ const IndexPage = () => (
           <br /><br />
           <div className="skills-container">
             <div className="skill-container">
-              <img src={require("../images/skills/nodejs.svg")} alt="Node.js" />
+              <img src={require("../images/skills/nodejs.svg")} alt="Node.js" title="Node.js" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/reactjs.svg")} alt="React.js" />
+              <img src={require("../images/skills/reactjs.svg")} alt="React.js" title="React.js" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/vuejs.svg")} alt="Vue.js" />
+              <img src={require("../images/skills/vuejs.svg")} alt="Vue.js" title="Vue.js" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/gatsby.svg")} alt="Gatsby" />
+              <img src={require("../images/skills/gatsby.svg")} alt="Gatsby" title="Gatsby" />
             </div>
           </div>
           <div className="skills-container">
             <div className="skill-container">
-              <img src={require("../images/skills/figma.svg")} alt="Figma" />
+              <img src={require("../images/skills/figma.svg")} alt="Figma" title="Figma" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/adobe-xd.svg")} alt="Adobe XD" />
+              <img src={require("../images/skills/adobe-xd.svg")} alt="Adobe XD" title="Adobe XD" />
             </div>
             <div className="skill-container">
-              <img src={require("../images/skills/adobe-photoshop.svg")} alt="Adobe Photoshop" />
+              <img src={require("../images/skills/adobe-photoshop.svg")} alt="Adobe Photoshop" title="Adobe Photoshop" />
             </div>
           </div>
         </div>
