@@ -25,77 +25,25 @@ const IndexPage = () => (
             </svg>
           </div>
 
-          <br /><br /><br /><br />
-          <h2 className="is-huge">Technology</h2>
-          <br /><br />
+          <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Languages and Frameworks</h2>
+          <p className="is-size-3">Node, React, Vue, Gatsby, Python</p>
 
-          <div className="skills-container">
-            <div className="skill-container">
-              <img src={require("../images/skills/nodejs.svg")} alt="Node.js" title="Node.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/reactjs.svg")} alt="React.js" title="React.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/vuejs.svg")} alt="Vue.js" title="Vue.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/gatsby.svg")} alt="Gatsby" title="Gatsby" />
-            </div>
-          </div>
-          <div className="skills-container">
-            <div className="skill-container">
-              <img src={require("../images/skills/figma.svg")} alt="Figma" title="Figma" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/adobe-xd.svg")} alt="Adobe XD" title="Adobe XD" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/adobe-photoshop.svg")} alt="Adobe Photoshop" title="Adobe Photoshop" />
-            </div>
-          </div>
+          <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Design Tools</h2>
+          <p className="is-size-3">Figma, Adobe XD, Adobe Photoshop</p>
 
-          <br /><br /><br /><br />
-          <h2 className="is-huge">Devices</h2>
-          <br /><br />
+          <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Terminal and IDE</h2>
+          <p className="is-size-3">ZSH + Oh-my-zsh, iTerm, VS Code</p>
 
-          <div className="skills-container">
-            <div className="skill-container">
-              <img src={require("../images/skills/nodejs.svg")} alt="Node.js" title="Node.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/reactjs.svg")} alt="React.js" title="React.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/vuejs.svg")} alt="Vue.js" title="Vue.js" />
-            </div>
-          </div>
+          <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Devices and Platforms</h2>
+          <p className="is-size-3">iPhone, iPad Pro, macOS (Yeah! I'm full in the ecosystem)</p>
 
-          <br /><br /><br /><br />
-          <h2 className="is-huge">Tools</h2>
-          <br /><br />
+          <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Podcasts, I listen to</h2>
+          <p className="is-size-3">Syntax, The Vergecast</p>
 
-          <div className="skills-container">
-            <div className="skill-container">
-              <img src={require("../images/skills/nodejs.svg")} alt="Node.js" title="Node.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/reactjs.svg")} alt="React.js" title="React.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/vuejs.svg")} alt="Vue.js" title="Vue.js" />
-            </div>
-            <div className="skill-container">
-              <img src={require("../images/skills/gatsby.svg")} alt="Gatsby" title="Gatsby" />
-            </div>
-          </div>
+          <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>What's for 2020</h2>
+          <p className="is-size-3">Swift and Typescript</p>
 
         </div>
-      </div>
-      <div className="hero-foot has-text-centered">
-        <i className="fas fa-angle-double-down" />
-        <br />
-        <br />
       </div>
     </section>
     <Footer />
