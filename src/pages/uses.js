@@ -32,16 +32,16 @@ const IndexPage = () => (
           <p className="is-size-3 has-text-weight-light">Figma, Adobe XD, Adobe Photoshop</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Terminal and IDE</h2>
-          <p className="is-size-3 has-text-weight-light">ZSH + Oh-my-zsh, iTerm, VS Code</p>
+          <p className="is-size-3 has-text-weight-light">ZSH + Oh-my-zsh, iTerm, VS Code(<a href="https://gist.github.com/nirnejak/3773427ef028723130d2e6d0abdab8e2" target="_blank" rel="noopener noreferrer" className="link is-size-3">Settings Gist</a>)</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Devices and Platforms</h2>
-          <p className="is-size-3 has-text-weight-light">iPhone, iPad Pro, macOS (Yeah! I'm full in the ecosystem)</p>
+          <p className="is-size-3 has-text-weight-light">iPhone XR, iPad Pro 11, macOS(Macbook Air)</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>Podcasts, I listen to</h2>
           <p className="is-size-3 has-text-weight-light">Syntax, The Vergecast</p>
 
           <h2 className="is-size-2 has-text-black" style={{ marginTop: 70, marginBottom: 10 }}>What's for 2020</h2>
-          <p className="is-size-3 has-text-weight-light">Swift and Typescript</p>
+          <p className="is-size-3 has-text-weight-light">JAM Stack, Typescript and Swift</p>
 
         </div>
       </div>
