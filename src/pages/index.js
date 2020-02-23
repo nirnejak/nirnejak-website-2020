@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 
 import SEO from "../components/seo"
 import Footer from "../components/footer"
@@ -131,6 +132,13 @@ const IndexPage = () => (
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A guide to building custom global vue.js plugins.</p>
               </a>
             </div>
+          </div>
+          <div style={{ margin: 50 }} className="has-text-centered">
+            <Link to="/blogs" className="link">See All Blogs</Link>
+            <br />
+            <svg width="64" height="5" viewBox="0 0 64 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="64" height="5" fill="#027BFF" />
+            </svg>
           </div>
         </div>
       </div>
