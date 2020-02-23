@@ -214,8 +214,11 @@ const IndexPage = () => (
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Contact</h2>
-          <p className="is-size-2 has-text-right has-text-black has-text-weight-light">7869290297</p>
-          <p className="is-size-2 has-text-right has-text-black has-text-weight-light">hello@nirnejak.com</p>
+          <br /><br />
+          <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '25px 0 10px 0' }}>
+            <p className="is-size-3 has-text-black has-text-weight-light">7869290297</p>
+            <p className="is-size-3 has-text-black has-text-weight-light">hello@nirnejak.com</p>
+          </div>
         </div>
       </div>
     </section>
