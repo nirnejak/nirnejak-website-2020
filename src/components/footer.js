@@ -2,7 +2,7 @@ import React from 'react'
 
 function footer() {
   return (
-    <div className="has-text-centered" style={{ margin: "200px 10px" }}>
+    <div className="has-text-centered" style={{ margin: "100px 10px 200px 10px" }}>
       <div className="is-size-3 has-text-weight-bold has-text-black">Follow Me on</div>
 
       <div style={{ marginBottom: 10, marginTop: 10 }}>

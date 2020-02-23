@@ -186,7 +186,7 @@ const IndexPage = () => (
               <a href="http://gitpro.app/">
                 <GitProImage />
                 <br />
-                <p className="is-size-3 has-text-black has-text-weight-bold">GitPro</p>
+                <p className="has-text-black has-text-weight-bold">GitPro</p>
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A platform to make repository management and developer activity tracking easier.</p>
               </a>
             </div>
