@@ -61,6 +61,17 @@
 .is-paddingless {
   padding: 0 !important;
 }
+.has-margin-auto {
+  margin: auto;
+}
+.has-margin-vertical-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.has-margin-horizontal-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 // Float
 .is-pulled-left {
