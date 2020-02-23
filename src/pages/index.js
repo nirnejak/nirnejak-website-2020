@@ -216,7 +216,7 @@ const IndexPage = () => (
           <h2 className="is-huge">Contact</h2>
           <br /><br />
           <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '50px 20px 40px 20px' }}>
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form action="/thanks/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
               <div>
                 <input type="text" name="name" id="name" placeholder="Name" />
               </div>
