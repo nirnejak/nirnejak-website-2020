@@ -186,7 +186,7 @@ const IndexPage = () => (
               <a href="http://gitpro.app/">
                 <GitProImage />
                 <br />
-                <p className="has-text-black has-text-weight-bold">GitPro</p>
+                <p className="is-size-3 has-text-black has-text-weight-bold">GitPro</p>
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A platform to make repository management and developer activity tracking easier.</p>
               </a>
             </div>
@@ -215,8 +215,26 @@ const IndexPage = () => (
         <div className="container">
           <h2 className="is-huge">Contact</h2>
           <br /><br />
-          <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '25px 0 10px 0' }}>
-            <p className="is-size-3 has-text-black has-text-weight-light">7869290297</p>
+          <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '50px 20px 40px 20px' }}>
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+              <div>
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div>
+                <input type="email" name="email" id="email" placeholder="Email" />
+              </div>
+              <div>
+                <textarea name="message" id="message" placeholder="Message" />
+              </div>
+              <br />
+              <div>
+                <button type="submit">SEND</button>
+              </div>
+            </form>
+            <br /><br /><br />
+            <p className="is-size-3 has-text-black has-text-weight-bold">
+              or reach me at
+            </p>
             <p className="is-size-3 has-text-black has-text-weight-light">hello@nirnejak.com</p>
           </div>
         </div>

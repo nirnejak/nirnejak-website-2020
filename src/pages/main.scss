@@ -17,6 +17,7 @@ $body-background: #fafafa;
 * {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 html {
@@ -49,3 +50,4 @@ section {
 @import "utils/icons";
 @import "utils/blogs";
 @import "utils/skills";
+@import "utils/form";
