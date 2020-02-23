@@ -216,7 +216,7 @@ const IndexPage = () => (
           <h2 className="is-huge">Contact</h2>
           <br /><br />
           <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '50px 20px 40px 20px' }}>
-            <form action="/thanks/" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+            <form method="POST" action="https://formsubmit.co/hello@nirnejak.com" >
               <div>
                 <input type="text" name="name" id="name" placeholder="Name" />
               </div>
@@ -227,6 +227,8 @@ const IndexPage = () => (
                 <textarea name="message" id="message" placeholder="Message" />
               </div>
               <br />
+              <input type="hidden" name="_next" value="https://nirnejak.com/thanks" />
+              <input type="hidden" name="_captcha" value="false" />
               <div>
                 <button type="submit">SEND</button>
               </div>
