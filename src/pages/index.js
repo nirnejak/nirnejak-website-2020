@@ -236,7 +236,12 @@ const IndexPage = () => {
             <h2 className="is-huge">Contact</h2>
             <br /><br />
             <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '50px 20px 40px 20px' }}>
-              <form name="contact" method="post" onSubmit={handleSubmit}>
+              <form
+                name="contact"
+                method="post"
+                onSubmit={handleSubmit}
+                data-netlify="true"
+              >
                 <div>
                   <input type="text" name="name" id="name" placeholder="Name" />
                 </div>
