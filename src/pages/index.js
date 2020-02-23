@@ -239,6 +239,7 @@ const IndexPage = () => {
               <form
                 name="contact"
                 method="post"
+                action="/thanks/"
                 onSubmit={handleSubmit}
                 data-netlify="true"
               >
