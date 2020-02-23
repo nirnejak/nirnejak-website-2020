@@ -216,7 +216,7 @@ const IndexPage = () => (
           <h2 className="is-huge">Contact</h2>
           <br /><br />
           <div className="is-raised has-text-centered" style={{ borderRadius: '0.5em', padding: '50px 20px 40px 20px' }}>
-            <form method="post" action="https://airform.io/hello@nirnejak.com" >
+            <form method="post" name="contact" netlify>
               <div>
                 <input type="text" name="name" id="name" placeholder="Name" />
               </div>
