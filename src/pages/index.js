@@ -252,6 +252,7 @@ const IndexPage = () => {
                   <textarea name="message" id="message" placeholder="Message" />
                 </div>
                 <br />
+                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <button type="submit">SEND</button>
                 </div>
