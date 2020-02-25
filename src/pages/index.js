@@ -1,6 +1,5 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { Link } from "gatsby"
-import ScrollReveal from 'scrollreveal'
 
 import SEO from "../components/seo"
 import Footer from "../components/footer"
@@ -16,11 +15,6 @@ import TellMeImage from "../components/works/tellme"
 import './main.scss'
 
 const IndexPage = () => {
-  useEffect(() => {
-    ScrollReveal({ reset: true });
-    ScrollReveal().reveal('.scroll-reveal-card', { delay: 300, interval: 100, reset: true });
-  });
-
   return (
     <>
       <SEO title="Home" />

@@ -20,7 +20,7 @@ const Blogs = () => (
           <h1 className="is-huge">Blogs</h1>
           <br /><br />
           <div className="image-contents-container">
-            <div className="image-content-container">
+            <div className="image-content-container scroll-reveal-card">
               <a href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/" target="_blank">
                 <FormBlogImage />
                 <br />
@@ -28,7 +28,7 @@ const Blogs = () => (
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A guide to building input forms that are easy to use and aesthetically pleasing.</p>
               </a>
             </div>
-            <div className="image-content-container">
+            <div className="image-content-container scroll-reveal-card">
               <a href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/" target="_blank">
                 <GatsbyPluginBlogImage />
                 <br />
@@ -38,7 +38,7 @@ const Blogs = () => (
             </div>
           </div>
           <div className="image-contents-container">
-            <div className="image-content-container">
+            <div className="image-content-container scroll-reveal-card">
               <a href="https://www.inkoop.io/blog/building-custom-plugins-for-vue/" target="_blank">
                 <VuePluginBlogImage />
                 <br />
@@ -46,7 +46,7 @@ const Blogs = () => (
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A guide to building custom global vue.js plugins.</p>
               </a>
             </div>
-            <div className="image-content-container">
+            <div className="image-content-container scroll-reveal-card">
               <a href="https://www.inkoop.io/blog/vuesax-the-all-new-vue-component-library/" target="_blank">
                 <VuesaxBlogImage />
                 <br />
@@ -54,7 +54,7 @@ const Blogs = () => (
                 <p className="has-text-weight-light" style={{ marginBottom: 5 }}>Vuesax - The all new Vue Component Library with Material Design</p>
               </a>
             </div>
-            <div className="image-content-container">
+            <div className="image-content-container scroll-reveal-card">
               <a href="https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/" target="_blank">
                 <JSDocBlogImage />
                 <br />

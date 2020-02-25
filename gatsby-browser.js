@@ -1,7 +1,5 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/browser-apis/
- */
+import ScrollReveal from 'scrollreveal'
 
-// You can delete this file if you're not using it
+export const onInitialClientRender = () => {
+  ScrollReveal().reveal('.scroll-reveal-card', { delay: 300, interval: 100, reset: true });
+}
