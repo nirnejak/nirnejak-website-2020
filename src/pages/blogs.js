@@ -10,7 +10,7 @@ import VuePluginBlogImage from "../components/blogs/vue_plugin"
 import VuesaxBlogImage from "../components/blogs/vuesax"
 import JSDocBlogImage from "../components/blogs/jsdoc_for_react"
 
-const Blogs = () => (
+const blogs = () => (
   <>
     <SEO title="Blogs" />
     <Header />
@@ -70,4 +70,4 @@ const Blogs = () => (
   </>
 )
 
-export default Blogs
+export default blogs
