@@ -21,7 +21,11 @@ const blogs = () => (
           <br /><br />
           <div className="image-contents-container">
             <div className="image-content-container scroll-reveal-card">
-              <a href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/" target="_blank">
+              <a
+                href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FormBlogImage />
                 <br />
                 <p className="has-text-black has-text-weight-bold">Forms that don't suck | How to ensure great user experience on forms</p>
@@ -29,7 +33,11 @@ const blogs = () => (
               </a>
             </div>
             <div className="image-content-container scroll-reveal-card">
-              <a href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/" target="_blank">
+              <a
+                href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <GatsbyPluginBlogImage />
                 <br />
                 <p className="has-text-black has-text-weight-bold">Must have Gatsby plugins for a great blog</p>
@@ -39,7 +47,11 @@ const blogs = () => (
           </div>
           <div className="image-contents-container">
             <div className="image-content-container scroll-reveal-card">
-              <a href="https://www.inkoop.io/blog/building-custom-plugins-for-vue/" target="_blank">
+              <a
+                href="https://www.inkoop.io/blog/building-custom-plugins-for-vue/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VuePluginBlogImage />
                 <br />
                 <p className="has-text-black has-text-weight-bold">Building custom plugins for Vue.js | Supercharge your Vue.js Development</p>
@@ -47,7 +59,11 @@ const blogs = () => (
               </a>
             </div>
             <div className="image-content-container scroll-reveal-card">
-              <a href="https://www.inkoop.io/blog/vuesax-the-all-new-vue-component-library/" target="_blank">
+              <a
+                href="https://www.inkoop.io/blog/vuesax-the-all-new-vue-component-library/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <VuesaxBlogImage />
                 <br />
                 <p className="has-text-black has-text-weight-bold">Vuesax - The all new Vue Component Library with Material Design</p>
@@ -55,7 +71,11 @@ const blogs = () => (
               </a>
             </div>
             <div className="image-content-container scroll-reveal-card">
-              <a href="https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/" target="_blank">
+              <a
+                href="https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <JSDocBlogImage />
                 <br />
                 <p className="has-text-black has-text-weight-bold">A Guide to using JSDoc for React.js | Better Documentation in React</p>
