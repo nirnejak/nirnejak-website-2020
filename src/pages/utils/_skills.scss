@@ -17,8 +17,7 @@
     border-radius: 0.5em;
     margin: 1.5rem;
 
-    transition: all 0.2s ease-in-out;
-    animation: raise-container 0.3s forwards 0.8s;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px white ;
 
     & > a {
       color: black;

@@ -89,13 +89,6 @@
   box-shadow: none !important;
 }
 
-$displays: ("block", "flex", "inline", "inline-block", "inline-flex");
-@each $display in $displays {
-  is-#{$display} {
-    display: #{$display};
-  }
-}
-
 .is-raised {
   background-color: $body-background;
   box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px white;

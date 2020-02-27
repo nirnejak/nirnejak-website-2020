@@ -6,13 +6,12 @@ $primary: #027bff;
 $light: rgba(0, 0, 0, 0.1);
 $dark: #000000;
 
-$family-sans-serif: "HelveticaNowText";
+$family-sans-serif: "HelveticaNowText", Helvetica, Arial, sans-serif;
 
 $text-color: #797979;
 $text-size: 13px;
 
 $body-background: #fafafa;
-// $body-background: #fafafa;
 
 * {
   margin: 0px;
@@ -44,7 +43,6 @@ section {
   display: block;
 }
 
-@import "utils/animations";
 @import "utils/layout";
 @import "utils/typography";
 @import "utils/icons";

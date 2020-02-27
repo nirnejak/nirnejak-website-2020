@@ -1,62 +1,23 @@
 @font-face {
   font-family: "HelveticaNowText";
-  src: url("./fonts/HelveticaNowText-Black.ttf") format("truetype");
-  font-style: normal;
-  font-weight: bolder;
-}
-
-@font-face {
-  font-family: "HelveticaNowText";
-  src: url("./fonts/HelveticaNowText-BlackItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: bolder;
-}
-
-@font-face {
-  font-family: "HelveticaNowText";
   src: url("./fonts/HelveticaNowText-Bold.ttf") format("truetype");
+  font-display: swap;
   font-style: normal;
   font-weight: bold;
-}
-
-@font-face {
-  font-family: "HelveticaNowText";
-  src: url("./fonts/HelveticaNowText-BoldItalic.ttf") format("truetype");
-  font-style: italic;
-  font-weight: bold;
-}
-
-@font-face {
-  font-family: "HelveticaNowText";
-  src: url("./fonts/HelveticaNowText-ExtraLight.ttf") format("truetype");
-  font-style: normal;
-  font-weight: lighter;
 }
 
 @font-face {
   font-family: "HelveticaNowText";
   src: url("./fonts/HelveticaNowText-Light.ttf") format("truetype");
+  font-display: swap;
   font-style: normal;
-  font-weight: 200;
-}
-
-@font-face {
-  font-family: "HelveticaNowText";
-  src: url("./fonts/HelveticaNowText-LightItalic.ttf") format("truetype");
-  font-style: italic;
   font-weight: 200;
 }
 
 @font-face {
   font-family: "HelveticaNowText";
   src: url("./fonts/HelveticaNowText-Regular.ttf") format("truetype");
+  font-display: swap;
   font-style: normal;
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "HelveticaNowText";
-  src: url("./fonts/HelveticaNowText-RegIta.ttf") format("truetype");
-  font-style: italic;
   font-weight: normal;
 }
