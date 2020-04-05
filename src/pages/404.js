@@ -24,8 +24,10 @@ const NotFoundPage = () => (
             </span>
             Go back to home
           </Link>
-          <Footer />
         </div>
+      </div>
+      <div className="hero-foot">
+        <Footer />
       </div>
     </div>
   </>
