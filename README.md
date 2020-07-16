@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://nirnejak.com">
-    <img alt="Nirnejak" src="https://nirnejak.com/images/Face_image.png" width="60" />
+    <img alt="Nirnejak" src="https://github.com/nirnejak/nirnejak-website-2020/blob/master/src/images/logo.png?raw=true" width="60" />
   </a>
 </p>
 <h1 align="center">
