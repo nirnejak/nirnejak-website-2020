@@ -8,9 +8,20 @@ const Projects = () => (
   <>
     <SEO title="Projects" />
     <Header />
-    <h1>Projects</h1>
-    <p>Welcome to projects page</p>
-    <Link to="/">Go back to the homepage</Link>
+    <div className="hero is-fullheight">
+      <div className="hero-body">
+        <div className="container">
+          <h1 className="is-size-1 has-text-black">Projects</h1>
+          <br />
+          <p className="is-size-3 has-text-weight-light">
+            Things I&apos;ve built
+          </p>
+          <br />
+          <br />
+          <Link to="/">Go back to the homepage</Link>
+        </div>
+      </div>
+    </div>
   </>
 )
 

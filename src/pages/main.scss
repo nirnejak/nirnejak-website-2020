@@ -3,12 +3,13 @@
 @import "fonts";
 
 $primary: #027bff;
+$secondary: #797979;
 $light: rgba(0, 0, 0, 0.1);
 $dark: #000000;
 
 $family-sans-serif: "HelveticaNowText", Helvetica, Arial, sans-serif;
 
-$text-color: #797979;
+$text-color: $secondary;
 $text-size: 13px;
 
 $body-background: #fafafa;

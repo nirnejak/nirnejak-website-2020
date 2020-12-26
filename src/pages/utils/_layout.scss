@@ -4,18 +4,18 @@
 
 .container {
   width: auto;
-  margin: 0 auto;
   position: relative;
   flex-grow: 1;
 
-  @media (min-width: 1480px) {
-    max-width: 1344px;
+  max-width: 1344px;
+  margin: 0 auto;
+
+  @media (max-width: 1344px) {
+    margin: 0 35px;
   }
-  @media (min-width: 1216px) {
-    max-width: 1152px;
-  }
-  @media (min-width: 1024px) {
-    max-width: 960px;
+
+  @media (max-width: 900px) {
+    margin: 0 25px;
   }
 }
 
@@ -45,7 +45,7 @@
     flex-grow: 1;
     flex-shrink: 0;
 
-    padding: 3rem 1.5rem;
+    padding: 3rem 0;
 
     & > .container {
       flex-grow: 1;

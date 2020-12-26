@@ -45,6 +45,9 @@
 .has-text-primary {
   color: $primary;
 }
+.has-text-secondary {
+  color: $secondary;
+}
 .has-text-light {
   color: $light;
 }
@@ -58,6 +61,9 @@
 }
 .has-background-primary {
   background-color: $primary;
+}
+.has-background-secondary {
+  background-color: $secondary;
 }
 .has-background-light {
   background-color: $light;

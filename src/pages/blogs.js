@@ -16,6 +16,10 @@ const blogs = () => (
   <>
     <SEO title="Blogs" />
     <Header />
+    <br />
+    <br />
+    <br />
+    <br />
     <div className="hero is-fullheight">
       <div className="hero-body">
         <section className="container">
@@ -35,10 +39,7 @@ const blogs = () => (
                   <p className="has-text-black has-text-weight-bold">
                     Setup ESLint for React with Prettier, pre-commit and VSCode
                   </p>
-                  <p
-                    className="has-text-weight-light"
-                    style={{ marginBottom: 5 }}
-                  >
+                  <p className="has-text-weight-light has-text-secondary">
                     A Guide to setting up ESLint for React with Prettier,
                     Pre-commit Hook and Visual Studio Code for better
                     development with linting and code formatting that works with
@@ -60,10 +61,7 @@ const blogs = () => (
                     Forms that don&apos;t suck | How to ensure great user
                     experience on forms
                   </p>
-                  <p
-                    className="has-text-weight-light"
-                    style={{ marginBottom: 5 }}
-                  >
+                  <p className="has-text-weight-light">
                     A guide to building input forms that are easy to use and
                     aesthetically pleasing.
                   </p>
@@ -82,18 +80,13 @@ const blogs = () => (
                   <p className="has-text-black has-text-weight-bold">
                     Must have Gatsby plugins for a great blog
                   </p>
-                  <p
-                    className="has-text-weight-light"
-                    style={{ marginBottom: 5 }}
-                  >
+                  <p className="has-text-weight-light">
                     A comprehensive list of extremely useful Gatsby Plugins that
                     can help you build, deploy and monitor a great blog.
                   </p>
                 </a>
               </div>
             </Fade>
-          </div>
-          <div className="image-contents-container">
             <Fade>
               <div className="image-content-container">
                 <a
@@ -107,10 +100,7 @@ const blogs = () => (
                     Building custom plugins for Vue.js | Supercharge your Vue.js
                     Development
                   </p>
-                  <p
-                    className="has-text-weight-light"
-                    style={{ marginBottom: 5 }}
-                  >
+                  <p className="has-text-weight-light">
                     A guide to building custom global vue.js plugins.
                   </p>
                 </a>
@@ -129,10 +119,7 @@ const blogs = () => (
                     Vuesax - The all new Vue Component Library with Material
                     Design
                   </p>
-                  <p
-                    className="has-text-weight-light"
-                    style={{ marginBottom: 5 }}
-                  >
+                  <p className="has-text-weight-light">
                     Vuesax - The all new Vue Component Library with Material
                     Design
                   </p>
@@ -152,10 +139,7 @@ const blogs = () => (
                     A Guide to using JSDoc for React.js | Better Documentation
                     in React
                   </p>
-                  <p
-                    className="has-text-weight-light"
-                    style={{ marginBottom: 5 }}
-                  >
+                  <p className="has-text-weight-light">
                     A Guide to using JSDoc for generating documentation for
                     react.js applications.
                   </p>

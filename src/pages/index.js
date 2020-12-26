@@ -1,17 +1,14 @@
 import React from "react"
-import { Link } from "gatsby"
 import Fade from "react-reveal/Fade"
 
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
-import ESLintBlogImage from "../components/blogs/eslint"
-import FormBlogImage from "../components/blogs/form_blog"
-import GatsbyPluginBlogImage from "../components/blogs/gatsby_plugins"
-
-import GitProImage from "../components/works/gitpro"
-import SwiftUIAppImage from "../components/works/swiftui"
-import TellMeImage from "../components/works/tellme"
+import Header from "../components/header"
+import Skills from "../components/sections/SkillsSection"
+import RecentBlogs from "../components/sections/RecentBlogs"
+import RecentWork from "../components/sections/RecentWork"
+import ContactSection from "../components/sections/ContactSection"
 
 import "./main.scss"
 
@@ -19,6 +16,7 @@ const IndexPage = () => {
   return (
     <>
       <SEO title="Home" />
+      <Header />
       <section className="hero is-fullheight">
         <div className="hero-body">
           <div className="container">
@@ -201,294 +199,10 @@ const IndexPage = () => {
           <br />
         </div>
       </section>
-      <section className="hero">
-        <div className="hero-body">
-          <div className="container">
-            <h2 className="is-huge">Blogs</h2>
-            <br />
-            <br />
-            <div className="image-contents-container">
-              <Fade>
-                <div className="image-content-container">
-                  <a
-                    href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <ESLintBlogImage />
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      Setup ESLint for React with Prettier, pre-commit and
-                      VSCode
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-              <Fade>
-                <div className="image-content-container">
-                  <a
-                    href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FormBlogImage />
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      Forms that don&apos;t suck | How to ensure great user
-                      experience on forms
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-              <Fade>
-                <div className="image-content-container">
-                  <a
-                    href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GatsbyPluginBlogImage />
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      Must have Gatsby plugins for a great blog
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-            </div>
-            <div style={{ margin: 50 }} className="has-text-centered">
-              <Link to="/blogs" className="link">
-                See All Blogs
-              </Link>
-              <br />
-              <svg
-                width="64"
-                height="5"
-                viewBox="0 0 64 5"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect width="64" height="5" fill="#027BFF" />
-              </svg>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="hero">
-        <div className="hero-body">
-          <div className="container">
-            <h2 className="is-huge">Skills</h2>
-            <br />
-            <br />
-            <div className="skills-container">
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/nodejs.svg")}
-                    alt="Node.js"
-                    title="Node.js"
-                  />
-                </div>
-              </Fade>
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/reactjs.svg")}
-                    alt="React.js"
-                    title="React.js"
-                  />
-                </div>
-              </Fade>
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/vuejs.svg")}
-                    alt="Vue.js"
-                    title="Vue.js"
-                  />
-                </div>
-              </Fade>
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/gatsby.svg")}
-                    alt="Gatsby"
-                    title="Gatsby"
-                  />
-                </div>
-              </Fade>
-            </div>
-            <div className="skills-container">
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/figma.svg")}
-                    alt="Figma"
-                    title="Figma"
-                  />
-                </div>
-              </Fade>
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/adobe-xd.svg")}
-                    alt="Adobe XD"
-                    title="Adobe XD"
-                  />
-                </div>
-              </Fade>
-              <Fade>
-                <div className="skill-container">
-                  <img
-                    src={require("../images/skills/adobe-photoshop.svg")}
-                    alt="Adobe Photoshop"
-                    title="Adobe Photoshop"
-                  />
-                </div>
-              </Fade>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="hero">
-        <div className="hero-body">
-          <div className="container">
-            <h2 className="is-huge">Work</h2>
-            <br />
-            <br />
-            <div className="image-contents-container">
-              <Fade>
-                <div className="image-content-container">
-                  <a
-                    href="http://gitpro.app/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <GitProImage />
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      GitPro
-                    </p>
-                    <p
-                      className="has-text-weight-light"
-                      style={{ marginBottom: 5 }}
-                    >
-                      A platform to make repository management and developer
-                      activity tracking easier.
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-              <Fade>
-                <div className="image-content-container">
-                  <a
-                    href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <TellMeImage />
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      TellMe
-                    </p>
-                    <p
-                      className="has-text-weight-light"
-                      style={{ marginBottom: 5 }}
-                    >
-                      Application to collect and analyse irrigation data to
-                      reduce water wastage.
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-              <Fade>
-                <div className="image-content-container">
-                  <a
-                    href="https://github.com/nirnejak/swift-tab-app"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <SwiftUIAppImage />
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      SwiftUI Tab App
-                    </p>
-                    <p
-                      className="has-text-weight-light"
-                      style={{ marginBottom: 5 }}
-                    >
-                      A SwiftUI app for iOS for Task Management.
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section className="hero">
-        <div className="hero-body">
-          <div className="container">
-            <h2 className="is-huge">Contact</h2>
-            <br />
-            <br />
-            <Fade>
-              <div
-                className="is-raised has-text-centered"
-                style={{
-                  borderRadius: "0.5em",
-                  padding: "50px 20px 40px 20px",
-                }}
-              >
-                <form
-                  name="contact"
-                  method="post"
-                  action="/thanks/"
-                  data-netlify="true"
-                >
-                  <div>
-                    <input
-                      type="text"
-                      name="name"
-                      id="name"
-                      placeholder="Name"
-                    />
-                  </div>
-                  <div>
-                    <input
-                      type="email"
-                      name="email"
-                      id="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <div>
-                    <textarea
-                      name="message"
-                      id="message"
-                      placeholder="Message"
-                    />
-                  </div>
-                  <br />
-                  <input type="hidden" name="form-name" value="contact" />
-                  <div>
-                    <button type="submit">SEND</button>
-                  </div>
-                </form>
-                <br />
-                <br />
-                <br />
-                <p className="is-size-3 has-text-black has-text-weight-bold">
-                  or reach me at
-                </p>
-                <p className="is-size-3 has-text-black has-text-weight-light">
-                  hello@nirnejak.com
-                </p>
-              </div>
-            </Fade>
-          </div>
-        </div>
-      </section>
+      <RecentBlogs />
+      <Skills />
+      <RecentWork />
+      <ContactSection />
       <Footer />
     </>
   )

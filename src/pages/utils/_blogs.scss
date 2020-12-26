@@ -1,20 +1,21 @@
 .image-contents-container {
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 2rem;
+  column-gap: 2rem;
 
   width: 100%;
   margin: 0 auto;
 
-  flex-direction: column;
-  @media (min-width: 768px) {
-    flex-direction: row;
+  @media (max-width: 1000px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
   }
 
   .image-content-container {
-    flex: 1;
-
     padding: 1em;
-    margin: 1.5rem;
 
     border-radius: 0.5em;
     background-color: #fafafa;
@@ -27,5 +28,10 @@
     }
 
     line-height: 1.6;
+
+    &:hover {
+      box-shadow: none;
+      transition: all 0.3s ease-in;
+    }
   }
 }
