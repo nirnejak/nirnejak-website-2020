@@ -43,7 +43,7 @@ const IndexPage = () => {
               </svg>
             </div>
 
-            <Fade cascade>
+            <Fade>
               <div className="icons-container">
                 <div className="icon-container">
                   <a
