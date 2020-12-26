@@ -4,6 +4,7 @@ import Header from "../components/header"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
+import ESLintBlogImage from "../components/blogs/eslint"
 import FormBlogImage from "../components/blogs/form_blog"
 import GatsbyPluginBlogImage from "../components/blogs/gatsby_plugins"
 import VuePluginBlogImage from "../components/blogs/vue_plugin"
@@ -18,8 +19,30 @@ const blogs = () => (
       <div className="hero-body">
         <section className="container">
           <h1 className="is-huge">Blogs</h1>
-          <br /><br />
+          <br />
+          <br />
           <div className="image-contents-container">
+            <div className="image-content-container scroll-reveal-card">
+              <a
+                href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <ESLintBlogImage />
+                <br />
+                <p className="has-text-black has-text-weight-bold">
+                  Setup ESLint for React with Prettier, pre-commit and VSCode
+                </p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  A Guide to setting up ESLint for React with Prettier,
+                  Pre-commit Hook and Visual Studio Code for better development
+                  with linting and code formatting that works with your editor.
+                </p>
+              </a>
+            </div>
             <div className="image-content-container scroll-reveal-card">
               <a
                 href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/"
@@ -28,8 +51,17 @@ const blogs = () => (
               >
                 <FormBlogImage />
                 <br />
-                <p className="has-text-black has-text-weight-bold">Forms that don't suck | How to ensure great user experience on forms</p>
-                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A guide to building input forms that are easy to use and aesthetically pleasing.</p>
+                <p className="has-text-black has-text-weight-bold">
+                  Forms that don&apos;t suck | How to ensure great user
+                  experience on forms
+                </p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  A guide to building input forms that are easy to use and
+                  aesthetically pleasing.
+                </p>
               </a>
             </div>
             <div className="image-content-container scroll-reveal-card">
@@ -40,8 +72,16 @@ const blogs = () => (
               >
                 <GatsbyPluginBlogImage />
                 <br />
-                <p className="has-text-black has-text-weight-bold">Must have Gatsby plugins for a great blog</p>
-                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A comprehensive list of extremely useful Gatsby Plugins that can help you build, deploy and monitor a great blog.</p>
+                <p className="has-text-black has-text-weight-bold">
+                  Must have Gatsby plugins for a great blog
+                </p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  A comprehensive list of extremely useful Gatsby Plugins that
+                  can help you build, deploy and monitor a great blog.
+                </p>
               </a>
             </div>
           </div>
@@ -54,8 +94,16 @@ const blogs = () => (
               >
                 <VuePluginBlogImage />
                 <br />
-                <p className="has-text-black has-text-weight-bold">Building custom plugins for Vue.js | Supercharge your Vue.js Development</p>
-                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A guide to building custom global vue.js plugins.</p>
+                <p className="has-text-black has-text-weight-bold">
+                  Building custom plugins for Vue.js | Supercharge your Vue.js
+                  Development
+                </p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  A guide to building custom global vue.js plugins.
+                </p>
               </a>
             </div>
             <div className="image-content-container scroll-reveal-card">
@@ -66,8 +114,17 @@ const blogs = () => (
               >
                 <VuesaxBlogImage />
                 <br />
-                <p className="has-text-black has-text-weight-bold">Vuesax - The all new Vue Component Library with Material Design</p>
-                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>Vuesax - The all new Vue Component Library with Material Design</p>
+                <p className="has-text-black has-text-weight-bold">
+                  Vuesax - The all new Vue Component Library with Material
+                  Design
+                </p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  Vuesax - The all new Vue Component Library with Material
+                  Design
+                </p>
               </a>
             </div>
             <div className="image-content-container scroll-reveal-card">
@@ -78,8 +135,17 @@ const blogs = () => (
               >
                 <JSDocBlogImage />
                 <br />
-                <p className="has-text-black has-text-weight-bold">A Guide to using JSDoc for React.js | Better Documentation in React</p>
-                <p className="has-text-weight-light" style={{ marginBottom: 5 }}>A Guide to using JSDoc for generating documentation for react.js applications.</p>
+                <p className="has-text-black has-text-weight-bold">
+                  A Guide to using JSDoc for React.js | Better Documentation in
+                  React
+                </p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  A Guide to using JSDoc for generating documentation for
+                  react.js applications.
+                </p>
               </a>
             </div>
           </div>

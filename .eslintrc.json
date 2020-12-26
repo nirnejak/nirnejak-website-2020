@@ -25,5 +25,7 @@
     }
   },
   "plugins": ["react"],
-  "rules": {}
+  "rules": {
+    "node/no-path-concat": 0
+  }
 }

@@ -18,10 +18,6 @@ function SEO({ description, lang, meta, title }) {
             social {
               twitter
             }
-            facebook_app {
-              fb_admin_id
-              fb_app_id
-            }
           }
         }
       }
@@ -39,20 +35,21 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: 'keywords',
-          content: 'Jitendra, Nirnejak, Portfolio, Developer, Designer, Blogger, React, Vue, Gatsby, Node, Adobe XD, Figma'
+          name: "keywords",
+          content:
+            "Jitendra, Nirnejak, Portfolio, Developer, Designer, Blogger, React, Vue, Gatsby, Node, Adobe XD, Figma",
         },
         {
-          name: 'author',
-          content: site.siteMetadata.author
+          name: "author",
+          content: site.siteMetadata.author,
         },
         {
-          name: 'robots',
-          content: 'follow'   // 'follow', 'index'?
+          name: "robots",
+          content: "follow", // 'follow', 'index'?
         },
         {
-          name: 'image',
-          content: site.siteMetadata.siteImage
+          name: "image",
+          content: site.siteMetadata.siteImage,
         },
         {
           name: `description`,
@@ -60,16 +57,16 @@ function SEO({ description, lang, meta, title }) {
         },
         // Schema.org for Google
         {
-          itemprop: 'name',
-          content: site.siteMetadata.title
+          itemprop: "name",
+          content: site.siteMetadata.title,
         },
         {
-          itemprop: 'description',
-          content: metaDescription
+          itemprop: "description",
+          content: metaDescription,
         },
         {
-          itemprop: 'description',
-          content: site.siteMetadata.siteImage
+          itemprop: "description",
+          content: site.siteMetadata.siteImage,
         },
         // Open Graph
         {
@@ -94,12 +91,12 @@ function SEO({ description, lang, meta, title }) {
         },
         // Facebook
         {
-          property: 'fb:admins',
-          content: site.siteMetadata.facebook_app.fb_admin_id
+          property: "fb:admins",
+          content: "100003147340678",
         },
         {
-          property: 'fb:app_id',
-          content: site.siteMetadata.facebook_app.fb_app_id
+          property: "fb:app_id",
+          content: "303711933555596",
         },
         // Twitter
         {
@@ -124,7 +121,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image:src`,
-          content: site.siteMetadata.siteImage
+          content: site.siteMetadata.siteImage,
         },
       ].concat(meta)}
     />

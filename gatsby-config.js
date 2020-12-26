@@ -19,11 +19,6 @@ module.exports = {
       linkedin: "nirnejak",
       twitter: "jeetnirnejak",
     },
-
-    facebook_app: {
-      fb_admin_id: process.env.FB_ADMINS_ID,
-      fb_app_id: process.env.FB_APP_ID,
-    },
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -64,7 +59,12 @@ module.exports = {
     },
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    "gatsby-plugin-sass",
+    {
+      resolve: "gatsby-plugin-sass",
+      options: {
+        implementation: require("sass"),
+      },
+    },
     {
       resolve: "gatsby-plugin-manifest",
       options: {

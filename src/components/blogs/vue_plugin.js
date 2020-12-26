@@ -15,7 +15,13 @@ const VuePluginBlogImage = () => {
     }
   `)
 
-  return <Img fluid={data.placeholderImage.childImageSharp.fluid} style={{ borderRadius: 7 }} />
+  return (
+    <Img
+      fluid={data.placeholderImage.childImageSharp.fluid}
+      style={{ borderRadius: 7 }}
+      alt="Vue Plugin"
+    />
+  )
 }
 
 export default VuePluginBlogImage
