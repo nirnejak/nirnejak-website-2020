@@ -2,6 +2,21 @@ import React from "react"
 import Fade from "react-reveal/Fade"
 
 const ContactSection = () => {
+  const handleSubmit = (e) => {
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        // 'Content-Type': 'application/x-www-form-urlencoded',
+      },
+      body: JSON.stringify(e),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        console.log(data)
+      })
+  }
+
   return (
     <section className="hero is-fullheight">
       <div className="hero-body">
@@ -21,7 +36,7 @@ const ContactSection = () => {
                 name="contact"
                 method="post"
                 action="/thanks/"
-                data-netlify="true"
+                onSubmit={handleSubmit}
               >
                 <div>
                   <input type="text" name="name" id="name" placeholder="Name" />
