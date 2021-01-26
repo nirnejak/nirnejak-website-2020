@@ -4,8 +4,8 @@
     "es6": true
   },
   "extends": [
-    "plugin:react/recommended",
     "standard",
+    "plugin:react/recommended",
     "plugin:prettier/recommended"
   ],
   "globals": {
@@ -24,8 +24,13 @@
       "version": "detect"
     }
   },
-  "plugins": ["react"],
+  "plugins": ["react", "react-hooks"],
   "rules": {
-    "node/no-path-concat": 0
+    "node/no-path-concat": 0,
+
+    "react/jsx-no-useless-fragment": "error",
+
+    "react-hooks/exhaustive-deps": "warn",
+    "react-hooks/rules-of-hooks": "error"
   }
 }
