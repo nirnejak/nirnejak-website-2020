@@ -8,7 +8,7 @@ import "./main.scss"
 
 const IndexPage = () => (
   <>
-    <SEO title="Uses" />
+    <SEO title="Thank You for Submission" />
     <section className="hero is-fullheight">
       <div className="hero-head">
         <Header />
