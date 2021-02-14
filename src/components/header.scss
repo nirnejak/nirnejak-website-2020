@@ -3,29 +3,28 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 999;
-}
 
-.navbar-link,
-.link {
-  text-decoration: none;
-  color: black;
-  font-size: 1rem;
-  font-weight: bold;
+  .navbar-link {
+    text-decoration: none;
+    color: black;
+    font-size: 1rem;
+    font-weight: bold;
 
-  margin-right: 70px;
+    margin-right: 70px;
 
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: -7px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #027bff;
-  }
-  &:hover::before {
-    width: 100%;
-    transition: all 0.3s ease-in-out;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -7px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: #027bff;
+    }
+    &:hover::before {
+      width: 100%;
+      transition: all 0.3s ease-in-out;
+    }
   }
 }

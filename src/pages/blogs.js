@@ -5,6 +5,7 @@ import Header from "../components/header"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
+import GatsbyShopifyBlogImage from "../components/blogs/gatsby_shopify"
 import ESLintBlogImage from "../components/blogs/eslint"
 import FormBlogImage from "../components/blogs/form_blog"
 import GatsbyPluginBlogImage from "../components/blogs/gatsby_plugins"
@@ -27,6 +28,25 @@ const blogs = () => (
           <br />
           <br />
           <div className="image-contents-container">
+            <Fade>
+              <div className="image-content-container">
+                <a
+                  href="https://www.inkoop.io/blog/how-to-integrate-gatsby-with-shopify-store/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GatsbyShopifyBlogImage />
+                  <br />
+                  <p className="has-text-black has-text-weight-bold">
+                    How to integrate Gatsby with Shopify Store
+                  </p>
+                  <p className="has-text-weight-light has-text-secondary">
+                    Integrate your Shopify Store with Gatsby Site, build
+                    e-commerce website using Gatsby and Shopify
+                  </p>
+                </a>
+              </div>
+            </Fade>
             <Fade>
               <div className="image-content-container">
                 <a

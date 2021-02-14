@@ -2,9 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 import Fade from "react-reveal/Fade"
 
+import GatsbyShopifyBlogImage from "../blogs/gatsby_shopify"
 import ESLintBlogImage from "../blogs/eslint"
 import FormBlogImage from "../blogs/form_blog"
-import GatsbyPluginBlogImage from "../blogs/gatsby_plugins"
 
 const RecentBlogs = () => {
   return (
@@ -15,6 +15,21 @@ const RecentBlogs = () => {
           <br />
           <br />
           <div className="image-contents-container">
+            <Fade>
+              <div className="image-content-container">
+                <a
+                  href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <GatsbyShopifyBlogImage />
+                  <br />
+                  <p className="has-text-black has-text-weight-bold">
+                    How to integrate Gatsby with Shopify Store
+                  </p>
+                </a>
+              </div>
+            </Fade>
             <Fade>
               <div className="image-content-container">
                 <a
@@ -46,24 +61,9 @@ const RecentBlogs = () => {
                 </a>
               </div>
             </Fade>
-            <Fade>
-              <div className="image-content-container">
-                <a
-                  href="https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GatsbyPluginBlogImage />
-                  <br />
-                  <p className="has-text-black has-text-weight-bold">
-                    Must have Gatsby plugins for a great blog
-                  </p>
-                </a>
-              </div>
-            </Fade>
           </div>
           <div style={{ margin: 50 }} className="has-text-centered">
-            <Link to="/blogs" className="link">
+            <Link to="/blogs" className="link" style={{ marginRight: 0 }}>
               See All Blogs
             </Link>
             <br />

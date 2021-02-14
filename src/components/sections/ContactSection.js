@@ -2,8 +2,8 @@ import React from "react"
 import Fade from "react-reveal/Fade"
 
 const ContactSection = () => {
-  const handleSubmit = (e) => {
-    fetch("/api/contact", {
+  const handleSubmit = async (e) => {
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -11,10 +11,9 @@ const ContactSection = () => {
       },
       body: JSON.stringify(e),
     })
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data)
-      })
+    const data = await response.json()
+
+    console.log(data)
   }
 
   return (
