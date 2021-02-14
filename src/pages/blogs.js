@@ -12,6 +12,7 @@ import GatsbyPluginBlogImage from "../components/blogs/gatsby_plugins"
 import VuePluginBlogImage from "../components/blogs/vue_plugin"
 import VuesaxBlogImage from "../components/blogs/vuesax"
 import JSDocBlogImage from "../components/blogs/jsdoc_for_react"
+import AdminBroImage from "../components/blogs/admin_bro"
 
 const blogs = () => (
   <>
@@ -162,6 +163,27 @@ const blogs = () => (
                   <p className="has-text-weight-light">
                     A Guide to using JSDoc for generating documentation for
                     react.js applications.
+                  </p>
+                </a>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="image-content-container">
+                <a
+                  href="https://www.inkoop.io/blog/adminbro-a-modern-admin-panel-for-node-js/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <AdminBroImage />
+                  <br />
+                  <p className="has-text-black has-text-weight-bold">
+                    AdminBro - a Modern Admin Panel for Node JS | React based
+                    Admin Panel
+                  </p>
+                  <p className="has-text-weight-light">
+                    AdminBro is a React JS based admin panel for Node JS. We
+                    talk about how to set it up and use it in Node JS
+                    applications with MongoDB and SQL Databases.
                   </p>
                 </a>
               </div>
