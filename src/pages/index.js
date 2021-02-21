@@ -26,7 +26,7 @@ const IndexPage = () => {
             </h1>
             <br />
             <p className="is-size-3 has-text-weight-light">
-              UI/UX Designer, Full-Stack Developer, Tech Blogger
+              Developer, Designer, and Blogger
             </p>
 
             <div style={{ margin: "30 0px" }}>
