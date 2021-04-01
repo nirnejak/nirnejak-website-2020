@@ -8,8 +8,8 @@ module.exports = {
     author: "Jitendra Nirnejak",
 
     siteLanguage: "en",
-    siteUrl: "https://nirnejak.netlify.com",
-    siteImage: "https://nirnejak.netlify.com/public/cover.png",
+    siteUrl: "https://nirnejak.com",
+    siteImage: "https://nirnejak.com/static/sitecover.png",
 
     social: {
       github: "nirnejak",
@@ -21,6 +21,7 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-catch-links",
     {
@@ -30,7 +31,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-images",
             options: {
-              maxwidth: 900,
+              maxWidth: 900,
             },
           },
           {
