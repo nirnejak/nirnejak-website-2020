@@ -1,10 +1,8 @@
 import React from "react"
 
-import Fade from "react-reveal/Fade"
+import { StaticImage } from "gatsby-plugin-image"
 
-import GitProImage from "../works/gitpro"
-import SwiftUIAppImage from "../works/swiftui"
-import TellMeImage from "../works/tellme"
+import Fade from "react-reveal/Fade"
 
 const RecentWork = () => {
   return (
@@ -22,7 +20,13 @@ const RecentWork = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GitProImage />
+                  <StaticImage
+                    src="../../images/works/gitpro.jpeg"
+                    alt="GitPro Screenshot"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7 }}
+                  />
                   <br />
                   <p className="has-text-black has-text-weight-bold">GitPro</p>
                   <p
@@ -42,7 +46,13 @@ const RecentWork = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <TellMeImage />
+                  <StaticImage
+                    src="../../images/works/tellme.png"
+                    alt="TellMe App Screenshot"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7 }}
+                  />
                   <br />
                   <p className="has-text-black has-text-weight-bold">TellMe</p>
                   <p
@@ -62,7 +72,13 @@ const RecentWork = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <SwiftUIAppImage />
+                  <StaticImage
+                    src="../../images/works/swiftui.png"
+                    alt="SwiftUI App"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7 }}
+                  />
                   <br />
                   <p className="has-text-black has-text-weight-bold">
                     SwiftUI Tab App
