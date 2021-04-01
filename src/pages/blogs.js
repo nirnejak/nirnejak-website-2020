@@ -5,14 +5,7 @@ import Header from "../components/header"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 
-import GatsbyShopifyBlogImage from "../components/blogs/gatsby_shopify"
-import ESLintBlogImage from "../components/blogs/eslint"
-import FormBlogImage from "../components/blogs/form_blog"
-import GatsbyPluginBlogImage from "../components/blogs/gatsby_plugins"
-import VuePluginBlogImage from "../components/blogs/vue_plugin"
-import VuesaxBlogImage from "../components/blogs/vuesax"
-import JSDocBlogImage from "../components/blogs/jsdoc_for_react"
-import AdminBroImage from "../components/blogs/admin_bro"
+import { StaticImage } from "gatsby-plugin-image"
 
 const BlogsPage = () => (
   <>
@@ -62,7 +55,15 @@ const blogs = [
     author: "Jitendra Nirnejak",
     url:
       "https://www.inkoop.io/blog/how-to-integrate-gatsby-with-shopify-store/",
-    image: <GatsbyShopifyBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/gatsby_shopify.png"
+        alt="Gatsby and Shopify"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title: "Setup ESLint for React with Prettier, pre-commit and VSCode",
@@ -72,7 +73,15 @@ const blogs = [
     author: "Jitendra Nirnejak",
     url:
       "https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/",
-    image: <ESLintBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/eslint.png"
+        alt="ESLint, Prettier and VSCode"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title:
@@ -83,7 +92,15 @@ const blogs = [
     author: "Jitendra Nirnejak",
     url:
       "https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/",
-    image: <FormBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/form_blog.png"
+        alt="Form"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title: "Must have Gatsby plugins for a great blog",
@@ -93,7 +110,15 @@ const blogs = [
     author: "Jitendra Nirnejak",
     url:
       "https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/",
-    image: <GatsbyPluginBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/gatsby_plugins.png"
+        alt="Gatsby Plugins"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title: "Building custom plugins for Vue.js | Supercharge Development",
@@ -102,7 +127,15 @@ const blogs = [
     date: "31 Dec 2019",
     author: "Jitendra Nirnejak",
     url: "https://www.inkoop.io/blog/building-custom-plugins-for-vue/",
-    image: <VuePluginBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/vue_plugin.png"
+        alt="Vue Plugin"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title: "Vuesax - The all new Vue Component Library",
@@ -111,7 +144,15 @@ const blogs = [
     date: "30 Nov 2019",
     author: "Jitendra Nirnejak",
     url: "https://www.inkoop.io/blog/vuesax-the-all-new-vue-component-library/",
-    image: <VuesaxBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/vuesax.png"
+        alt="Vuesax"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title:
@@ -121,7 +162,15 @@ const blogs = [
     date: "30 Oct 2019",
     author: "Jitendra Nirnejak",
     url: "https://www.inkoop.io/blog/a-guide-to-js-docs-for-react-js/",
-    image: <JSDocBlogImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/jsdoc_for_react.png"
+        alt="JSDoc for React"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
   {
     title:
@@ -132,7 +181,15 @@ const blogs = [
     author: "Jitendra Nirnejak",
     url:
       "https://www.inkoop.io/blog/adminbro-a-modern-admin-panel-for-node-js/",
-    image: <AdminBroImage />,
+    image: (
+      <StaticImage
+        src="../images/blogs/admin_bro.png"
+        alt="AdminBro"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
   },
 ]
 

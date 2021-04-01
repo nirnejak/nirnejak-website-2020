@@ -2,6 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Fade from "react-reveal/Fade"
 
+import { StaticImage } from "gatsby-plugin-image"
+
 import GatsbyShopifyBlogImage from "../blogs/gatsby_shopify"
 import ESLintBlogImage from "../blogs/eslint"
 import FormBlogImage from "../blogs/form_blog"
@@ -22,7 +24,13 @@ const RecentBlogs = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <GatsbyShopifyBlogImage />
+                  <StaticImage
+                    src="../../images/blogs/gatsby_shopify.png"
+                    alt="Gatsby and Shopify"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7 }}
+                  />
                   <br />
                   <p className="has-text-black has-text-weight-bold">
                     How to integrate Gatsby with Shopify Store
@@ -37,7 +45,13 @@ const RecentBlogs = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <ESLintBlogImage />
+                  <StaticImage
+                    src="../../images/blogs/eslint.png"
+                    alt="ESLint, Prettier and VSCode"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7 }}
+                  />
                   <br />
                   <p className="has-text-black has-text-weight-bold">
                     Setup ESLint for React with Prettier, pre-commit and VSCode
@@ -52,7 +66,13 @@ const RecentBlogs = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FormBlogImage />
+                  <StaticImage
+                    src="../../images/blogs/form_blog.png"
+                    alt="Form"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7 }}
+                  />
                   <br />
                   <p className="has-text-black has-text-weight-bold">
                     Forms that don&apos;t suck | How to ensure great user
