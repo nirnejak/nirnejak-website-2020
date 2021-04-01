@@ -1,4 +1,5 @@
 import React from "react"
+
 import Fade from "react-reveal/Fade"
 
 const footer = () => (
@@ -24,7 +25,7 @@ const footer = () => (
     <Fade>
       <div
         className="icons-container"
-        style={{ justifyContent: "center", flexWrap: "wrap" }}
+        style={{ flexWrap: "wrap", justifyContent: "center" }}
       >
         <div className="icon-container" style={{ margin: "20px 15px" }}>
           <a

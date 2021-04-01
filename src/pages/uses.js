@@ -1,8 +1,8 @@
 import React from "react"
 
-import SEO from "../components/seo"
-import Header from "../components/header"
 import Footer from "../components/footer"
+import Header from "../components/header"
+import SEO from "../components/seo"
 
 import "./main.scss"
 
@@ -35,7 +35,7 @@ const IndexPage = () => (
 
           <h2
             className="is-size-2 has-text-black"
-            style={{ marginTop: 70, marginBottom: 10 }}
+            style={{ marginBottom: 10, marginTop: 70 }}
           >
             Languages and Frameworks
           </h2>
@@ -45,7 +45,7 @@ const IndexPage = () => (
 
           <h2
             className="is-size-2 has-text-black"
-            style={{ marginTop: 70, marginBottom: 10 }}
+            style={{ marginBottom: 10, marginTop: 70 }}
           >
             Design Tools
           </h2>
@@ -55,7 +55,7 @@ const IndexPage = () => (
 
           <h2
             className="is-size-2 has-text-black"
-            style={{ marginTop: 70, marginBottom: 10 }}
+            style={{ marginBottom: 10, marginTop: 70 }}
           >
             Terminal and Editor
           </h2>
@@ -74,7 +74,7 @@ const IndexPage = () => (
 
           <h2
             className="is-size-2 has-text-black"
-            style={{ marginTop: 70, marginBottom: 10 }}
+            style={{ marginBottom: 10, marginTop: 70 }}
           >
             Gear
           </h2>
@@ -84,7 +84,7 @@ const IndexPage = () => (
 
           <h2
             className="is-size-2 has-text-black"
-            style={{ marginTop: 70, marginBottom: 10 }}
+            style={{ marginBottom: 10, marginTop: 70 }}
           >
             Podcasts, I listen to
           </h2>
@@ -94,7 +94,7 @@ const IndexPage = () => (
 
           <h2
             className="is-size-2 has-text-black"
-            style={{ marginTop: 70, marginBottom: 10 }}
+            style={{ marginBottom: 10, marginTop: 70 }}
           >
             What&apos;s for 2020
           </h2>

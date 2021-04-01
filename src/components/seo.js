@@ -1,7 +1,9 @@
 import React from "react"
-import PropTypes from "prop-types"
 import Helmet from "react-helmet"
+
 import { useStaticQuery, graphql } from "gatsby"
+
+import PropTypes from "prop-types"
 
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
@@ -35,93 +37,93 @@ function SEO({ description, lang, meta, title }) {
       titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
-          name: "keywords",
           content:
             "Jitendra, Nirnejak, Portfolio, Developer, Designer, Blogger, React, Vue, Gatsby, Node, Adobe XD, Figma",
+          name: "keywords",
         },
         {
-          name: "author",
           content: site.siteMetadata.author,
+          name: "author",
         },
         {
-          name: "robots",
           content: "follow", // 'follow', 'index'?
+          name: "robots",
         },
         {
-          name: "image",
           content: site.siteMetadata.siteImage,
+          name: "image",
         },
         {
-          name: `description`,
           content: metaDescription,
+          name: `description`,
         },
         // Schema.org for Google
         {
+          content: "Jitendra Nirnejak",
           itemprop: "name",
-          content: site.siteMetadata.title,
         },
         {
-          itemprop: "description",
           content: metaDescription,
+          itemprop: "description",
         },
         {
-          itemprop: "description",
           content: site.siteMetadata.siteImage,
+          itemprop: "description",
         },
         // Open Graph
         {
-          property: `og:url`,
           content: site.siteMetadata.siteUrl,
+          property: `og:url`,
         },
         {
-          property: `og:title`,
           content: title,
+          property: `og:title`,
         },
         {
-          property: `og:description`,
           content: metaDescription,
+          property: `og:description`,
         },
         {
-          property: `og:image`,
           content: site.siteMetadata.siteImage,
+          property: `og:image`,
         },
         {
-          property: `og:type`,
           content: `website`,
+          property: `og:type`,
         },
         // Facebook
         {
-          property: "fb:admins",
           content: "100003147340678",
+          property: "fb:admins",
         },
         {
-          property: "fb:app_id",
           content: "303711933555596",
+          property: "fb:app_id",
         },
         // Twitter
         {
-          name: `twitter:card`,
           content: `summary`,
+          name: `twitter:card`,
         },
         {
-          name: `twitter:title`,
           content: title,
+          name: `twitter:title`,
         },
         {
-          name: `twitter:description`,
           content: metaDescription,
+          name: `twitter:description`,
         },
         {
+          content: site.siteMetadata.social.twitter,
           name: `twitter:site`,
-          content: site.siteMetadata.social.twitter,
         },
         {
+          content: site.siteMetadata.social.twitter,
           name: `twitter:creator`,
-          content: site.siteMetadata.social.twitter,
         },
         {
-          name: `twitter:image:src`,
           content: site.siteMetadata.siteImage,
+          name: `twitter:image:src`,
         },
       ].concat(meta)}
     />
@@ -129,9 +131,9 @@ function SEO({ description, lang, meta, title }) {
 }
 
 SEO.defaultProps = {
+  description: ``,
   lang: `en`,
   meta: [],
-  description: ``,
 }
 
 SEO.propTypes = {

@@ -1,14 +1,14 @@
 import React from "react"
+
 import Fade from "react-reveal/Fade"
 
-import SEO from "../components/seo"
 import Footer from "../components/footer"
-
 import Header from "../components/header"
-import Skills from "../components/sections/SkillsSection"
+import ContactSection from "../components/sections/ContactSection"
 import RecentBlogs from "../components/sections/RecentBlogs"
 import RecentWork from "../components/sections/RecentWork"
-import ContactSection from "../components/sections/ContactSection"
+import Skills from "../components/sections/SkillsSection"
+import SEO from "../components/seo"
 
 import "./main.scss"
 

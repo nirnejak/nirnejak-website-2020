@@ -1,13 +1,14 @@
 import React from "react"
+
 import Fade from "react-reveal/Fade"
 
-import ReactLogo from "../../images/skills/reactjs.svg"
+import PhotoshopLogo from "../../images/skills/adobe-photoshop.svg"
+import AdobeXDLogo from "../../images/skills/adobe-xd.svg"
+import FigmaLogo from "../../images/skills/figma.svg"
 import GatsbyLogo from "../../images/skills/gatsby.svg"
 import NodeLogo from "../../images/skills/nodejs.svg"
+import ReactLogo from "../../images/skills/reactjs.svg"
 import VueLogo from "../../images/skills/vuejs.svg"
-import FigmaLogo from "../../images/skills/figma.svg"
-import AdobeXDLogo from "../../images/skills/adobe-xd.svg"
-import PhotoshopLogo from "../../images/skills/adobe-photoshop.svg"
 
 const SkillsSection = () => {
   return (

@@ -1,15 +1,16 @@
 import React from "react"
+
 import Fade from "react-reveal/Fade"
 
 const ContactSection = () => {
   const handleSubmit = async (e) => {
     const response = await fetch("/api/contact", {
-      method: "POST",
+      body: JSON.stringify(e),
       headers: {
         "Content-Type": "application/json",
         // 'Content-Type': 'application/x-www-form-urlencoded',
       },
-      body: JSON.stringify(e),
+      method: "POST",
     })
     const data = await response.json()
 

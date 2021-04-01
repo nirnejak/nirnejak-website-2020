@@ -1,9 +1,8 @@
 import React from "react"
 
-import SEO from "../components/seo"
 import Header from "../components/header"
-
 import ContactSection from "../components/sections/ContactSection"
+import SEO from "../components/seo"
 
 const ContactPage = () => {
   return (

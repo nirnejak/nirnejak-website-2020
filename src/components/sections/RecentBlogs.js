@@ -1,7 +1,9 @@
 import React from "react"
+
 import { Link } from "gatsby"
-import Fade from "react-reveal/Fade"
 import { StaticImage } from "gatsby-plugin-image"
+
+import Fade from "react-reveal/Fade"
 
 const RecentBlogs = () => {
   return (

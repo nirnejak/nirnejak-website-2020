@@ -7,7 +7,7 @@
   "dependencies": {
     "cross-env": "^7.0.3",
     "dotenv": "^8.2.0",
-    "gatsby": "^3.2.0",
+    "gatsby": "^3.2.1",
     "gatsby-link": "^3.2.0",
     "gatsby-plugin-catch-links": "^3.2.0",
     "gatsby-plugin-feed": "^3.2.0",

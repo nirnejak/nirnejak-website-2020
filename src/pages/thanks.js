@@ -1,8 +1,8 @@
 import React from "react"
 
-import SEO from "../components/seo"
-import Header from "../components/header"
 import Footer from "../components/footer"
+import Header from "../components/header"
+import SEO from "../components/seo"
 
 import "./main.scss"
 
