@@ -1,11 +1,10 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
+import { StaticImage } from "gatsby-plugin-image"
 
 import Header from "../components/header"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
-
-import { StaticImage } from "gatsby-plugin-image"
 
 const BlogsPage = () => (
   <>
