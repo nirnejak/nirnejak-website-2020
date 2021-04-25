@@ -7,8 +7,8 @@
   Jitendra Nirnejak - Portfolio Website
 </h1>
 
-<img alt="Nirnejak" src="https://nirnejak.com/sitecover.png" width="60" />
-
 My Portfolio website built with Gatsby, showcasing my blogs, designs and projects.
 
 [Visit Website](https://nirnejak.com)
+
+<img alt="Nirnejak" src="https://nirnejak.com/sitecover.png" />
