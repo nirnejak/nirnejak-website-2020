@@ -6,7 +6,9 @@
   "extends": [
     "standard",
     "plugin:react/recommended",
-    "plugin:prettier/recommended"
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended",
+    "plugin:jsx-a11y/recommended"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -24,7 +26,8 @@
       "version": "detect"
     }
   },
-  "plugins": ["react", "react-hooks"],
+  "ignorePatterns": ["gatsby-config.js"],
+  "plugins": ["react", "react-hooks", "jsx-a11y"],
   "rules": {
     "node/no-path-concat": 0,
 

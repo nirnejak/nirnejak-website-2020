@@ -1,4 +1,5 @@
-require(`dotenv`).config({ path: `.env` })
+const path = require(`path`)
+require("dotenv").config({ path: ".env" })
 
 module.exports = {
   siteMetadata: {
@@ -9,7 +10,7 @@ module.exports = {
 
     siteLanguage: "en",
     siteUrl: "https://nirnejak.com",
-    siteImage: "https://nirnejak.com/static/sitecover.png",
+    siteImage: "https://nirnejak.com/sitecover.png",
 
     social: {
       github: "nirnejak",
@@ -21,10 +22,17 @@ module.exports = {
     },
   },
   plugins: [
+    "gatsby-plugin-sass",
     "gatsby-plugin-image",
     "gatsby-plugin-postcss",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-catch-links",
+    // 'gatsby-plugin-feed',
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
+    "gatsby-plugin-robots-txt",
+    "gatsby-plugin-sitemap",
+    "gatsby-plugin-offline",
     {
       resolve: "gatsby-transformer-remark",
       options: {
@@ -50,21 +58,13 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
-        path: `${__dirname}/src/images`,
+        path: path.resolve(`./src`),
       },
     },
     {
       resolve: "gatsby-plugin-google-analytics",
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
-      },
-    },
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-plugin-sass",
-      options: {
-        implementation: require("sass"),
       },
     },
     {
@@ -88,10 +88,5 @@ module.exports = {
     //     display: 'swap'
     //   }
     // },
-
-    // 'gatsby-plugin-feed',
-    "gatsby-plugin-robots-txt",
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-offline",
   ],
 }
