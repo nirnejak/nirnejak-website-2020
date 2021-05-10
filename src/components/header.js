@@ -13,9 +13,9 @@ const Header = () => (
       <Link to="/blogs" className="navbar-link">
         Blogs
       </Link>
-      <Link to="/projects" className="navbar-link">
+      <a href="https://github.com/nirnejak" className="navbar-link">
         Projects
-      </Link>
+      </a>
       <Link to="/contact" className="navbar-link">
         Contact
       </Link>
