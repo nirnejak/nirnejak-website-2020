@@ -9,6 +9,11 @@ const ContactPage = () => {
     <>
       <SEO title="Contact" />
       <Header />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <ContactSection />
     </>
   )
