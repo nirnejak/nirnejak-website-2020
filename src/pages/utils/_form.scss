@@ -10,7 +10,7 @@ button {
   padding: 1.5em 2em;
 
   font-size: 1em;
-  font-family: $family-sans-serif;
+  font-family: var(--font-sans-serif);
   border-radius: 0.4em;
 
   margin-bottom: 1em;
@@ -31,6 +31,6 @@ button {
   background: black;
   font-weight: bold;
   letter-spacing: 3px;
-  
+
   cursor: pointer;
 }

@@ -8,7 +8,6 @@ const ContactSection = () => {
       body: JSON.stringify(e),
       headers: {
         "Content-Type": "application/json",
-        // 'Content-Type': 'application/x-www-form-urlencoded',
       },
       method: "POST",
     })

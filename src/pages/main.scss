@@ -2,17 +2,19 @@
 
 @import "fonts";
 
-$primary: #027bff;
-$secondary: #797979;
-$light: rgba(0, 0, 0, 0.1);
-$dark: #000000;
+:root {
+  --color-primary: #027bff;
+  --color-secondary: #797979;
+  --color-text: #797979;
+  --color-lightest: rgba(0, 0, 0, 0.1);
+  --color-light: rgba(0, 0, 0, 0.1);
+  --color-dark: #000000;
+  --color-body-background: #fafafa;
 
-$family-sans-serif: "HelveticaNowText", Helvetica, Arial, sans-serif;
+  --size-text: 13px;
 
-$text-color: $secondary;
-$text-size: 13px;
-
-$body-background: #fafafa;
+  --font-sans-serif: "HelveticaNowText", Helvetica, Arial, sans-serif;
+}
 
 * {
   margin: 0px;
@@ -29,13 +31,13 @@ html {
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: $text-size;
-  color: $text-color;
-  background-color: $body-background;
+  font-size: var(--size-text);
+  color: var(--color-text);
+  background-color: var(--color-body-background);
 
   &::selection {
-    background-color: $primary;
-    color: white;
+    background-color: var(--color-primary);
+    color: var(--color-lightest);
   }
 }
 

@@ -50,13 +50,13 @@
   color: #ffffff;
 }
 .has-text-primary {
-  color: $primary;
+  color: var(--color-primary);
 }
 .has-text-secondary {
-  color: $secondary;
+  color: var(--color-secondary);
 }
 .has-text-light {
-  color: $light;
+  color: var(--color-light);
 }
 
 // Background
@@ -67,13 +67,13 @@
   background-color: #ffffff;
 }
 .has-background-primary {
-  background-color: $primary;
+  background-color: var(--color-primary);
 }
 .has-background-secondary {
-  background-color: $secondary;
+  background-color: var(--color-secondary);
 }
 .has-background-light {
-  background-color: $light;
+  background-color: var(--color-light);
 }
 
 .is-size-1 {
