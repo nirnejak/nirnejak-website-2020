@@ -1,9 +1,9 @@
-import React from "react"
+import React, { FC, ReactElement } from "react"
 
 import Fade from "react-reveal/Fade"
 
-const ContactSection = () => {
-  const handleSubmit = async (e) => {
+const ContactSection: FC = (): ReactElement => {
+  const handleSubmit = async (e: React.FormEvent<EventTarget>) => {
     const response = await fetch("/api/contact", {
       body: JSON.stringify(e),
       headers: {

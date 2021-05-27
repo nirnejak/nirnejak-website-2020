@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC, ReactElement } from "react"
 
 import Fade from "react-reveal/Fade"
 
@@ -10,9 +10,9 @@ import RecentWork from "../components/sections/RecentWork"
 import Skills from "../components/sections/SkillsSection"
 import SEO from "../components/seo"
 
-import "./main.scss"
+import "../scss/main.scss"
 
-const IndexPage = () => {
+const IndexPage: FC = (): ReactElement => {
   return (
     <>
       <SEO title="Home" />

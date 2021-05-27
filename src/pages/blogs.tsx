@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC, ReactElement } from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -7,45 +7,6 @@ import Fade from "react-reveal/Fade"
 import Footer from "../components/footer"
 import Header from "../components/header"
 import SEO from "../components/seo"
-
-const BlogsPage = () => (
-  <>
-    <SEO title="Blogs" />
-    <Header />
-    <br />
-    <br />
-    <br />
-    <br />
-    <div className="hero is-fullheight">
-      <div className="hero-body">
-        <section className="container">
-          <h1 className="is-huge">Blogs</h1>
-          <br />
-          <br />
-          <div className="image-contents-container">
-            {blogs.map((blog, index) => (
-              <Fade key={index}>
-                <div className="image-content-container">
-                  <a href={blog.url} target="_blank" rel="noopener noreferrer">
-                    {blog.image}
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
-                      {blog.title}
-                    </p>
-                    <p className="has-text-weight-light has-text-secondary">
-                      {blog.description}
-                    </p>
-                  </a>
-                </div>
-              </Fade>
-            ))}
-          </div>
-        </section>
-      </div>
-    </div>
-    <Footer />
-  </>
-)
 
 const blogs = [
   {
@@ -63,8 +24,7 @@ const blogs = [
       />
     ),
     title: "How to integrate Gatsby with Shopify Store",
-    url:
-      "https://www.inkoop.io/blog/how-to-integrate-gatsby-with-shopify-store/",
+    url: "https://www.inkoop.io/blog/how-to-integrate-gatsby-with-shopify-store/",
   },
   {
     author: "Jitendra Nirnejak",
@@ -81,8 +41,7 @@ const blogs = [
       />
     ),
     title: "Setup ESLint for React with Prettier, pre-commit and VSCode",
-    url:
-      "https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/",
+    url: "https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/",
   },
   {
     author: "Jitendra Nirnejak",
@@ -100,8 +59,7 @@ const blogs = [
     ),
     title:
       "Forms that don't suck | How to ensure great user experience on forms",
-    url:
-      "https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/",
+    url: "https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/",
   },
   {
     author: "Jitendra Nirnejak",
@@ -119,8 +77,7 @@ const blogs = [
       />
     ),
     title: "Must have Gatsby plugins for a great blog",
-    url:
-      "https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/",
+    url: "https://www.inkoop.io/blog/must-have-gatsby-plugins-for-a-great-blog/",
   },
   {
     author: "Jitendra Nirnejak",
@@ -191,9 +148,47 @@ const blogs = [
     ),
     title:
       "AdminBro - a Modern Admin Panel for Node JS | React based Admin Panel",
-    url:
-      "https://www.inkoop.io/blog/adminbro-a-modern-admin-panel-for-node-js/",
+    url: "https://www.inkoop.io/blog/adminbro-a-modern-admin-panel-for-node-js/",
   },
 ]
+
+const BlogsPage: FC = (): ReactElement => (
+  <>
+    <SEO title="Blogs" />
+    <Header />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div className="hero is-fullheight">
+      <div className="hero-body">
+        <section className="container">
+          <h1 className="is-huge">Blogs</h1>
+          <br />
+          <br />
+          <div className="image-contents-container">
+            {blogs.map((blog, index) => (
+              <Fade key={index}>
+                <div className="image-content-container">
+                  <a href={blog.url} target="_blank" rel="noopener noreferrer">
+                    {blog.image}
+                    <br />
+                    <p className="has-text-black has-text-weight-bold">
+                      {blog.title}
+                    </p>
+                    <p className="has-text-weight-light has-text-secondary">
+                      {blog.description}
+                    </p>
+                  </a>
+                </div>
+              </Fade>
+            ))}
+          </div>
+        </section>
+      </div>
+    </div>
+    <Footer />
+  </>
+)
 
 export default BlogsPage

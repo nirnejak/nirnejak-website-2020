@@ -1,4 +1,4 @@
-import React from "react"
+import React, { FC, ReactElement } from "react"
 
 import { Link } from "gatsby"
 
@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-const NotFoundPage = () => (
+const NotFoundPage: FC = (): ReactElement => (
   <>
     <SEO title="404: Not found" />
     <div className="hero is-fullheight">

@@ -1,12 +1,10 @@
-import React from "react"
+import React, { FC, ReactElement } from "react"
 
 import Footer from "../components/footer"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-import "./main.scss"
-
-const IndexPage = () => (
+const IndexPage: FC = (): ReactElement => (
   <>
     <SEO title="Uses" />
     <section className="hero">
