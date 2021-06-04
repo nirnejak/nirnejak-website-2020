@@ -11,6 +11,23 @@ import SEO from "../components/seo"
 const blogs = [
   {
     author: "Jitendra Nirnejak",
+    date: "1 Jun 2021",
+    description:
+      "A closer look into the new image api of Gatsby 3. What's new, what's changed and what's gone.",
+    image: (
+      <StaticImage
+        src="../images/blogs/gatsby_3_image.png"
+        alt="Gatsby v3 Image API"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
+    title: "Gatsby 3 Image - A Deep-dive into the new image API features",
+    url: "https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/",
+  },
+  {
+    author: "Jitendra Nirnejak",
     date: "11 Feb 2021",
     description:
       "Integrate your Shopify Store with Gatsby Site, build e-commerce website using Gatsby and Shopify.",

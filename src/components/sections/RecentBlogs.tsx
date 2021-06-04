@@ -17,6 +17,26 @@ const RecentBlogs: FC = (): ReactElement => {
             <Fade>
               <div className="image-content-container">
                 <a
+                  href="https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <StaticImage
+                    src="../../images/blogs/gatsby_3_image.png"
+                    alt="Gatsby v3 Image API"
+                    placeholder="blurred"
+                    width={400}
+                    style={{ borderRadius: 7, marginBottom: 13 }}
+                  />
+                  <p className="has-text-black has-text-weight-bold">
+                    Gatsby 3 Image - A Deep-dive into the new image API features
+                  </p>
+                </a>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="image-content-container">
+                <a
                   href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -26,9 +46,8 @@ const RecentBlogs: FC = (): ReactElement => {
                     alt="Gatsby and Shopify"
                     placeholder="blurred"
                     width={400}
-                    style={{ borderRadius: 7 }}
+                    style={{ borderRadius: 7, marginBottom: 13 }}
                   />
-                  <br />
                   <p className="has-text-black has-text-weight-bold">
                     How to integrate Gatsby with Shopify Store
                   </p>
@@ -47,33 +66,10 @@ const RecentBlogs: FC = (): ReactElement => {
                     alt="ESLint, Prettier and VSCode"
                     placeholder="blurred"
                     width={400}
-                    style={{ borderRadius: 7 }}
+                    style={{ borderRadius: 7, marginBottom: 13 }}
                   />
-                  <br />
                   <p className="has-text-black has-text-weight-bold">
                     Setup ESLint for React with Prettier, pre-commit and VSCode
-                  </p>
-                </a>
-              </div>
-            </Fade>
-            <Fade>
-              <div className="image-content-container">
-                <a
-                  href="https://www.inkoop.io/blog/how-to-ensure-great-user-experience-on-forms/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <StaticImage
-                    src="../../images/blogs/form_blog.png"
-                    alt="Form"
-                    placeholder="blurred"
-                    width={400}
-                    style={{ borderRadius: 7 }}
-                  />
-                  <br />
-                  <p className="has-text-black has-text-weight-bold">
-                    Forms that don&apos;t suck | How to ensure great user
-                    experience on forms
                   </p>
                 </a>
               </div>
