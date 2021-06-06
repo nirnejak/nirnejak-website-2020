@@ -9,7 +9,7 @@
   },
   "env": {
     "browser": true,
-    "es6": true
+    "es2021": true
   },
   "extends": [
     "standard",
@@ -20,20 +20,13 @@
     "plugin:jsx-a11y/recommended",
     "plugin:@typescript-eslint/recommended"
   ],
-  "globals": {
-    "Atomics": "readonly",
-    "SharedArrayBuffer": "readonly"
-  },
-  "settings": {
-    "react": {
-      "version": "detect"
-    }
-  },
   "ignorePatterns": ["gatsby-config.js"],
   "plugins": ["@typescript-eslint", "react", "react-hooks", "jsx-a11y"],
   "rules": {
     "no-use-before-define": [0],
-    "@typescript-eslint/no-use-before-define": [1],
+    "@typescript-eslint/no-use-before-define": "error",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/no-empty-interface": "off",
 
     "react/jsx-no-useless-fragment": "error",
 
@@ -75,5 +68,14 @@
         }
       }
     ]
+  },
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
