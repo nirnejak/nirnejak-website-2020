@@ -7,10 +7,8 @@ import SEO from "../components/seo"
 const IndexPage: FC = (): ReactElement => (
   <>
     <SEO title="Uses" />
+    <Header />
     <section className="hero">
-      <div className="hero-head">
-        <Header />
-      </div>
       <div className="hero-body">
         <div className="container">
           <h1 className="is-size-1 has-text-black">Uses.</h1>

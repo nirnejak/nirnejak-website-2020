@@ -173,10 +173,6 @@ const BlogsPage: FC = (): ReactElement => (
   <>
     <SEO title="Blogs" />
     <Header />
-    <br />
-    <br />
-    <br />
-    <br />
     <div className="hero is-fullheight">
       <div className="hero-body">
         <section className="container">

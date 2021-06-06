@@ -16,8 +16,10 @@ const IndexPage: FC = (): ReactElement => {
   return (
     <>
       <SEO title="Home" />
-      <Header />
       <section className="hero is-fullheight">
+        <div className="hero-head">
+          <Header />
+        </div>
         <div className="hero-body">
           <div className="container">
             <h1 className="is-size-1 has-text-black">

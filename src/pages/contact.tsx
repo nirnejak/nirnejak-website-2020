@@ -9,11 +9,6 @@ const ContactPage: FC = (): ReactElement => {
     <>
       <SEO title="Contact" />
       <Header />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
       <ContactSection />
     </>
   )

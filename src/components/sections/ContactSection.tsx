@@ -17,7 +17,7 @@ const ContactSection: FC = (): ReactElement => {
   }
 
   return (
-    <section className="hero is-fullheight">
+    <section className="hero is-medium">
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Contact</h2>
