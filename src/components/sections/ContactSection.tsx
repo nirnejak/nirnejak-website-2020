@@ -2,10 +2,24 @@ import * as React from "react"
 
 import Fade from "react-reveal/Fade"
 
+type ContactFormInput = {
+  name: string
+  email: string
+  message: string
+}
+
 const ContactSection: React.FC = (): React.ReactElement => {
-  const handleSubmit = async (e: React.FormEvent<EventTarget>) => {
+  const handleSubmit = async (e: any) => {
+    e.preventDefault()
+
+    const contactFormData: ContactFormInput = {
+      name: e.target.name.value,
+      email: e.target.email.value,
+      message: e.target.message.value,
+    }
+
     const response = await fetch("/api/contact", {
-      body: JSON.stringify(e),
+      body: JSON.stringify(contactFormData),
       headers: {
         "Content-Type": "application/json",
       },
@@ -52,7 +66,6 @@ const ContactSection: React.FC = (): React.ReactElement => {
                   <textarea name="message" id="message" placeholder="Message" />
                 </div>
                 <br />
-                <input type="hidden" name="form-name" value="contact" />
                 <div>
                   <button type="submit">SEND</button>
                 </div>
