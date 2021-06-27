@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 
@@ -169,7 +169,7 @@ const blogs = [
   },
 ]
 
-const BlogsPage: FC = (): ReactElement => (
+const BlogsPage: React.FC = (): React.ReactElement => (
   <>
     <SEO title="Blogs" />
     <Header />

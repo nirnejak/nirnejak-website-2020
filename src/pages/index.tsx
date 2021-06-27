@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import Fade from "react-reveal/Fade"
 
@@ -12,7 +12,7 @@ import SEO from "../components/seo"
 
 import "../scss/main.scss"
 
-const IndexPage: FC = (): ReactElement => {
+const IndexPage: React.FC = (): React.ReactElement => {
   return (
     <>
       <SEO title="Home" />

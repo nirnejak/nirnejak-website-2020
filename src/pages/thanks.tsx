@@ -1,10 +1,10 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import Footer from "../components/footer"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-const IndexPage: FC = (): ReactElement => (
+const IndexPage: React.FC = (): React.ReactElement => (
   <>
     <SEO title="Thank You for Submission" />
     <section className="hero is-fullheight">

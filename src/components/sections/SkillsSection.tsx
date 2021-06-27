@@ -1,4 +1,4 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import Fade from "react-reveal/Fade"
 
@@ -11,7 +11,7 @@ import ReactNativeLogo from "../../images/skills/react-native.svg"
 import ReactLogo from "../../images/skills/reactjs.svg"
 import VueLogo from "../../images/skills/vuejs.svg"
 
-const SkillsSection: FC = (): ReactElement => {
+const SkillsSection: React.FC = (): React.ReactElement => {
   return (
     <section className="hero">
       <div className="hero-body">

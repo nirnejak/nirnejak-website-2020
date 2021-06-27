@@ -1,8 +1,8 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import Fade from "react-reveal/Fade"
 
-const Footer: FC = (): ReactElement => (
+const Footer: React.FC = (): React.ReactElement => (
   <div
     className="has-text-centered"
     style={{ margin: "100px 10px 200px 10px" }}

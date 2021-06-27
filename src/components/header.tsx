@@ -1,10 +1,10 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import { Link } from "gatsby"
 
 import "./header.scss"
 
-const Header: FC = (): ReactElement => (
+const Header: React.FC = (): React.ReactElement => (
   <nav className="navbar">
     <div className="container">
       <Link to="/" className="navbar-link">

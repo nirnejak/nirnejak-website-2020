@@ -1,10 +1,10 @@
-import React, { FC, ReactElement } from "react"
+import * as React from "react"
 
 import { StaticImage } from "gatsby-plugin-image"
 
 import Fade from "react-reveal/Fade"
 
-const RecentWork: FC = (): ReactElement => {
+const RecentWork: React.FC = (): React.ReactElement => {
   return (
     <section className="hero">
       <div className="hero-body">
