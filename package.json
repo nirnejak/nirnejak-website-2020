@@ -86,5 +86,8 @@
   },
   "bugs": {
     "url": "https://github.com/nirnejak/nirnejak-website-2020/issues"
+  },
+  "volta": {
+    "node": "14.17.1"
   }
 }
