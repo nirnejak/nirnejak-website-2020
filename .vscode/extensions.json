@@ -5,6 +5,7 @@
     "editorconfig.editorconfig",
     "esbenp.prettier-vscode",
     "jock.svg",
-    "stylelint.vscode-stylelint"
+    "stylelint.vscode-stylelint",
+    "graphql.vscode-graphql"
   ]
 }
