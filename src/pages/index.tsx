@@ -28,7 +28,7 @@ const IndexPage: React.FC = (): React.ReactElement => {
             </h1>
             <br />
             <p className="is-size-3 has-text-weight-light">
-              Developer, Designer, and Blogger
+              Developer, Designer, and Tech Blogger
             </p>
 
             <div style={{ margin: "30 0px" }}>
