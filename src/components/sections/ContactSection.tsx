@@ -35,8 +35,6 @@ const ContactSection: React.FC = (): React.ReactElement => {
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Contact</h2>
-          <br />
-          <br />
           <Fade>
             <div
               className="is-raised has-text-centered"

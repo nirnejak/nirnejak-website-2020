@@ -3,12 +3,10 @@ import Helmet from "react-helmet"
 
 import { useStaticQuery, graphql } from "gatsby"
 
-import PropTypes from "prop-types"
-
 type SEOProps = {
   description?: string
   lang?: string
-  meta?: string
+  meta?: string[]
   title: string
 }
 
@@ -139,7 +137,18 @@ const SEO: React.FC<SEOProps> = ({
           name: `twitter:image:src`,
         },
       ].concat(meta)}
-    />
+    >
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossOrigin="true"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;700&display=swap"
+        rel="stylesheet"
+      />
+    </Helmet>
   )
 }
 
@@ -147,13 +156,6 @@ SEO.defaultProps = {
   description: ``,
   lang: `en`,
   meta: [],
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 }
 
 export default SEO

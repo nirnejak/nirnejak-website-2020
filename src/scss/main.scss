@@ -1,7 +1,5 @@
 @charset "utf-8";
 
-@import "fonts";
-
 :root {
   --color-primary: #027bff;
   --color-secondary: #797979;
@@ -13,7 +11,7 @@
 
   --size-text: 13px;
 
-  --font-sans-serif: "HelveticaNowText", Helvetica, Arial, sans-serif;
+  --font-sans-serif: "Space Grotesk", sans-serif;
 }
 
 * {
@@ -23,7 +21,7 @@
 }
 
 html {
-  font-family: sans-serif;
+  font-family: var(--font-sans-serif);
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }

@@ -17,8 +17,6 @@ const SkillsSection: React.FC = (): React.ReactElement => {
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Skills</h2>
-          <br />
-          <br />
           <div className="skills-container">
             <Fade>
               <div className="skill-container">

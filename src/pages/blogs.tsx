@@ -177,16 +177,16 @@ const BlogsPage: React.FC = (): React.ReactElement => (
       <div className="hero-body">
         <section className="container">
           <h1 className="is-huge">Blogs</h1>
-          <br />
-          <br />
           <div className="image-contents-container">
             {blogs.map((blog, index) => (
               <Fade key={index}>
                 <div className="image-content-container">
                   <a href={blog.url} target="_blank" rel="noopener noreferrer">
                     {blog.image}
-                    <br />
-                    <p className="has-text-black has-text-weight-bold">
+                    <p
+                      className="has-text-black has-text-weight-bold"
+                      style={{ marginTop: 20 }}
+                    >
                       {blog.title}
                     </p>
                     <p className="has-text-weight-light has-text-secondary">

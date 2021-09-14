@@ -11,8 +11,6 @@ const RecentBlogs: React.FC = (): React.ReactElement => {
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Blogs</h2>
-          <br />
-          <br />
           <div className="image-contents-container">
             <Fade>
               <div className="image-content-container">

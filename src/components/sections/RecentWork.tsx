@@ -10,8 +10,6 @@ const RecentWork: React.FC = (): React.ReactElement => {
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Work</h2>
-          <br />
-          <br />
           <div className="image-contents-container">
             <Fade>
               <div className="image-content-container">
