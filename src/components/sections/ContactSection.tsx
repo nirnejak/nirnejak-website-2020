@@ -1,45 +1,10 @@
 import * as React from "react"
 
+import { useForm, ValidationError } from "@formspree/react"
 import Fade from "react-reveal/Fade"
 
-type ContactFormInput = {
-  name: string
-  email: string
-  message: string
-}
-
-const initialState: ContactFormInput = {
-  name: "",
-  email: "",
-  message: "",
-}
-
-const ContactSection: React.FC = (): React.ReactElement => {
-  const [state, setState] = React.useState<ContactFormInput>(initialState)
-
-  const handleInput: React.ChangeEventHandler<
-    HTMLInputElement | HTMLTextAreaElement
-  > = (event) => {
-    setState({
-      ...state,
-      [event.target.name]: event.target.value,
-    })
-  }
-
-  const handleSubmit: React.FormEventHandler = async (e) => {
-    e.preventDefault()
-
-    const response = await fetch("/api/contact", {
-      body: JSON.stringify(state),
-      headers: {
-        "Content-Type": "application/json",
-      },
-      method: "POST",
-    })
-    const data = await response.json()
-
-    console.log(data)
-  }
+const ContactSection: React.FC = () => {
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
 
   return (
     <section className="hero is-medium">
@@ -61,12 +26,11 @@ const ContactSection: React.FC = (): React.ReactElement => {
                 onSubmit={handleSubmit}
               >
                 <div>
-                  <input
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
-                    onChange={handleInput}
+                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <ValidationError
+                    prefix="Name"
+                    field="name"
+                    errors={state.errors}
                   />
                 </div>
                 <div>
@@ -75,21 +39,28 @@ const ContactSection: React.FC = (): React.ReactElement => {
                     name="email"
                     id="email"
                     placeholder="Email"
-                    onChange={handleInput}
+                  />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
                   />
                 </div>
                 <div>
-                  <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Message"
-                    onChange={handleInput}
+                  <textarea name="message" id="message" placeholder="Message" />
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
                   />
                 </div>
                 <br />
                 <div>
-                  <button type="submit">SEND</button>
+                  <button type="submit" disabled={state.submitting}>
+                    SEND
+                  </button>
                 </div>
+                <ValidationError errors={state.errors} />
               </form>
               <br />
               <br />

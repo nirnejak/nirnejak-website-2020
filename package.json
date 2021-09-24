@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
   "dependencies": {
+    "@formspree/react": "^2.2.4",
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "gatsby": "^3.14.0",
