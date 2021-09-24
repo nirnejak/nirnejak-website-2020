@@ -17,7 +17,9 @@ const initialState: ContactFormInput = {
 const ContactSection: React.FC = (): React.ReactElement => {
   const [state, setState] = React.useState<ContactFormInput>(initialState)
 
-  const handleInput: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+  const handleInput: React.ChangeEventHandler<
+    HTMLInputElement | HTMLTextAreaElement
+  > = (event) => {
     setState({
       ...state,
       [event.target.name]: event.target.value,
