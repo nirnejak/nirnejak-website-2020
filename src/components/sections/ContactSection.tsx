@@ -4,7 +4,7 @@ import { useForm, ValidationError } from "@formspree/react"
 import Fade from "react-reveal/Fade"
 
 const ContactSection: React.FC = () => {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM)
+  const [state, handleSubmit] = useForm("xgerdbkz")
 
   return (
     <section className="hero is-medium">
