@@ -1,6 +1,6 @@
 .link {
   text-decoration: none;
-  color: var(--color-darkest);
+  color: var(--color-link);
   font-size: 1rem;
   font-weight: bold;
 }
@@ -47,9 +47,6 @@
 .has-text-primary {
   color: var(--color-primary);
 }
-.has-text-secondary {
-  color: var(--color-secondary);
-}
 .has-text-light {
   color: var(--color-light);
 }
@@ -63,9 +60,6 @@
 // Background
 .has-background-primary {
   background-color: var(--color-primary);
-}
-.has-background-secondary {
-  background-color: var(--color-secondary);
 }
 .has-background-light {
   background-color: var(--color-light);

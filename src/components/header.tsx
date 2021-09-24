@@ -7,11 +7,36 @@ import "./header.scss"
 const Header: React.FC = () => {
   const [isDark, setIsDark] = React.useState(false)
 
+  const setDark = () => {
+    const root: HTMLElement = document.querySelector(":root")
+    // root.style.setProperty("--color-body-background", "#000000")
+    root.style.setProperty("--color-body-background", "#1e1e20")
+    root.style.setProperty("--color-link", "#ffffff")
+    root.style.setProperty("--color-darkest", "#ffffff")
+    root.style.setProperty("--color-lightest", "#000000")
+    root.style.setProperty(
+      "--box-shadow-primary",
+      "7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px #1f1f1f"
+    )
+  }
+
+  const setLight = () => {
+    const root: HTMLElement = document.querySelector(":root")
+    root.style.setProperty("--color-body-background", "#fafafa")
+    root.style.setProperty("--color-link", "#000000")
+    root.style.setProperty("--color-darkest", "#000000")
+    root.style.setProperty("--color-lightest", "#ffffff")
+    root.style.setProperty(
+      "--box-shadow-primary",
+      "7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px #ffffff"
+    )
+  }
+
   React.useEffect(() => {
     if (isDark) {
-      // TODO: Set Dark Mode
+      setDark()
     } else {
-      // TODO: Set Light Mode
+      setLight()
     }
   }, [isDark])
 
