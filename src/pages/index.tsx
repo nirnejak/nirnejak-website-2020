@@ -28,7 +28,17 @@ const IndexPage: React.FC = () => {
             </h1>
             <br />
             <p className="is-size-3 has-text-weight-light">
-              Developer, Designer, and Tech Blogger
+              <span className="has-text-weight-bold is-gradient-1">
+                Developer
+              </span>
+              ,{" "}
+              <span className="has-text-weight-bold is-gradient-2">
+                Designer
+              </span>
+              , and{" "}
+              <span className="has-text-weight-bold is-gradient-3">
+                Tech Blogger
+              </span>
             </p>
 
             <div style={{ margin: "30 0px" }}>

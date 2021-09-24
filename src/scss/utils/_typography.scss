@@ -29,6 +29,26 @@
   }
 }
 
+.is-gradient-1 {
+  background: -webkit-linear-gradient(#03cffe, #397dd6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.is-gradient-2 {
+  background: -webkit-linear-gradient(#d61f5f, #e95d0f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.is-gradient-3 {
+  background: -webkit-linear-gradient(#ffc900, #ffa101);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 // Alignment
 .has-text-centered {
   text-align: center;
