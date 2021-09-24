@@ -3,6 +3,6 @@ module.exports = (req, res) => {
     console.log(req.body)
     res.status(201).json({ message: "Success" })
   } else {
-    res.status(405).send("Invalid method")
+    res.status(405).json({ message: "Invalid method" })
   }
 }
