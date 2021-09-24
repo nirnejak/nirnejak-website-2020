@@ -18,13 +18,12 @@
     padding: 1em;
 
     border-radius: 0.5em;
-    background-color: #fafafa;
+    background-color: var(--color-body-background);
 
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05),
-      -7px -7px 10px var(--color-white);
+    box-shadow: var(--box-shadow-primary);
 
     & > a {
-      color: var(--color-dark);
+      color: var(--color-darkest);
       text-decoration: none;
     }
 

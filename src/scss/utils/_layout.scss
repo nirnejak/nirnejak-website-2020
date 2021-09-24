@@ -91,6 +91,5 @@
 
 .is-raised {
   background-color: var(--color-body-background);
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05),
-    -7px -7px 10px var(--color-white);
+  box-shadow: var(--box-shadow-primary);
 }

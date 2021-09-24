@@ -4,11 +4,12 @@
   --color-primary: #027bff;
   --color-secondary: #797979;
   --color-text: #797979;
-  --color-lightest: rgba(0, 0, 0, 0.1);
-  --color-light: rgba(0, 0, 0, 0.1);
-  --color-dark: #000000;
-  --color-white: #ffffff;
+  --color-darkest: #000000;
+  --color-light: #e0e0e0;
+  --color-lightest: #ffffff;
   --color-body-background: #fafafa;
+
+  --box-shadow-primary: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px #ffffff;
 
   --size-text: 13px;
 
@@ -36,7 +37,7 @@ body {
 
   &::selection {
     background-color: var(--color-primary);
-    color: var(--color-lightest);
+    color: var(--color-light);
   }
 }
 
