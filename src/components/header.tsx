@@ -13,7 +13,12 @@ const Header: React.FC = (): React.ReactElement => (
       <Link to="/blogs" className="navbar-link">
         Blogs
       </Link>
-      <a href="https://github.com/nirnejak" className="navbar-link">
+      <a
+        href="https://github.com/nirnejak"
+        className="navbar-link"
+        rel="noreferrer"
+        target="_blank"
+      >
         Projects
       </a>
       <Link to="/contact" className="navbar-link">

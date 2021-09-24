@@ -23,7 +23,7 @@ const RecentWork: React.FC = (): React.ReactElement => {
                     alt="GitPro Screenshot"
                     placeholder="blurred"
                     width={400}
-                    style={{ borderRadius: 7 }}
+                    style={{ borderRadius: 7, marginBottom: 13 }}
                   />
                   <br />
                   <p className="has-text-black has-text-weight-bold">GitPro</p>
@@ -49,7 +49,7 @@ const RecentWork: React.FC = (): React.ReactElement => {
                     alt="TellMe App Screenshot"
                     placeholder="blurred"
                     width={400}
-                    style={{ borderRadius: 7 }}
+                    style={{ borderRadius: 7, marginBottom: 13 }}
                   />
                   <br />
                   <p className="has-text-black has-text-weight-bold">TellMe</p>
@@ -75,7 +75,7 @@ const RecentWork: React.FC = (): React.ReactElement => {
                     alt="SwiftUI App"
                     placeholder="blurred"
                     width={400}
-                    style={{ borderRadius: 7 }}
+                    style={{ borderRadius: 7, marginBottom: 13 }}
                   />
                   <br />
                   <p className="has-text-black has-text-weight-bold">
