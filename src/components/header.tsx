@@ -11,6 +11,7 @@ const Header: React.FC = () => {
     const root: HTMLElement = document.querySelector(":root")
     // root.style.setProperty("--color-body-background", "#000000")
     root.style.setProperty("--color-body-background", "#1e1e20")
+    root.style.setProperty("--color-input-background", "#1f1f1f")
     root.style.setProperty("--color-link", "#ffffff")
     root.style.setProperty("--color-darkest", "#ffffff")
     root.style.setProperty("--color-lightest", "#000000")
@@ -23,6 +24,7 @@ const Header: React.FC = () => {
   const setLight = () => {
     const root: HTMLElement = document.querySelector(":root")
     root.style.setProperty("--color-body-background", "#fafafa")
+    root.style.setProperty("--color-input-background", "#f4f4f4")
     root.style.setProperty("--color-link", "#000000")
     root.style.setProperty("--color-darkest", "#000000")
     root.style.setProperty("--color-lightest", "#ffffff")

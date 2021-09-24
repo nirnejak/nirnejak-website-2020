@@ -19,10 +19,11 @@ button {
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: #f4f4f4;
+  background-color: var(--color-input-background);
+  color: var(--color-darkest);
 
   &:focus {
-    border: 2px #e4e4e4 solid;
+    border: 2px var(--color-input-border) solid;
   }
 }
 
