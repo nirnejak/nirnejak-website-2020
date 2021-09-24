@@ -16,7 +16,7 @@ const IndexPage: React.FC = () => {
   return (
     <>
       <SEO title="Home" />
-      <section className="hero is-fullheight">
+      <section className="hero is-fullheight-with-navbar">
         <div className="hero-head">
           <Header />
         </div>

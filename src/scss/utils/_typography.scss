@@ -1,6 +1,6 @@
 .link {
   text-decoration: none;
-  color: black;
+  color: var(--color-dark);
   font-size: 1rem;
   font-weight: bold;
 }
@@ -45,10 +45,10 @@
 
 // Colors
 .has-text-black {
-  color: #000000;
+  color: var(--color-dark);
 }
 .has-text-white {
-  color: #ffffff;
+  color: var(--color-white);
 }
 .has-text-primary {
   color: var(--color-primary);
@@ -62,10 +62,10 @@
 
 // Background
 .has-background-black {
-  background-color: #000000;
+  background-color: var(--color-dark);
 }
 .has-background-white {
-  background-color: #ffffff;
+  background-color: var(--color-white);
 }
 .has-background-primary {
   background-color: var(--color-primary);
@@ -75,6 +75,10 @@
 }
 .has-background-light {
   background-color: var(--color-light);
+}
+
+.has-cursor-pointer {
+  cursor: pointer;
 }
 
 .is-size-1 {

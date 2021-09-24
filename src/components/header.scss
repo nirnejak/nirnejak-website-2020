@@ -3,15 +3,21 @@ nav {
   width: 100%;
   z-index: 999;
 
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .navbar-link {
     text-decoration: none;
-    color: black;
+    color: var(--color-dark);
     font-size: 1rem;
     font-weight: bold;
 
-    margin-right: 70px;
+    margin-right: 50px;
 
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -19,7 +25,7 @@ nav {
       left: 0;
       width: 0;
       height: 2px;
-      background-color: #027bff;
+      background-color: var(--color-primary);
     }
     &:hover::before {
       width: 100%;

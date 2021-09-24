@@ -5,7 +5,7 @@
 
   width: 100%;
   margin: 0 auto;
-  
+
   & > .skill-container {
     min-width: 100px;
     max-width: 100px;
@@ -17,10 +17,11 @@
     border-radius: 0.5em;
     margin: 1.5rem;
 
-    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px white ;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05),
+      -7px -7px 10px var(--color-white);
 
     & > a {
-      color: black;
+      color: var(--color-dark);
     }
     & > img {
       margin: auto;

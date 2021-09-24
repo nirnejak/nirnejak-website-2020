@@ -7,10 +7,10 @@
   position: relative;
   flex-grow: 1;
 
-  max-width: 1344px;
+  max-width: 980px;
   margin: 0 auto;
 
-  @media (max-width: 1344px) {
+  @media (max-width: 980px) {
     margin: 0 35px;
   }
 
@@ -91,5 +91,6 @@
 
 .is-raised {
   background-color: var(--color-body-background);
-  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px white;
+  box-shadow: 7px 7px 10px rgba(0, 0, 0, 0.05),
+    -7px -7px 10px var(--color-white);
 }
