@@ -8,18 +8,27 @@ type ContactFormInput = {
   message: string
 }
 
+const initialState: ContactFormInput = {
+  name: "",
+  email: "",
+  message: "",
+}
+
 const ContactSection: React.FC = (): React.ReactElement => {
-  const handleSubmit = async (e: any) => {
+  const [state, setState] = React.useState<ContactFormInput>(initialState)
+
+  const handleInput: React.ChangeEventHandler<HTMLInputElement> = (event) => {
+    setState({
+      ...state,
+      [event.target.name]: event.target.value,
+    })
+  }
+
+  const handleSubmit: React.FormEventHandler = async (e) => {
     e.preventDefault()
 
-    const contactFormData: ContactFormInput = {
-      name: e.target.name.value,
-      email: e.target.email.value,
-      message: e.target.message.value,
-    }
-
     const response = await fetch("/api/contact", {
-      body: JSON.stringify(contactFormData),
+      body: JSON.stringify(state),
       headers: {
         "Content-Type": "application/json",
       },
@@ -50,7 +59,13 @@ const ContactSection: React.FC = (): React.ReactElement => {
                 onSubmit={handleSubmit}
               >
                 <div>
-                  <input type="text" name="name" id="name" placeholder="Name" />
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Name"
+                    onChange={handleInput}
+                  />
                 </div>
                 <div>
                   <input
@@ -58,10 +73,16 @@ const ContactSection: React.FC = (): React.ReactElement => {
                     name="email"
                     id="email"
                     placeholder="Email"
+                    onChange={handleInput}
                   />
                 </div>
                 <div>
-                  <textarea name="message" id="message" placeholder="Message" />
+                  <textarea
+                    name="message"
+                    id="message"
+                    placeholder="Message"
+                    onChange={handleInput}
+                  />
                 </div>
                 <br />
                 <div>
