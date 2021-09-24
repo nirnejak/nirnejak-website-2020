@@ -11,7 +11,7 @@ import ReactNativeLogo from "../../images/skills/react-native.svg"
 import ReactLogo from "../../images/skills/reactjs.svg"
 import VueLogo from "../../images/skills/vuejs.svg"
 
-const SkillsSection: React.FC = (): React.ReactElement => {
+const SkillsSection: React.FC = () => {
   return (
     <section className="hero">
       <div className="hero-body">

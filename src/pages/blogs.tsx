@@ -169,7 +169,7 @@ const blogs = [
   },
 ]
 
-const BlogsPage: React.FC = (): React.ReactElement => (
+const BlogsPage: React.FC = () => (
   <>
     <SEO title="Blogs" />
     <Header />

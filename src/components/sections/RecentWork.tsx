@@ -4,7 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import Fade from "react-reveal/Fade"
 
-const RecentWork: React.FC = (): React.ReactElement => {
+const RecentWork: React.FC = () => {
   return (
     <section className="hero">
       <div className="hero-body">

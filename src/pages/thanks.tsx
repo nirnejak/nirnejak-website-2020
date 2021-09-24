@@ -4,7 +4,7 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-const IndexPage: React.FC = (): React.ReactElement => (
+const IndexPage: React.FC = () => (
   <>
     <SEO title="Thank You for Submission" />
     <section className="hero is-fullheight">

@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 import Header from "../components/header"
 import SEO from "../components/seo"
 
-const NotFoundPage: React.FC = (): React.ReactElement => (
+const NotFoundPage: React.FC = () => (
   <>
     <SEO title="404: Not found" />
     <div className="hero is-fullheight">

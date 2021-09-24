@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 
 import "./header.scss"
 
-const Header: React.FC = (): React.ReactElement => (
+const Header: React.FC = () => (
   <nav className="navbar">
     <div className="container">
       <Link to="/" className="navbar-link">

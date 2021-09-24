@@ -12,7 +12,7 @@ import SEO from "../components/seo"
 
 import "../scss/main.scss"
 
-const IndexPage: React.FC = (): React.ReactElement => {
+const IndexPage: React.FC = () => {
   return (
     <>
       <SEO title="Home" />

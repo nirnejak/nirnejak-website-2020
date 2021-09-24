@@ -4,7 +4,7 @@ import Header from "../components/header"
 import ContactSection from "../components/sections/ContactSection"
 import SEO from "../components/seo"
 
-const ContactPage: React.FC = (): React.ReactElement => {
+const ContactPage: React.FC = () => {
   return (
     <>
       <SEO title="Contact" />
