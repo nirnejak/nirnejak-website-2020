@@ -95,9 +95,12 @@ const ContactSection: React.FC = (): React.ReactElement => {
               <p className="is-size-3 has-text-black has-text-weight-bold">
                 or reach me at
               </p>
-              <p className="is-size-3 has-text-black has-text-weight-light">
+              <a
+                href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
+                className="link is-size-3 has-text-weight-light"
+              >
                 hello@nirnejak.com
-              </p>
+              </a>
             </div>
           </Fade>
         </div>
