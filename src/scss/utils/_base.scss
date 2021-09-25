@@ -1,5 +1,16 @@
+::-moz-selection {
+  color: var(--color-lightest);
+  background-color: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-lightest);
+  background-color: var(--color-primary);
+}
+
 * {
   margin: 0px;
+
   padding: 0px;
   box-sizing: border-box;
 }
@@ -23,12 +34,6 @@ section {
   display: block;
 }
 
-::-moz-selection {
-  color: var(--color-lightest);
-  background-color: var(--color-primary);
-}
-
-::selection {
-  color: var(--color-lightest);
-  background-color: var(--color-primary);
+p {
+  margin-bottom: 1rem;
 }

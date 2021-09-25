@@ -1,3 +1,23 @@
+.is-gradient-1 {
+  background: -webkit-linear-gradient(top left, #03cffe, #397dd6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.is-gradient-2 {
+  background: -webkit-linear-gradient(top left, #e95d0f, #d61f5f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.is-gradient-3 {
+  background: -webkit-linear-gradient(top left, #ffc900, #ffa101);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .link {
   text-decoration: none;
   color: var(--color-link);
@@ -27,26 +47,6 @@
   @media (min-width: 1024px) {
     font-size: 130px;
   }
-}
-
-.is-gradient-1 {
-  background: -webkit-linear-gradient(top left, #03cffe, #397dd6);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.is-gradient-2 {
-  background: -webkit-linear-gradient(top left, #e95d0f, #d61f5f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.is-gradient-3 {
-  background: -webkit-linear-gradient(top left, #ffc900, #ffa101);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 // Alignment
@@ -135,8 +135,4 @@
   @media (min-width: 1024px) {
     font-size: 23px;
   }
-}
-
-p {
-  margin-bottom: 1rem;
 }
