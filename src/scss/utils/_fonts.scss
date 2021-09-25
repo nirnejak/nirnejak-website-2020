@@ -1,11 +1,15 @@
 @font-face {
   font-family: "Space Grotesk";
   src: url("./fonts/SpaceGrotesk-Light.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "Space Grotesk";
   src: url("./fonts/SpaceGrotesk-Bold.ttf") format("truetype");
+  font-display: swap;
+  font-style: normal;
   font-weight: 700;
 }
