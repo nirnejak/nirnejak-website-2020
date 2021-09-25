@@ -1,3 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-sans-serif);
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: var(--size-text);
+  color: var(--color-text);
+  background-color: var(--color-body-background);
+}
+
+div,
+section {
+  display: block;
+}
+
 ::-moz-selection {
   color: var(--color-lightest);
   background-color: var(--color-primary);
