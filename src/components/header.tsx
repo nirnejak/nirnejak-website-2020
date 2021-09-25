@@ -5,9 +5,10 @@ import { Link } from "gatsby"
 import "./header.scss"
 
 const Header: React.FC = () => {
-  const [isDark, setIsDark] = React.useState(false)
+  const [isDark, setIsDark] = React.useState(true)
 
   const setDark = () => {
+    sessionStorage.setItem("isDark", "true")
     const root: HTMLElement = document.querySelector(":root")
     root.style.setProperty("--color-body-background", "#1e1e20")
     root.style.setProperty("--color-input-background", "#1f1f1f")
@@ -17,11 +18,12 @@ const Header: React.FC = () => {
     root.style.setProperty("--color-lightest", "#000000")
     root.style.setProperty(
       "--box-shadow-primary",
-      "7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px #1f1f1f"
+      "14px 14px 29px #181819, -14px -14px 29px #242427"
     )
   }
 
   const setLight = () => {
+    sessionStorage.setItem("isDark", "false")
     const root: HTMLElement = document.querySelector(":root")
     root.style.setProperty("--color-body-background", "#fafafa")
     root.style.setProperty("--color-input-background", "#f4f4f4")
@@ -36,6 +38,16 @@ const Header: React.FC = () => {
   }
 
   React.useEffect(() => {
+    if (sessionStorage.getItem("isDark") === "false") {
+      setIsDark(false)
+      setLight()
+    } else {
+      setIsDark(true)
+      setDark()
+    }
+  }, [])
+
+  React.useEffect(() => {
     if (isDark) {
       setDark()
     } else {
@@ -44,6 +56,11 @@ const Header: React.FC = () => {
   }, [isDark])
 
   const toggleIsDark = () => {
+    if (isDark) {
+      setLight()
+    } else {
+      setDark()
+    }
     setIsDark(!isDark)
   }
 
