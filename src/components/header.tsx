@@ -9,9 +9,9 @@ const Header: React.FC = () => {
 
   const setDark = () => {
     const root: HTMLElement = document.querySelector(":root")
-    // root.style.setProperty("--color-body-background", "#000000")
     root.style.setProperty("--color-body-background", "#1e1e20")
     root.style.setProperty("--color-input-background", "#1f1f1f")
+    root.style.setProperty("--color-text-large", "rgba(255, 255, 255, 0.2)")
     root.style.setProperty("--color-link", "#ffffff")
     root.style.setProperty("--color-darkest", "#ffffff")
     root.style.setProperty("--color-lightest", "#000000")
@@ -25,6 +25,7 @@ const Header: React.FC = () => {
     const root: HTMLElement = document.querySelector(":root")
     root.style.setProperty("--color-body-background", "#fafafa")
     root.style.setProperty("--color-input-background", "#f4f4f4")
+    root.style.setProperty("--color-text-large", "rgba(0, 0, 0, 0.1)")
     root.style.setProperty("--color-link", "#000000")
     root.style.setProperty("--color-darkest", "#000000")
     root.style.setProperty("--color-lightest", "#ffffff")

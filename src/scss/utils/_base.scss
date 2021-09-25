@@ -1,0 +1,9 @@
+::-moz-selection {
+  color: var(--color-lightest);
+  background-color: var(--color-primary);
+}
+
+::selection {
+  color: var(--color-lightest);
+  background-color: var(--color-primary);
+}
