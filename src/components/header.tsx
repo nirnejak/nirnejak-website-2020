@@ -57,6 +57,14 @@ const Header: React.FC = () => {
   }, [])
 
   React.useEffect(() => {
+    if (isExpanded) {
+      document.body.style.overflowY = "hidden"
+    } else {
+      document.body.style.overflowY = "visible"
+    }
+  }, [isExpanded])
+
+  React.useEffect(() => {
     if (isDark) {
       setDark()
     } else {
