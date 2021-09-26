@@ -7,14 +7,15 @@
   --color-text-large: rgba(0, 0, 0, 0.1); // rgba(255, 255, 255, 0.2)
   --color-link: #000000; // #ffffff
   --color-body-background: #fafafa; // #1e1e20
-  --color-input-background: #f4f4f4; // #1f1f1f
-  --color-input-border: #e4e4e4;
+  --color-input-border: rgba(0, 0, 0, 0.1);
 
   --color-light: #e0e0e0;
   --color-lightest: #ffffff; // #000000
   --color-darkest: #000000; // #ffffff
 
   --box-shadow-primary: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px #ffffff;
+  --box-shadow-input: inset 7px 7px 10px rgba(0, 0, 0, 0.05),
+    inset -7px -7px 10px #ffffff;
 
   --size-text: 13px;
 

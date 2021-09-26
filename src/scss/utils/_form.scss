@@ -14,17 +14,18 @@ button {
   border-radius: 0.4em;
 
   margin-bottom: 1em;
+
+  &:focus {
+    border: 2px var(--color-input-border) solid;
+  }
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-  background-color: var(--color-input-background);
+  background-color: var(--color-body-background);
   color: var(--color-darkest);
-
-  &:focus {
-    border: 2px var(--color-input-border) solid;
-  }
+  box-shadow: var(--box-shadow-input);
 }
 
 button {
