@@ -58,7 +58,7 @@ const IndexPage: React.FC = () => (
           <p className="is-size-3 has-text-weight-light">
             ZSH + Oh-my-zsh, iTerm, VS Code(
             <a
-              href="https://gist.github.com/nirnejak/3773427ef028723130d2e6d0abdab8e2"
+              href="https://gist.github.com/nirnejak/3773427ef028723130d2e6d0abdab8e2/"
               target="_blank"
               rel="noopener noreferrer"
               className="link is-size-3"

@@ -40,7 +40,7 @@ const RecentWork: React.FC = () => {
             <Fade>
               <div className="image-content-container">
                 <a
-                  href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard"
+                  href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -66,7 +66,7 @@ const RecentWork: React.FC = () => {
             <Fade>
               <div className="image-content-container">
                 <a
-                  href="https://github.com/nirnejak/swift-tab-app"
+                  href="https://github.com/nirnejak/swift-tab-app/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

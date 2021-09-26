@@ -8,7 +8,7 @@ module.exports = {
     author: `Jitendra Nirnejak`,
 
     siteLanguage: `en`,
-    siteUrl: `https://nirnejak.com`,
+    siteUrl: `https://nirnejak.com/`,
     siteImage: `https://nirnejak.com/sitecover.png`,
 
     social: {
@@ -45,7 +45,7 @@ module.exports = {
       options: {
         typeName: "GITHUB",
         fieldName: "github",
-        url: `https://api.github.com/graphql`,
+        url: `https://api.github.com/graphql/`,
         headers: {
           Authorization: `Bearer ${process.env.GITHUB_PERSONAL_ACCESS_TOKEN}`,
         },

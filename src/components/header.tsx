@@ -76,7 +76,7 @@ const Header: React.FC = () => {
               Blogs
             </Link>
             <a
-              href="https://github.com/nirnejak"
+              href="https://github.com/nirnejak/"
               className="navbar-link"
               rel="noreferrer"
               target="_blank"

@@ -83,7 +83,7 @@ const IndexPage: React.FC = () => {
                 </div>
                 <div className="icon-container">
                   <a
-                    href="https://codepen.io/nirnejak"
+                    href="https://codepen.io/nirnejak/"
                     title="Jitendra Nirnejak's Codepen Profile"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -135,7 +135,7 @@ const IndexPage: React.FC = () => {
                 </div>
                 <div className="icon-container">
                   <a
-                    href="https://www.behance.net/nirnejak"
+                    href="https://www.behance.net/nirnejak/"
                     title="Jitendra Nirnejak's Behance Portfolio"
                     target="_blank"
                     rel="noopener noreferrer"

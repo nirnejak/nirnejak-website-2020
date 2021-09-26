@@ -9,6 +9,6 @@
 
 My Portfolio website built with Gatsby, showcasing my blogs, designs and projects.
 
-[Visit Website](https://nirnejak.com)
+[Visit Website](https://nirnejak.com/)
 
 <img alt="Nirnejak" src="https://nirnejak.com/sitecover.png" />
