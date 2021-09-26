@@ -9,16 +9,24 @@ nav {
   }
 
   .navbar-toggle-menu {
-    z-index: 1001;
-
     display: none;
     @media (max-width: 600px) {
       display: flex;
+
+      z-index: 1001;
+      position: fixed;
+      top: 48px;
+      left: 25px;
     }
   }
 
   .navbar-toggle-theme {
-    z-index: 1001;
+    @media (max-width: 600px) {
+      z-index: 1001;
+      position: fixed;
+      top: 48px;
+      right: 25px;
+    }
   }
 
   .navbar-links {
