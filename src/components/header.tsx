@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 import "./header.scss"
 
 const Header: React.FC = () => {
+  const [isExpanded, setExpanded] = React.useState(false)
   const [isDark, setIsDark] = React.useState(true)
 
   const setDark = () => {
@@ -76,7 +77,42 @@ const Header: React.FC = () => {
     <nav className="navbar">
       <div className="container">
         <div className="navbar-container">
-          <div className="navbar-links">
+          <div className="navbar-toggle-menu">
+            {isExpanded ? (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="has-text-black has-cursor-pointer"
+                onClick={() => setExpanded(false)}
+              >
+                <path d="M20 20L4 4m16 0L4 20" />
+              </svg>
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="has-text-black has-cursor-pointer"
+                onClick={() => setExpanded(true)}
+              >
+                <path d="M3 6h18M3 12h18M3 18h18" />
+              </svg>
+            )}
+          </div>
+          <div className={`navbar-links ${isExpanded ? "is-visible" : ""}`}>
             <Link to="/" className="navbar-link">
               Home
             </Link>
@@ -95,7 +131,7 @@ const Header: React.FC = () => {
               Contact
             </Link>
           </div>
-          <div className="navbar-toggle">
+          <div className="navbar-toggle-theme">
             {isDark ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
