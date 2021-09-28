@@ -36,7 +36,7 @@ const IndexPage: React.FC = () => (
             Languages and Frameworks
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            React, Vue, Gatsby, Node.js
+            React, Vue, Gatsby and Node.js
           </p>
 
           <h2
@@ -46,7 +46,7 @@ const IndexPage: React.FC = () => (
             Design Tools
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            Figma, Sketch, Affinity Designer, Procreate
+            Figma, Affinity Designer and Procreate
           </p>
 
           <h2
@@ -85,7 +85,7 @@ const IndexPage: React.FC = () => (
             Podcasts, I listen to
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            Syntax, PodRocket, The Vergecast
+            Syntax and PodRocket
           </p>
 
           <h2
@@ -94,7 +94,9 @@ const IndexPage: React.FC = () => (
           >
             What&apos;s for 2021
           </h2>
-          <p className="is-size-3 has-text-weight-light">Typescript</p>
+          <p className="is-size-3 has-text-weight-light">
+            Typescript and GraphQL
+          </p>
         </div>
       </div>
     </section>
