@@ -4,14 +4,14 @@
   --color-primary: #027bff;
 
   --color-text: #797979;
-  --color-text-large: rgba(0, 0, 0, 0.1); // rgba(255, 255, 255, 0.2)
-  --color-link: #000000; // #ffffff
-  --color-body-background: #fafafa; // #1e1e20
+  --color-text-large: rgba(0, 0, 0, 0.1);
+  --color-link: #000000;
+  --color-body-background: #fafafa;
   --color-input-border: rgba(0, 0, 0, 0.1);
 
   --color-light: #e0e0e0;
-  --color-lightest: #ffffff; // #000000
-  --color-darkest: #000000; // #ffffff
+  --color-lightest: #ffffff;
+  --color-darkest: #000000;
 
   --box-shadow-primary: 7px 7px 10px rgba(0, 0, 0, 0.05), -7px -7px 10px #ffffff;
   --box-shadow-input: inset 7px 7px 10px rgba(0, 0, 0, 0.05),
@@ -20,6 +20,18 @@
   --size-text: 13px;
 
   --font-sans-serif: "Space Grotesk", sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-text-large: rgba(255, 255, 255, 0.2);
+    --color-link: #ffffff;
+    --color-body-background: #1e1e20;
+    --color-lightest: #000000;
+    --color-darkest: #ffffff;
+    --box-shadow-primary: 14px 14px 29px #181819, -14px -14px 29px #242427;
+    --box-shadow-input: inset 7px 7px 10px #1a1a1b, inset -7px -7px 10px #232325;
+  }
 }
 
 @import "utils/base";
