@@ -36,7 +36,7 @@ const IndexPage: React.FC = () => (
             Languages and Frameworks
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            Node, React, Vue, Gatsby, Python
+            React, Vue, Gatsby, Node.js
           </p>
 
           <h2
@@ -46,7 +46,7 @@ const IndexPage: React.FC = () => (
             Design Tools
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            Figma, Adobe XD, Adobe Photoshop
+            Figma, Sketch, Affinity Designer, Procreate
           </p>
 
           <h2
@@ -75,7 +75,7 @@ const IndexPage: React.FC = () => (
             Gear
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            iPhone XR, iPad Pro 11, MacBook Air
+            iPhone XR, iPad Pro 11, MacBook Pro(M1)
           </p>
 
           <h2
@@ -85,18 +85,16 @@ const IndexPage: React.FC = () => (
             Podcasts, I listen to
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            Syntax, The Vergecast
+            Syntax, PodRocket, The Vergecast
           </p>
 
           <h2
             className="is-size-2 has-text-black"
             style={{ marginBottom: 10, marginTop: 70 }}
           >
-            What&apos;s for 2020
+            What&apos;s for 2021
           </h2>
-          <p className="is-size-3 has-text-weight-light">
-            JAM Stack, Typescript and Swift
-          </p>
+          <p className="is-size-3 has-text-weight-light">Typescript</p>
         </div>
       </div>
     </section>
