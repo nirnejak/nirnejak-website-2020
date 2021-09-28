@@ -1,7 +1,7 @@
 {
   "name": "nirnejak-website",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Portfolio website of Jitendra Nirnejak",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
   "dependencies": {
@@ -76,10 +76,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nirnejak/nirnejak-website-2020"
+    "url": "https://github.com/nirnejak/nirnejak-website"
   },
   "bugs": {
-    "url": "https://github.com/nirnejak/nirnejak-website-2020/issues"
+    "url": "https://github.com/nirnejak/nirnejak-website/issues"
   },
   "volta": {
     "node": "14.17.3"

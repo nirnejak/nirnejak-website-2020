@@ -4,7 +4,7 @@ require(`dotenv`).config({ path: `.env` })
 module.exports = {
   siteMetadata: {
     title: `Jitendra Nirnejak - Portfolio`,
-    description: `Portfolio website of Jitendra Nirnejak, I am a full-stack developer, UI/UX Designer, and Tech Blogger.`,
+    description: `Portfolio website of Jitendra Nirnejak, I am a developer, designer, and tech blogger.`,
     author: `Jitendra Nirnejak`,
 
     siteLanguage: `en`,
