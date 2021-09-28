@@ -14,7 +14,7 @@ const IndexPage: React.FC = () => (
           <h1 className="is-size-1 has-text-black">Uses.</h1>
           <br />
           <p className="is-size-3 has-text-weight-light">
-            What I&apos;m using for 2020
+            What I&apos;m using for 2021
           </p>
 
           <div style={{ margin: "30 0px" }}>
