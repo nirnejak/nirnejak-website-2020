@@ -54,6 +54,10 @@ const Header: React.FC = () => {
   //   }
   // }, [])
 
+  const toggleIsDark = () => {
+    setIsDark(!isDark)
+  }
+
   // React.useEffect(() => {
   //   if (isDark) {
   //     setDark()
@@ -61,10 +65,6 @@ const Header: React.FC = () => {
   //     setLight()
   //   }
   // }, [isDark])
-
-  const toggleIsDark = () => {
-    setIsDark(!isDark)
-  }
 
   React.useEffect(() => {
     if (isExpanded) {
