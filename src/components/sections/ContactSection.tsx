@@ -1,10 +1,18 @@
 import * as React from "react"
 
+import { navigate } from "gatsby"
+
 import { useForm, ValidationError } from "@formspree/react"
 import Fade from "react-reveal/Fade"
 
 const ContactSection: React.FC = () => {
   const [state, handleSubmit] = useForm("xgerdbkz")
+
+  React.useEffect(() => {
+    if (state.succeeded) {
+      navigate("/thanks/")
+    }
+  }, [state.succeeded])
 
   return (
     <section className="hero is-medium">

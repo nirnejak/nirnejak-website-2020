@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 const IndexPage: React.FC = () => (
   <>
     <SEO title="Thank You for Submission" />
-    <section className="hero is-fullheight">
+    <section className="hero is-fullheight-with-navbar">
       <div className="hero-head">
         <Header />
       </div>
