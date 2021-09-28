@@ -74,7 +74,7 @@ const RecentBlogs: React.FC = () => {
             </Fade>
           </div>
           <div style={{ margin: 50 }} className="has-text-centered">
-            <Link to="/blogs" className="link" style={{ marginRight: 0 }}>
+            <Link to="/blogs/" className="link" style={{ marginRight: 0 }}>
               See All Blogs
             </Link>
             <br />

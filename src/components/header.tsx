@@ -117,8 +117,11 @@ const Header: React.FC = () => {
             <Link to="/" className="navbar-link">
               Home
             </Link>
-            <Link to="/blogs" className="navbar-link">
+            <Link to="/blogs/" className="navbar-link">
               Blogs
+            </Link>
+            <Link to="/uses/" className="navbar-link">
+              Uses
             </Link>
             <a
               href="https://github.com/nirnejak/"
