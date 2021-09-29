@@ -2,24 +2,17 @@ import * as React from "react"
 
 import Fade from "react-reveal/Fade"
 
-import Footer from "../components/footer"
-import Header from "../components/header"
 import ContactSection from "../components/sections/ContactSection"
 import RecentBlogs from "../components/sections/RecentBlogs"
 import RecentWork from "../components/sections/RecentWork"
 import Skills from "../components/sections/SkillsSection"
 import SEO from "../components/seo"
 
-import "../scss/main.scss"
-
 const IndexPage: React.FC = () => {
   return (
     <>
       <SEO title="Home" />
       <section className="hero is-fullheight-with-navbar">
-        <div className="hero-head">
-          <Header />
-        </div>
         <div className="hero-body">
           <div className="container">
             <h1 className="is-size-1 has-text-black">
@@ -215,7 +208,6 @@ const IndexPage: React.FC = () => {
       <Skills />
       <RecentWork />
       <ContactSection />
-      <Footer />
     </>
   )
 }

@@ -2,17 +2,12 @@ import * as React from "react"
 
 import { Link } from "gatsby"
 
-import Footer from "../components/footer"
-import Header from "../components/header"
 import SEO from "../components/seo"
 
 const NotFoundPage: React.FC = () => (
   <>
     <SEO title="404: Not found" />
-    <div className="hero is-fullheight">
-      <div className="hero-head">
-        <Header />
-      </div>
+    <div className="hero" style={{ marginTop: 150 }}>
       <div className="hero-body">
         <div className="container">
           <h1 className="is-size-1 has-text-black">NOT FOUND</h1>
@@ -45,9 +40,6 @@ const NotFoundPage: React.FC = () => (
             Go back to home
           </Link>
         </div>
-      </div>
-      <div className="hero-foot">
-        <Footer />
       </div>
     </div>
   </>

@@ -1,16 +1,11 @@
 import * as React from "react"
 
-import Footer from "../components/footer"
-import Header from "../components/header"
 import SEO from "../components/seo"
 
 const IndexPage: React.FC = () => (
   <>
     <SEO title="Thank You for Submission" />
     <section className="hero is-fullheight-with-navbar">
-      <div className="hero-head">
-        <Header />
-      </div>
       <div className="hero-body">
         <div className="container">
           <h1 className="is-size-1 has-text-black">Thank You.</h1>
@@ -34,7 +29,6 @@ const IndexPage: React.FC = () => (
         </div>
       </div>
     </section>
-    <Footer />
   </>
 )
 

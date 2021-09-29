@@ -1,13 +1,10 @@
 import * as React from "react"
 
-import Footer from "../components/footer"
-import Header from "../components/header"
 import SEO from "../components/seo"
 
 const IndexPage: React.FC = () => (
   <>
     <SEO title="Uses" />
-    <Header />
     <section className="hero">
       <div className="hero-body">
         <div className="container">
@@ -100,7 +97,6 @@ const IndexPage: React.FC = () => (
         </div>
       </div>
     </section>
-    <Footer />
   </>
 )
 
