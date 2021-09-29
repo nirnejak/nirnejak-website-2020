@@ -1,29 +1,47 @@
 import * as React from "react"
+import { useInView } from "react-intersection-observer"
 
-import Fade from "react-reveal/Fade"
+import { motion, useAnimation } from "framer-motion"
 
-const Footer: React.FC = () => (
-  <div
-    className="has-text-centered"
-    style={{ margin: "100px 10px 200px 10px" }}
-  >
-    <div className="is-size-3 has-text-weight-bold has-text-black">
-      Follow Me on
-    </div>
+const Footer: React.FC = () => {
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
 
-    <div style={{ marginBottom: 10, marginTop: 10 }}>
-      <svg
-        width="64"
-        height="5"
-        viewBox="0 0 64 5"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <rect width="64" height="5" fill="#027BFF" />
-      </svg>
-    </div>
-    <Fade>
-      <div
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible")
+    }
+  }, [controls, inView])
+
+  return (
+    <div
+      className="has-text-centered"
+      style={{ margin: "100px 10px 200px 10px" }}
+      ref={ref}
+    >
+      <div className="is-size-3 has-text-weight-bold has-text-black">
+        Follow Me on
+      </div>
+
+      <div style={{ marginBottom: 10, marginTop: 10 }}>
+        <svg
+          width="64"
+          height="5"
+          viewBox="0 0 64 5"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="64" height="5" fill="#027BFF" />
+        </svg>
+      </div>
+      <motion.div
+        animate={controls}
+        initial="hidden"
+        transition={{ delay: 0.5, duration: 0.3 }}
+        variants={{
+          visible: { opacity: 1, scale: 1 },
+          hidden: { opacity: 0, scale: 0 },
+        }}
         className="icons-container"
         style={{ flexWrap: "wrap", justifyContent: "center" }}
       >
@@ -157,9 +175,9 @@ const Footer: React.FC = () => (
             </span>
           </a>
         </div>
-      </div>
-    </Fade>
-  </div>
-)
+      </motion.div>
+    </div>
+  )
+}
 
 export default Footer

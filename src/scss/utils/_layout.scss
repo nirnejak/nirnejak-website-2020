@@ -26,7 +26,7 @@
   justify-content: space-between;
 
   &.is-fullheight-with-navbar {
-    min-height: calc(100vh - 3.25rem);
+    min-height: calc(100vh - 100px);
   }
   &.is-fullheight {
     min-height: 100vh;

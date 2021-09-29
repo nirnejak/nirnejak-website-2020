@@ -1,12 +1,21 @@
 import * as React from "react"
+import { useInView } from "react-intersection-observer"
 
 import { navigate } from "gatsby"
 
 import { useForm, ValidationError } from "@formspree/react"
-import Fade from "react-reveal/Fade"
+import { motion, useAnimation } from "framer-motion"
 
 const ContactSection: React.FC = () => {
   const [state, handleSubmit] = useForm("xgerdbkz")
+  const controls = useAnimation()
+  const [ref, inView] = useInView()
+
+  React.useEffect(() => {
+    if (inView) {
+      controls.start("visible")
+    }
+  }, [controls, inView])
 
   React.useEffect(() => {
     if (state.succeeded) {
@@ -15,75 +24,80 @@ const ContactSection: React.FC = () => {
   }, [state.succeeded])
 
   return (
-    <section className="hero is-medium">
+    <section className="hero is-medium" ref={ref}>
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Contact</h2>
-          <Fade>
-            <div
-              className="is-raised has-text-centered"
-              style={{
-                borderRadius: "0.5em",
-                padding: "100px 20px",
-              }}
+          <motion.div
+            animate={controls}
+            initial="hidden"
+            transition={{ delay: 0.5, duration: 0.3 }}
+            variants={{
+              visible: { opacity: 1, scale: 1 },
+              hidden: { opacity: 0, scale: 0 },
+            }}
+            className="is-raised has-text-centered"
+            style={{
+              borderRadius: "0.5em",
+              padding: "100px 20px",
+            }}
+          >
+            <form
+              name="contact"
+              method="post"
+              action="/thanks/"
+              onSubmit={handleSubmit}
             >
-              <form
-                name="contact"
-                method="post"
-                action="/thanks/"
-                onSubmit={handleSubmit}
-              >
-                <div>
-                  <input type="text" name="name" id="name" placeholder="Name" />
-                  <ValidationError
-                    prefix="Name"
-                    field="name"
-                    errors={state.errors}
-                  />
-                </div>
-                <div>
-                  <input
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="Email"
-                  />
-                  <ValidationError
-                    prefix="Email"
-                    field="email"
-                    errors={state.errors}
-                  />
-                </div>
-                <div>
-                  <textarea name="message" id="message" placeholder="Message" />
-                  <ValidationError
-                    prefix="Message"
-                    field="message"
-                    errors={state.errors}
-                  />
-                </div>
-                <br />
-                <div>
-                  <button type="submit" disabled={state.submitting}>
-                    SEND
-                  </button>
-                </div>
-                <ValidationError errors={state.errors} />
-              </form>
+              <div>
+                <input type="text" name="name" id="name" placeholder="Name" />
+                <ValidationError
+                  prefix="Name"
+                  field="name"
+                  errors={state.errors}
+                />
+              </div>
+              <div>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Email"
+                />
+                <ValidationError
+                  prefix="Email"
+                  field="email"
+                  errors={state.errors}
+                />
+              </div>
+              <div>
+                <textarea name="message" id="message" placeholder="Message" />
+                <ValidationError
+                  prefix="Message"
+                  field="message"
+                  errors={state.errors}
+                />
+              </div>
               <br />
-              <br />
-              <br />
-              <p className="is-size-3 has-text-black has-text-weight-bold">
-                or reach me at
-              </p>
-              <a
-                href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
-                className="link is-size-3 has-text-weight-light"
-              >
-                hello@nirnejak.com
-              </a>
-            </div>
-          </Fade>
+              <div>
+                <button type="submit" disabled={state.submitting}>
+                  SEND
+                </button>
+              </div>
+              <ValidationError errors={state.errors} />
+            </form>
+            <br />
+            <br />
+            <br />
+            <p className="is-size-3 has-text-black has-text-weight-bold">
+              or reach me at
+            </p>
+            <a
+              href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
+              className="link is-size-3 has-text-weight-light"
+            >
+              hello@nirnejak.com
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>
