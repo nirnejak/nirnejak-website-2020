@@ -24,17 +24,18 @@ const ContactSection: React.FC = () => {
   }, [state.succeeded])
 
   return (
-    <section className="hero is-medium" ref={ref}>
+    <section className="hero is-medium">
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Contact</h2>
           <motion.div
+            ref={ref}
             animate={controls}
             initial="hidden"
-            transition={{ delay: 0.5, duration: 0.3 }}
+            transition={{ duration: 0.3 }}
             variants={{
-              visible: { opacity: 1, scale: 1 },
-              hidden: { opacity: 0, scale: 0 },
+              visible: { opacity: 1, translateY: -5 },
+              hidden: { opacity: 0, translateY: 0 },
             }}
             className="is-raised has-text-centered"
             style={{

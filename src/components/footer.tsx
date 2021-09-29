@@ -17,7 +17,6 @@ const Footer: React.FC = () => {
     <div
       className="has-text-centered"
       style={{ margin: "100px 10px 200px 10px" }}
-      ref={ref}
     >
       <div className="is-size-3 has-text-weight-bold has-text-black">
         Follow Me on
@@ -34,18 +33,22 @@ const Footer: React.FC = () => {
           <rect width="64" height="5" fill="#027BFF" />
         </svg>
       </div>
-      <motion.div
-        animate={controls}
-        initial="hidden"
-        transition={{ delay: 0.5, duration: 0.3 }}
-        variants={{
-          visible: { opacity: 1, scale: 1 },
-          hidden: { opacity: 0, scale: 0 },
-        }}
+      <div
+        ref={ref}
         className="icons-container"
         style={{ flexWrap: "wrap", justifyContent: "center" }}
       >
-        <div className="icon-container" style={{ margin: "20px 15px" }}>
+        <motion.div
+          animate={controls}
+          initial="hidden"
+          transition={{ delay: 0.1, duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className="icon-container"
+          style={{ margin: "20px 15px" }}
+        >
           <a
             href="https://github.com/nirnejak/"
             title="Jitendra Nirnejak's Github Portfolio"
@@ -70,8 +73,18 @@ const Footer: React.FC = () => {
               </svg>
             </span>
           </a>
-        </div>
-        <div className="icon-container" style={{ margin: "20px 15px" }}>
+        </motion.div>
+        <motion.div
+          animate={controls}
+          initial="hidden"
+          transition={{ delay: 0.2, duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className="icon-container"
+          style={{ margin: "20px 15px" }}
+        >
           <a
             href="https://codepen.io/nirnejak/"
             title="Jitendra Nirnejak's Codepen Profile"
@@ -96,8 +109,18 @@ const Footer: React.FC = () => {
               </svg>
             </span>
           </a>
-        </div>
-        <div className="icon-container" style={{ margin: "20px 15px" }}>
+        </motion.div>
+        <motion.div
+          animate={controls}
+          initial="hidden"
+          transition={{ delay: 0.3, duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className="icon-container"
+          style={{ margin: "20px 15px" }}
+        >
           <a
             href="https://www.dribbble.com/nirnejak/"
             title="Jitendra Nirnejak's Dribbble Portfolio"
@@ -122,8 +145,18 @@ const Footer: React.FC = () => {
               </svg>
             </span>
           </a>
-        </div>
-        <div className="icon-container" style={{ margin: "20px 15px" }}>
+        </motion.div>
+        <motion.div
+          animate={controls}
+          initial="hidden"
+          transition={{ delay: 0.4, duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className="icon-container"
+          style={{ margin: "20px 15px" }}
+        >
           <a
             href="https://www.behance.net/nirnejak/"
             title="Jitendra Nirnejak's Behance Portfolio"
@@ -148,8 +181,18 @@ const Footer: React.FC = () => {
               </svg>
             </span>
           </a>
-        </div>
-        <div className="icon-container" style={{ margin: "20px 15px" }}>
+        </motion.div>
+        <motion.div
+          animate={controls}
+          initial="hidden"
+          transition={{ delay: 0.5, duration: 0.3 }}
+          variants={{
+            visible: { opacity: 1, scale: 1 },
+            hidden: { opacity: 0, scale: 0 },
+          }}
+          className="icon-container"
+          style={{ margin: "20px 15px" }}
+        >
           <a
             href="https://www.linkedin.com/in/nirnejak/"
             title="Jitendra Nirnejak's Linked Profile"
@@ -174,8 +217,8 @@ const Footer: React.FC = () => {
               </svg>
             </span>
           </a>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   )
 }

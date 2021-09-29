@@ -22,18 +22,18 @@ const SkillsSection: React.FC = () => {
   }, [controls, inView])
 
   return (
-    <section className="hero" ref={ref}>
+    <section className="hero">
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Skills</h2>
-          <div className="skills-container">
+          <div className="skills-container" ref={ref}>
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
@@ -43,10 +43,10 @@ const SkillsSection: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.2, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
@@ -56,10 +56,10 @@ const SkillsSection: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.3, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
@@ -69,10 +69,10 @@ const SkillsSection: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.4, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
@@ -85,8 +85,8 @@ const SkillsSection: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.5, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
@@ -96,10 +96,10 @@ const SkillsSection: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.6, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
@@ -109,10 +109,10 @@ const SkillsSection: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.7, duration: 0.3 }}
               variants={{
-                visible: { opacity: 1, scale: 1 },
-                hidden: { opacity: 0, scale: 0 },
+                visible: { opacity: 1, translateY: -5 },
+                hidden: { opacity: 0, translateY: 0 },
               }}
               className="skill-container"
             >
