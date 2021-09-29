@@ -67,24 +67,41 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <Link to="/" className="navbar-link">
+            <Link
+              to="/"
+              className="navbar-link"
+              onClick={() => setExpanded(false)}
+            >
               Home
             </Link>
-            <Link to="/blogs/" className="navbar-link">
+            <Link
+              to="/blogs/"
+              className="navbar-link"
+              onClick={() => setExpanded(false)}
+            >
               Blogs
             </Link>
-            <Link to="/uses/" className="navbar-link">
+            <Link
+              to="/uses/"
+              className="navbar-link"
+              onClick={() => setExpanded(false)}
+            >
               Uses
             </Link>
             <a
               href="https://github.com/nirnejak/"
               className="navbar-link"
+              onClick={() => setExpanded(false)}
               rel="noreferrer"
               target="_blank"
             >
               Projects
             </a>
-            <Link to="/contact" className="navbar-link">
+            <Link
+              to="/contact"
+              className="navbar-link"
+              onClick={() => setExpanded(false)}
+            >
               Contact
             </Link>
           </motion.div>
