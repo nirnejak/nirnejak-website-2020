@@ -56,8 +56,17 @@ const IndexPage: React.FC = () => {
               </svg>
             </div>
 
-            <motion.div className="icons-container" ref={ref}>
-              <div className="icon-container">
+            <div className="icons-container" ref={ref}>
+              <motion.div
+                animate={controls}
+                initial="hidden"
+                transition={{ delay: 0.5, duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
+                className="icon-container"
+              >
                 <a
                   href="https://github.com/nirnejak/"
                   title="Jitendra Nirnejak's Github Portfolio"
@@ -82,8 +91,17 @@ const IndexPage: React.FC = () => {
                     </svg>
                   </span>
                 </a>
-              </div>
-              <div className="icon-container">
+              </motion.div>
+              <motion.div
+                animate={controls}
+                initial="hidden"
+                transition={{ delay: 0.5, duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
+                className="icon-container"
+              >
                 <a
                   href="https://codepen.io/nirnejak/"
                   title="Jitendra Nirnejak's Codepen Profile"
@@ -108,8 +126,17 @@ const IndexPage: React.FC = () => {
                     </svg>
                   </span>
                 </a>
-              </div>
-              <div className="icon-container">
+              </motion.div>
+              <motion.div
+                animate={controls}
+                initial="hidden"
+                transition={{ delay: 0.5, duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
+                className="icon-container"
+              >
                 <a
                   href="https://www.dribbble.com/nirnejak/"
                   title="Jitendra Nirnejak's Dribbble Portfolio"
@@ -134,8 +161,17 @@ const IndexPage: React.FC = () => {
                     </svg>
                   </span>
                 </a>
-              </div>
-              <div className="icon-container">
+              </motion.div>
+              <motion.div
+                animate={controls}
+                initial="hidden"
+                transition={{ delay: 0.5, duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
+                className="icon-container"
+              >
                 <a
                   href="https://www.behance.net/nirnejak/"
                   title="Jitendra Nirnejak's Behance Portfolio"
@@ -160,8 +196,17 @@ const IndexPage: React.FC = () => {
                     </svg>
                   </span>
                 </a>
-              </div>
-              <div className="icon-container">
+              </motion.div>
+              <motion.div
+                animate={controls}
+                initial="hidden"
+                transition={{ delay: 0.5, duration: 0.3 }}
+                variants={{
+                  visible: { opacity: 1, scale: 1 },
+                  hidden: { opacity: 0, scale: 0 },
+                }}
+                className="icon-container"
+              >
                 <a
                   href="https://www.linkedin.com/in/nirnejak/"
                   title="Jitendra Nirnejak's Linked Profile"
@@ -186,8 +231,8 @@ const IndexPage: React.FC = () => {
                     </svg>
                   </span>
                 </a>
-              </div>
-            </motion.div>
+              </motion.div>
+            </div>
           </div>
         </div>
         <div className="hero-foot has-text-centered">
