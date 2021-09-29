@@ -13,6 +13,11 @@ const Footer: React.FC = () => {
     }
   }, [controls, inView])
 
+  const variants = {
+    visible: { opacity: 1, scale: 1 },
+    hidden: { opacity: 0, scale: 0 },
+  }
+
   return (
     <div
       className="has-text-centered"
@@ -42,10 +47,7 @@ const Footer: React.FC = () => {
           animate={controls}
           initial="hidden"
           transition={{ delay: 0, duration: 0.3 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
+          variants={variants}
           className="icon-container"
           style={{ margin: "20px 15px" }}
         >
@@ -78,10 +80,7 @@ const Footer: React.FC = () => {
           animate={controls}
           initial="hidden"
           transition={{ delay: 0.1, duration: 0.3 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
+          variants={variants}
           className="icon-container"
           style={{ margin: "20px 15px" }}
         >
@@ -114,10 +113,7 @@ const Footer: React.FC = () => {
           animate={controls}
           initial="hidden"
           transition={{ delay: 0.2, duration: 0.3 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
+          variants={variants}
           className="icon-container"
           style={{ margin: "20px 15px" }}
         >
@@ -150,10 +146,7 @@ const Footer: React.FC = () => {
           animate={controls}
           initial="hidden"
           transition={{ delay: 0.3, duration: 0.3 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
+          variants={variants}
           className="icon-container"
           style={{ margin: "20px 15px" }}
         >
@@ -186,10 +179,7 @@ const Footer: React.FC = () => {
           animate={controls}
           initial="hidden"
           transition={{ delay: 0.4, duration: 0.3 }}
-          variants={{
-            visible: { opacity: 1, scale: 1 },
-            hidden: { opacity: 0, scale: 0 },
-          }}
+          variants={variants}
           className="icon-container"
           style={{ margin: "20px 15px" }}
         >

@@ -21,6 +21,11 @@ const SkillsSection: React.FC = () => {
     }
   }, [controls, inView])
 
+  const variants = {
+    visible: { opacity: 1, translateY: -5 },
+    hidden: { opacity: 0, translateY: 0 },
+  }
+
   return (
     <section className="hero">
       <div className="hero-body">
@@ -31,10 +36,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img src={ReactLogo} alt="React.js" title="React.js" />
@@ -44,10 +46,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.1, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img src={GatsbyLogo} alt="Gatsby" title="Gatsby" />
@@ -57,10 +56,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.2, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img src={NodeLogo} alt="Node.js" title="Node.js" />
@@ -70,10 +66,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.3, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img src={VueLogo} alt="Vue.js" title="Vue.js" />
@@ -84,10 +77,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.4, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img src={FigmaLogo} alt="Figma" title="Figma" />
@@ -97,10 +87,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.5, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img src={AdobeXDLogo} alt="Adobe XD" title="Adobe XD" />
@@ -110,10 +97,7 @@ const SkillsSection: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.6, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="skill-container"
             >
               <img

@@ -16,6 +16,11 @@ const RecentBlogs: React.FC = () => {
     }
   }, [controls, inView])
 
+  const variants = {
+    visible: { opacity: 1, translateY: -5 },
+    hidden: { opacity: 0, translateY: 0 },
+  }
+
   return (
     <section className="hero">
       <div className="hero-body">
@@ -26,10 +31,7 @@ const RecentBlogs: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="image-content-container"
             >
               <a
@@ -53,10 +55,7 @@ const RecentBlogs: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.1, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="image-content-container"
             >
               <a
@@ -80,10 +79,7 @@ const RecentBlogs: React.FC = () => {
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.2, duration: 0.3 }}
-              variants={{
-                visible: { opacity: 1, translateY: -5 },
-                hidden: { opacity: 0, translateY: 0 },
-              }}
+              variants={variants}
               className="image-content-container"
             >
               <a
