@@ -81,13 +81,6 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
             >
               Blogs
             </Link>
-            <Link
-              to="/uses/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
-              Uses
-            </Link>
             <a
               href="https://github.com/nirnejak/"
               className="navbar-link"
@@ -98,6 +91,13 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
               Projects
             </a>
             <Link
+              to="/uses/"
+              className="navbar-link"
+              onClick={() => setExpanded(false)}
+            >
+              Uses
+            </Link>
+            <Link
               to="/contact"
               className="navbar-link"
               onClick={() => setExpanded(false)}
@@ -107,7 +107,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
           </motion.div>
           <div className="navbar-toggle-theme">
             {isDark ? (
-              <motion.svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -119,9 +119,9 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
               >
                 <path d="M20.958 15.325c.204-.486-.379-.9-.868-.684a7.684 7.684 0 0 1-3.101.648c-4.185 0-7.577-3.324-7.577-7.425a7.28 7.28 0 0 1 1.134-3.91c.284-.448-.057-1.068-.577-.936C5.96 4.041 3 7.613 3 11.862 3 16.909 7.175 21 12.326 21c3.9 0 7.24-2.345 8.632-5.675z" />
                 <path d="M15.611 3.103c-.53-.354-1.162.278-.809.808l.63.945a2.332 2.332 0 0 1 0 2.588l-.63.945c-.353.53.28 1.162.81.808l.944-.63a2.332 2.332 0 0 1 2.588 0l.945.63c.53.354 1.162-.278.808-.808l-.63-.945a2.332 2.332 0 0 1 0-2.588l.63-.945c.354-.53-.278-1.162-.809-.808l-.944.63a2.332 2.332 0 0 1-2.588 0l-.945-.63z" />
-              </motion.svg>
+              </svg>
             ) : (
-              <motion.svg
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
@@ -137,7 +137,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
                   clipRule="evenodd"
                   d="M12 1a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V2a1 1 0 0 1 1-1zM3.293 3.293a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414zm17.414 0a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 1 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0zM1 12a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2H2a1 1 0 0 1-1-1zm19 0a1 1 0 0 1 1-1h1a1 1 0 1 1 0 2h-1a1 1 0 0 1-1-1zM6.207 17.793a1 1 0 0 1 0 1.414l-1.5 1.5a1 1 0 0 1-1.414-1.414l1.5-1.5a1 1 0 0 1 1.414 0zm11.586 0a1 1 0 0 1 1.414 0l1.5 1.5a1 1 0 0 1-1.414 1.414l-1.5-1.5a1 1 0 0 1 0-1.414zM12 20a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1z"
                 />
-              </motion.svg>
+              </svg>
             )}
           </div>
         </div>
