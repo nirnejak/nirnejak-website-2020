@@ -2,6 +2,8 @@ import * as React from "react"
 
 import { Link } from "gatsby"
 
+import { motion } from "framer-motion"
+
 import SEO from "../components/seo"
 
 const NotFoundPage: React.FC = () => (
@@ -9,7 +11,12 @@ const NotFoundPage: React.FC = () => (
     <SEO title="404: Not found" />
     <div className="hero" style={{ marginTop: 150 }}>
       <div className="hero-body">
-        <div className="container">
+        <motion.div
+          initial={{ opacity: 0, translateY: 10 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+          className="container"
+        >
           <h1 className="is-size-1 has-text-black">NOT FOUND</h1>
           <br />
           <p className="is-size-3 has-text-weight-light">
@@ -39,7 +46,7 @@ const NotFoundPage: React.FC = () => (
             </span>
             Go back to home
           </Link>
-        </div>
+        </motion.div>
       </div>
     </div>
   </>

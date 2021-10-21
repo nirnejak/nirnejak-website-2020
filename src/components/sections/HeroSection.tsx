@@ -18,10 +18,8 @@ const HeroSection: React.FC = () => {
             </span>
             ,{" "}
             <span className="has-text-weight-bold is-gradient-2">Designer</span>
-            , and{" "}
-            <span className="has-text-weight-bold is-gradient-3">
-              Tech Blogger
-            </span>
+            , and not a{" "}
+            <span className="has-text-weight-bold is-gradient-3">Blogger</span>
           </p>
 
           <div style={{ margin: "30 0px" }}>
