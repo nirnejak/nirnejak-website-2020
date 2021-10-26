@@ -84,6 +84,6 @@
     "url": "https://github.com/nirnejak/nirnejak-website/issues"
   },
   "volta": {
-    "node": "14.18.0"
+    "node": "16.13.0"
   }
 }
