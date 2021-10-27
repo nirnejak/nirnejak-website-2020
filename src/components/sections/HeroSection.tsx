@@ -18,7 +18,7 @@ const HeroSection: React.FC = () => {
             </span>
             ,{" "}
             <span className="has-text-weight-bold is-gradient-2">Designer</span>
-            , and not a{" "}
+            , and definitely not a{" "}
             <span className="has-text-weight-bold is-gradient-3">Blogger</span>
           </p>
 
