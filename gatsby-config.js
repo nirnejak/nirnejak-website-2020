@@ -65,10 +65,10 @@ module.exports = {
         name: `Jitendra Nirnejak`,
         short_name: `nirnejak`,
         start_url: `/`,
-        background_color: `#027BFF`,
-        theme_color: `#027BFF`,
+        background_color: `#1e1e20`,
+        theme_color: `#1e1e20`,
         display: `fullscreen`,
-        icon: `src/images/logo.png`, // This path is relative to the root of the site.
+        icon: `src/images/logo.png`,
       },
     },
   ],
