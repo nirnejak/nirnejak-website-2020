@@ -66,7 +66,7 @@ const IndexPage: React.FC = () => {
               Design Tools
             </h2>
             <p className="is-size-3 has-text-weight-light">
-              Figma, Affinity Designer and Procreate
+              Figma, Affinity Photos and Procreate
             </p>
 
             <h2
