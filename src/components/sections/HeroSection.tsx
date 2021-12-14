@@ -7,19 +7,16 @@ const HeroSection: React.FC = () => {
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-          <h1 className="is-size-1 has-text-black">
+          <h1 className="text-7xl font-bold has-text-black">
             Hi, <br />
             I&apos;m Jitendra Nirnejak.
           </h1>
           <br />
-          <p className="is-size-3 has-text-weight-light">
-            <span className="has-text-weight-bold is-gradient-1">
-              Developer
-            </span>
-            ,{" "}
-            <span className="has-text-weight-bold is-gradient-2">Designer</span>
-            , and definitely not a{" "}
-            <span className="has-text-weight-bold is-gradient-3">Blogger</span>
+          <p className="text-3xl font-light mb-5">
+            <span className="font-bold is-gradient-1">Developer</span>,{" "}
+            <span className="font-bold is-gradient-2">Designer</span>, and
+            definitely not a{" "}
+            <span className="font-bold is-gradient-3">Blogger</span>
           </p>
 
           <div style={{ margin: "30 0px" }}>
@@ -183,7 +180,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="hero-foot has-text-centered">
+      <div className="hero-foot text-center">
         <span>
           <svg
             aria-hidden="true"

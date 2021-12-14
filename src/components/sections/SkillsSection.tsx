@@ -30,7 +30,7 @@ const SkillsSection: React.FC = () => {
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <h2 className="is-huge">Skills</h2>
+          <h2 className="text-9xl pb-10 font-bold">Skills</h2>
           <div className="skills-container" ref={ref}>
             <motion.div
               animate={controls}

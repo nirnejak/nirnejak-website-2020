@@ -19,13 +19,8 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <div
-      className="has-text-centered"
-      style={{ margin: "100px 10px 200px 10px" }}
-    >
-      <div className="is-size-3 has-text-weight-bold has-text-black">
-        Follow Me on
-      </div>
+    <div className="text-center" style={{ margin: "100px 10px 200px 10px" }}>
+      <div className="text-3xl font-bold has-text-black">Follow Me on</div>
 
       <div style={{ marginBottom: 10, marginTop: 10 }}>
         <svg

@@ -27,7 +27,7 @@ const ContactSection: React.FC = () => {
     <section className="hero is-medium">
       <div className="hero-body">
         <div className="container">
-          <h2 className="is-huge">Contact</h2>
+          <h2 className="text-9xl pb-10 font-bold">Contact</h2>
           <motion.div
             ref={ref}
             animate={controls}
@@ -37,7 +37,7 @@ const ContactSection: React.FC = () => {
               visible: { opacity: 1, translateY: -5 },
               hidden: { opacity: 0, translateY: 0 },
             }}
-            className="is-raised has-text-centered"
+            className="is-raised text-center"
             style={{
               borderRadius: "0.5em",
               padding: "100px 20px",
@@ -80,7 +80,11 @@ const ContactSection: React.FC = () => {
               </div>
               <br />
               <div>
-                <button type="submit" disabled={state.submitting}>
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  className="font-bold bg-white text-black tracking-widest"
+                >
                   SEND
                 </button>
               </div>
@@ -89,12 +93,10 @@ const ContactSection: React.FC = () => {
             <br />
             <br />
             <br />
-            <p className="is-size-3 has-text-black has-text-weight-bold">
-              or reach me at
-            </p>
+            <p className="text-3xl has-text-black font-bold">or reach me at</p>
             <a
               href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
-              className="link is-size-3 has-text-weight-light"
+              className="link text-3xl font-light"
             >
               hello@nirnejak.com
             </a>

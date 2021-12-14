@@ -54,41 +54,6 @@
   }
 }
 
-// Padding and Margin
-.is-marginless {
-  margin: 0 !important;
-}
-.is-paddingless {
-  padding: 0 !important;
-}
-.has-margin-auto {
-  margin: auto;
-}
-.has-margin-vertical-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.has-margin-horizontal-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-// Float
-.is-pulled-left {
-  float: left;
-}
-.is-pulled-right {
-  float: right;
-}
-
-.is-radiusless {
-  border-radius: none !important;
-}
-
-.is-shadowless {
-  box-shadow: none !important;
-}
-
 .is-raised {
   background-color: var(--color-body-background);
   box-shadow: var(--box-shadow-primary);

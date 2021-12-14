@@ -17,9 +17,9 @@ const NotFoundPage: React.FC = () => (
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="container"
         >
-          <h1 className="is-size-1 has-text-black">NOT FOUND</h1>
+          <h1 className="text-7xl has-text-black">NOT FOUND</h1>
           <br />
-          <p className="is-size-3 has-text-weight-light">
+          <p className="text-3xl font-light">
             You just hit a route that doesn&#39;t exist... the sadness.
           </p>
           <br />

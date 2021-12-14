@@ -25,7 +25,7 @@ const RecentBlogs: React.FC = () => {
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <h2 className="is-huge">Blogs</h2>
+          <h2 className="text-9xl pb-10 font-bold">Blogs</h2>
           <div className="image-contents-container" ref={ref}>
             <motion.div
               animate={controls}
@@ -46,7 +46,7 @@ const RecentBlogs: React.FC = () => {
                   width={400}
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
-                <p className="has-text-black has-text-weight-bold">
+                <p className="has-text-black font-bold">
                   Gatsby 3 Image - A Deep-dive into the new image API features
                 </p>
               </a>
@@ -70,7 +70,7 @@ const RecentBlogs: React.FC = () => {
                   width={400}
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
-                <p className="has-text-black has-text-weight-bold">
+                <p className="has-text-black font-bold">
                   How to integrate Gatsby with Shopify Store
                 </p>
               </a>
@@ -94,13 +94,13 @@ const RecentBlogs: React.FC = () => {
                   width={400}
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
-                <p className="has-text-black has-text-weight-bold">
+                <p className="has-text-black font-bold">
                   Setup ESLint for React with Prettier, pre-commit and VSCode
                 </p>
               </a>
             </motion.div>
           </div>
-          <div style={{ margin: 50 }} className="has-text-centered">
+          <div style={{ margin: 50 }} className="text-center">
             <Link to="/blogs/" className="link" style={{ marginRight: 0 }}>
               See All Blogs
             </Link>

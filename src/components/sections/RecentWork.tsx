@@ -24,7 +24,7 @@ const RecentWork: React.FC = () => {
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <h2 className="is-huge">Work</h2>
+          <h2 className="text-9xl pb-10 font-bold">Work</h2>
           <div className="image-contents-container" ref={ref}>
             <motion.div
               animate={controls}
@@ -46,11 +46,8 @@ const RecentWork: React.FC = () => {
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
                 <br />
-                <p className="has-text-black has-text-weight-bold">GitPro</p>
-                <p
-                  className="has-text-weight-light"
-                  style={{ marginBottom: 5 }}
-                >
+                <p className="has-text-black font-bold">GitPro</p>
+                <p className="font-light" style={{ marginBottom: 5 }}>
                   A platform to make repository management and developer
                   activity tracking easier.
                 </p>
@@ -76,11 +73,8 @@ const RecentWork: React.FC = () => {
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
                 <br />
-                <p className="has-text-black has-text-weight-bold">TellMe</p>
-                <p
-                  className="has-text-weight-light"
-                  style={{ marginBottom: 5 }}
-                >
+                <p className="has-text-black font-bold">TellMe</p>
+                <p className="font-light" style={{ marginBottom: 5 }}>
                   Application to collect and analyse irrigation data to reduce
                   water wastage.
                 </p>
@@ -106,13 +100,8 @@ const RecentWork: React.FC = () => {
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
                 <br />
-                <p className="has-text-black has-text-weight-bold">
-                  SwiftUI Tab App
-                </p>
-                <p
-                  className="has-text-weight-light"
-                  style={{ marginBottom: 5 }}
-                >
+                <p className="has-text-black font-bold">SwiftUI Tab App</p>
+                <p className="font-light" style={{ marginBottom: 5 }}>
                   A SwiftUI app for iOS for Task Management.
                 </p>
               </a>

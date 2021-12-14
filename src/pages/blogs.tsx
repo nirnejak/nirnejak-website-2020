@@ -173,7 +173,7 @@ const BlogsPage: React.FC = () => (
     <div className="hero is-fullheight">
       <div className="hero-body">
         <section className="container">
-          <h1 className="is-huge">Blogs</h1>
+          <h1 className="text-9xl pb-10 font-bold">Blogs</h1>
           <div className="image-contents-container">
             {blogs.map((blog, index) => (
               <motion.div
@@ -186,12 +186,12 @@ const BlogsPage: React.FC = () => (
                 <a href={blog.url} target="_blank" rel="noopener noreferrer">
                   {blog.image}
                   <p
-                    className="has-text-black has-text-weight-bold"
+                    className="has-text-black font-bold"
                     style={{ marginTop: 20 }}
                   >
                     {blog.title}
                   </p>
-                  <p className="has-text-weight-light has-text-secondary">
+                  <p className="font-light has-text-secondary">
                     {blog.description}
                   </p>
                 </a>

@@ -31,11 +31,9 @@ const IndexPage: React.FC = () => {
             }}
             className="container"
           >
-            <h1 className="is-size-1 has-text-black">Uses.</h1>
+            <h1 className="text-7xl font-bold has-text-black">Uses.</h1>
             <br />
-            <p className="is-size-3 has-text-weight-light">
-              What I&apos;m using for 2021
-            </p>
+            <p className="text-3xl font-light">What I&apos;m using for 2021</p>
 
             <div style={{ margin: "30 0px" }}>
               <svg
@@ -50,38 +48,38 @@ const IndexPage: React.FC = () => {
             </div>
 
             <h2
-              className="is-size-2 has-text-black"
+              className="text-5xl font-bold has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Languages and Frameworks
             </h2>
-            <p className="is-size-3 has-text-weight-light">
+            <p className="text-3xl font-light">
               React, Vue, Gatsby and Node.js
             </p>
 
             <h2
-              className="is-size-2 has-text-black"
+              className="text-5xl font-bold has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Design Tools
             </h2>
-            <p className="is-size-3 has-text-weight-light">
+            <p className="text-3xl font-light">
               Figma, Affinity Photos and Procreate
             </p>
 
             <h2
-              className="is-size-2 has-text-black"
+              className="text-5xl font-bold has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Terminal and Editor
             </h2>
-            <p className="is-size-3 has-text-weight-light">
+            <p className="text-3xl font-light">
               ZSH + Oh-my-zsh, iTerm, VS Code(
               <a
                 href="https://gist.github.com/nirnejak/3773427ef028723130d2e6d0abdab8e2/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="link is-size-3"
+                className="link text-3xl"
               >
                 Settings Gist
               </a>
@@ -89,34 +87,30 @@ const IndexPage: React.FC = () => {
             </p>
 
             <h2
-              className="is-size-2 has-text-black"
+              className="text-5xl font-bold has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Gear
             </h2>
-            <p className="is-size-3 has-text-weight-light">
+            <p className="text-3xl font-light">
               iPhone XR, iPad Pro 11, MacBook Pro(M1)
             </p>
 
             <h2
-              className="is-size-2 has-text-black"
+              className="text-5xl font-bold has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Podcasts, I listen to
             </h2>
-            <p className="is-size-3 has-text-weight-light">
-              Syntax and PodRocket
-            </p>
+            <p className="text-3xl font-light">Syntax and PodRocket</p>
 
             <h2
-              className="is-size-2 has-text-black"
+              className="text-5xl font-bold has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               What&apos;s for 2021
             </h2>
-            <p className="is-size-3 has-text-weight-light">
-              Typescript and GraphQL
-            </p>
+            <p className="text-3xl font-light">Typescript and GraphQL</p>
           </motion.div>
         </div>
       </section>
