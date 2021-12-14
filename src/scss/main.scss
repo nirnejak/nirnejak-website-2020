@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --font-sans-serif: "Space Grotesk", sans-serif;
 
