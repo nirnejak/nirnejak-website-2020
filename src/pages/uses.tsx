@@ -31,11 +31,11 @@ const IndexPage: React.FC = () => {
             }}
             className="container"
           >
-            <h1 className="text-7xl font-bold has-text-black">Uses.</h1>
-            <br />
+            <h1 className="text-7xl font-bold has-text-black mb-3">Uses.</h1>
+
             <p className="text-3xl font-light">What I&apos;m using for 2021</p>
 
-            <div style={{ margin: "30 0px" }}>
+            <div className="mt-5">
               <svg
                 width="64"
                 height="5"

@@ -101,19 +101,20 @@ const RecentBlogs: React.FC = () => {
             </motion.div>
           </div>
           <div style={{ margin: 50 }} className="text-center">
-            <Link to="/blogs/" className="link" style={{ marginRight: 0 }}>
+            <Link to="/blogs/" className="link">
               See All Blogs
             </Link>
-            <br />
-            <svg
-              width="64"
-              height="5"
-              viewBox="0 0 64 5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="64" height="5" fill="#027BFF" />
-            </svg>
+            <div className="flex justify-center mt-3">
+              <svg
+                width="64"
+                height="5"
+                viewBox="0 0 64 5"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <rect width="64" height="5" fill="#027BFF" />
+              </svg>
+            </div>
           </div>
         </div>
       </div>
