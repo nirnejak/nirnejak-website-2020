@@ -46,7 +46,7 @@ const RecentBlogs: React.FC = () => {
                   width={400}
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
-                <p className="has-text-black font-bold">
+                <p className="text-white font-bold">
                   Gatsby 3 Image - A Deep-dive into the new image API features
                 </p>
               </a>
@@ -70,7 +70,7 @@ const RecentBlogs: React.FC = () => {
                   width={400}
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
-                <p className="has-text-black font-bold">
+                <p className="text-white font-bold">
                   How to integrate Gatsby with Shopify Store
                 </p>
               </a>
@@ -94,7 +94,7 @@ const RecentBlogs: React.FC = () => {
                   width={400}
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
-                <p className="has-text-black font-bold">
+                <p className="text-white font-bold">
                   Setup ESLint for React with Prettier, pre-commit and VSCode
                 </p>
               </a>

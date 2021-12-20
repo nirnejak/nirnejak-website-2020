@@ -8,7 +8,7 @@ const IndexPage: React.FC = () => (
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-          <h1 className="text-7xl has-text-black">Thank You.</h1>
+          <h1 className="text-7xl text-white">Thank You.</h1>
           <br />
           <p className="text-3xl font-light">
             Thank you for your submission, I&apos;ll get back to you as soon as

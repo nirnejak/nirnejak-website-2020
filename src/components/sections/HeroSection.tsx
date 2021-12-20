@@ -7,7 +7,7 @@ const HeroSection: React.FC = () => {
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-          <h1 className="text-7xl font-bold has-text-black">
+          <h1 className="text-7xl font-bold text-white">
             Hi, <br />
             I&apos;m Jitendra Nirnejak.
           </h1>

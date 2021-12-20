@@ -68,7 +68,7 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop --port 7000  --open",
+    "develop": "cross-env GATSBY_GRAPHQL_IDE=playground gatsby develop --port 9000  --open",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",

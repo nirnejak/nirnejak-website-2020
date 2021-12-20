@@ -185,10 +185,7 @@ const BlogsPage: React.FC = () => (
               >
                 <a href={blog.url} target="_blank" rel="noopener noreferrer">
                   {blog.image}
-                  <p
-                    className="has-text-black font-bold"
-                    style={{ marginTop: 20 }}
-                  >
+                  <p className="text-white font-bold" style={{ marginTop: 20 }}>
                     {blog.title}
                   </p>
                   <p className="font-light has-text-secondary">

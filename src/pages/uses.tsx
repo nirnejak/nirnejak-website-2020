@@ -31,7 +31,7 @@ const IndexPage: React.FC = () => {
             }}
             className="container"
           >
-            <h1 className="text-7xl font-bold has-text-black mb-3">Uses.</h1>
+            <h1 className="text-7xl font-bold text-white mb-3">Uses.</h1>
 
             <p className="text-3xl font-light">What I&apos;m using for 2021</p>
 
@@ -48,7 +48,7 @@ const IndexPage: React.FC = () => {
             </div>
 
             <h2
-              className="text-5xl font-bold has-text-black"
+              className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Languages and Frameworks
@@ -58,7 +58,7 @@ const IndexPage: React.FC = () => {
             </p>
 
             <h2
-              className="text-5xl font-bold has-text-black"
+              className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Design Tools
@@ -68,7 +68,7 @@ const IndexPage: React.FC = () => {
             </p>
 
             <h2
-              className="text-5xl font-bold has-text-black"
+              className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Terminal and Editor
@@ -87,7 +87,7 @@ const IndexPage: React.FC = () => {
             </p>
 
             <h2
-              className="text-5xl font-bold has-text-black"
+              className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Gear
@@ -97,7 +97,7 @@ const IndexPage: React.FC = () => {
             </p>
 
             <h2
-              className="text-5xl font-bold has-text-black"
+              className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               Podcasts, I listen to
@@ -105,7 +105,7 @@ const IndexPage: React.FC = () => {
             <p className="text-3xl font-light">Syntax and PodRocket</p>
 
             <h2
-              className="text-5xl font-bold has-text-black"
+              className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
               What&apos;s for 2021

@@ -46,7 +46,7 @@ const RecentWork: React.FC = () => {
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
                 <br />
-                <p className="has-text-black font-bold">Draxlr</p>
+                <p className="text-white font-bold">Draxlr</p>
                 <p className="font-light" style={{ marginBottom: 5 }}>
                   A Platform to analyze and monitor your SQL Databases.
                 </p>
@@ -72,7 +72,7 @@ const RecentWork: React.FC = () => {
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
                 <br />
-                <p className="has-text-black font-bold">GitPro</p>
+                <p className="text-white font-bold">GitPro</p>
                 <p className="font-light" style={{ marginBottom: 5 }}>
                   A platform to make repository management and developer
                   activity tracking easier.
@@ -99,7 +99,7 @@ const RecentWork: React.FC = () => {
                   style={{ borderRadius: 7, marginBottom: 13 }}
                 />
                 <br />
-                <p className="has-text-black font-bold">TellMe</p>
+                <p className="text-white font-bold">TellMe</p>
                 <p className="font-light" style={{ marginBottom: 5 }}>
                   Application to collect and analyse irrigation data to reduce
                   water wastage.

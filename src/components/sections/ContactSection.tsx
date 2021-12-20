@@ -93,7 +93,7 @@ const ContactSection: React.FC = () => {
             <br />
             <br />
             <br />
-            <p className="text-3xl has-text-black font-bold">or reach me at</p>
+            <p className="text-3xl text-white font-bold">or reach me at</p>
             <a
               href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
               className="link text-3xl font-light"

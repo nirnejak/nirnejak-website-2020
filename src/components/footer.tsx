@@ -20,7 +20,7 @@ const Footer: React.FC = () => {
 
   return (
     <div className="text-center" style={{ margin: "100px 10px 200px 10px" }}>
-      <div className="text-3xl font-bold has-text-black">Follow Me on</div>
+      <div className="text-3xl font-bold text-white">Follow Me on</div>
 
       <div className="flex justify-center my-5">
         <svg

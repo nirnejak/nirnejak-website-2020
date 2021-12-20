@@ -17,7 +17,7 @@ const NotFoundPage: React.FC = () => (
           transition={{ duration: 0.3, ease: "easeOut" }}
           className="container"
         >
-          <h1 className="text-7xl has-text-black">NOT FOUND</h1>
+          <h1 className="text-7xl text-white font-bold">NOT FOUND</h1>
           <br />
           <p className="text-3xl font-light">
             You just hit a route that doesn&#39;t exist... the sadness.
@@ -26,7 +26,7 @@ const NotFoundPage: React.FC = () => (
           <br />
           <br />
           <br />
-          <Link to="/" className="link">
+          <Link to="/" className="text-white font-bold">
             <span style={{ marginRight: 10 }}>
               <svg
                 aria-hidden="true"
