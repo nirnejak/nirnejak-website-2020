@@ -173,12 +173,11 @@ const BlogsPage: React.FC = () => (
     <div className="hero is-fullheight">
       <div className="hero-body">
         <section className="container">
-          <h1 className="text-9xl pb-10 font-bold">Blogs</h1>
-          <div className="image-contents-container">
+          <h1 className="text-9xl text-gray-500 pb-10 font-bold">Blogs</h1>
+          <div className="grid grid-cols-3 gap-5">
             {blogs.map((blog, index) => (
               <motion.div
                 key={index}
-                className="image-content-container"
                 initial={{ opacity: 0, translateY: -5 }}
                 animate={{ opacity: 1, translateY: 0 }}
                 transition={{ duration: 0.3, delay: index * 0.1 }}
@@ -188,7 +187,7 @@ const BlogsPage: React.FC = () => (
                   <p className="text-white font-bold" style={{ marginTop: 20 }}>
                     {blog.title}
                   </p>
-                  <p className="font-light has-text-secondary">
+                  <p className="text-gray-500 has-text-secondary">
                     {blog.description}
                   </p>
                 </a>

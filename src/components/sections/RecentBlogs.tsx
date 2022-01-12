@@ -25,14 +25,13 @@ const RecentBlogs: React.FC = () => {
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <h2 className="text-9xl pb-10 font-bold">Blogs</h2>
-          <div className="image-contents-container" ref={ref}>
+          <h2 className="text-9xl text-gray-500 pb-10 font-bold">Blogs</h2>
+          <div className="grid grid-cols-3 gap-5" ref={ref}>
             <motion.div
               animate={controls}
               initial="hidden"
               transition={{ delay: 0, duration: 0.3 }}
               variants={variants}
-              className="image-content-container"
             >
               <a
                 href="https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/"
@@ -56,7 +55,6 @@ const RecentBlogs: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.1, duration: 0.3 }}
               variants={variants}
-              className="image-content-container"
             >
               <a
                 href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
@@ -80,7 +78,6 @@ const RecentBlogs: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.2, duration: 0.3 }}
               variants={variants}
-              className="image-content-container"
             >
               <a
                 href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"

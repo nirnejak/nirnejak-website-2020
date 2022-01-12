@@ -18,7 +18,7 @@ const IndexPage: React.FC = () => {
   return (
     <>
       <SEO title="Uses" />
-      <section className="hero">
+      <section className="hero text-gray-500">
         <div className="hero-body">
           <motion.div
             ref={ref}
@@ -31,9 +31,9 @@ const IndexPage: React.FC = () => {
             }}
             className="container"
           >
-            <h1 className="text-7xl font-bold text-white mb-3">Uses.</h1>
+            <h1 className="text-7xl font-bold text-white mb-3 mt-24">Uses.</h1>
 
-            <p className="text-3xl font-light">What I&apos;m using for 2021</p>
+            <p className="text-3xl">What I&apos;m using for 2021</p>
 
             <div className="mt-5">
               <svg
@@ -53,9 +53,7 @@ const IndexPage: React.FC = () => {
             >
               Languages and Frameworks
             </h2>
-            <p className="text-3xl font-light">
-              React, Vue, Gatsby and Node.js
-            </p>
+            <p className="text-3xl">React, Vue, Gatsby and Node.js</p>
 
             <h2
               className="text-5xl font-bold text-white"
@@ -63,9 +61,7 @@ const IndexPage: React.FC = () => {
             >
               Design Tools
             </h2>
-            <p className="text-3xl font-light">
-              Figma, Affinity Photos and Procreate
-            </p>
+            <p className="text-3xl">Figma, Affinity Photos and Procreate</p>
 
             <h2
               className="text-5xl font-bold text-white"
@@ -73,7 +69,7 @@ const IndexPage: React.FC = () => {
             >
               Terminal and Editor
             </h2>
-            <p className="text-3xl font-light">
+            <p className="text-3xl">
               ZSH + Oh-my-zsh, iTerm, VS Code(
               <a
                 href="https://gist.github.com/nirnejak/3773427ef028723130d2e6d0abdab8e2/"
@@ -92,9 +88,7 @@ const IndexPage: React.FC = () => {
             >
               Gear
             </h2>
-            <p className="text-3xl font-light">
-              iPhone XR, iPad Pro 11, MacBook Pro(M1)
-            </p>
+            <p className="text-3xl">iPhone XR, iPad Pro 11, MacBook Pro(M1)</p>
 
             <h2
               className="text-5xl font-bold text-white"
@@ -102,7 +96,7 @@ const IndexPage: React.FC = () => {
             >
               Podcasts, I listen to
             </h2>
-            <p className="text-3xl font-light">Syntax and PodRocket</p>
+            <p className="text-3xl">Syntax and PodRocket</p>
 
             <h2
               className="text-5xl font-bold text-white"
@@ -110,7 +104,7 @@ const IndexPage: React.FC = () => {
             >
               What&apos;s for 2021
             </h2>
-            <p className="text-3xl font-light">Typescript and GraphQL</p>
+            <p className="text-3xl">Typescript and GraphQL</p>
           </motion.div>
         </div>
       </section>

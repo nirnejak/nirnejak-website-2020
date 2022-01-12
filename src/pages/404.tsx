@@ -19,7 +19,7 @@ const NotFoundPage: React.FC = () => (
         >
           <h1 className="text-7xl text-white font-bold">NOT FOUND</h1>
           <br />
-          <p className="text-3xl font-light">
+          <p className="text-3xl text-gray-500">
             You just hit a route that doesn&#39;t exist... the sadness.
           </p>
           <br />

@@ -24,17 +24,16 @@ const RecentWork: React.FC = () => {
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <h2 className="text-9xl pb-10 font-bold">Work</h2>
-          <div className="image-contents-container" ref={ref}>
+          <h2 className="text-9xl text-gray-500 pb-10 font-bold">Work</h2>
+          <div className="grid grid-cols-3 gap-5" ref={ref}>
             <motion.div
               animate={controls}
               initial="hidden"
               transition={{ delay: 0, duration: 0.3 }}
               variants={variants}
-              className="image-content-container"
             >
               <a
-                href="http://gitpro.app/"
+                href="https://draxlr.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -47,7 +46,7 @@ const RecentWork: React.FC = () => {
                 />
                 <br />
                 <p className="text-white font-bold">Draxlr</p>
-                <p className="font-light" style={{ marginBottom: 5 }}>
+                <p className="text-gray-500" style={{ marginBottom: 5 }}>
                   A Platform to analyze and monitor your SQL Databases.
                 </p>
               </a>
@@ -57,10 +56,9 @@ const RecentWork: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.1, duration: 0.3 }}
               variants={variants}
-              className="image-content-container"
             >
               <a
-                href="http://gitpro.app/"
+                href="https://gitpro.app/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -73,7 +71,7 @@ const RecentWork: React.FC = () => {
                 />
                 <br />
                 <p className="text-white font-bold">GitPro</p>
-                <p className="font-light" style={{ marginBottom: 5 }}>
+                <p className="text-gray-500" style={{ marginBottom: 5 }}>
                   A platform to make repository management and developer
                   activity tracking easier.
                 </p>
@@ -84,7 +82,6 @@ const RecentWork: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.2, duration: 0.3 }}
               variants={variants}
-              className="image-content-container"
             >
               <a
                 href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard/"
@@ -100,7 +97,7 @@ const RecentWork: React.FC = () => {
                 />
                 <br />
                 <p className="text-white font-bold">TellMe</p>
-                <p className="font-light" style={{ marginBottom: 5 }}>
+                <p className="text-gray-500" style={{ marginBottom: 5 }}>
                   Application to collect and analyse irrigation data to reduce
                   water wastage.
                 </p>

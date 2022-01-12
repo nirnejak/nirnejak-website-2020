@@ -1,26 +1,19 @@
-.is-gradient-1 {
+.gradient-1 {
   background: -webkit-linear-gradient(top left, #03cffe, #397dd6);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.is-gradient-2 {
+.gradient-2 {
   background: -webkit-linear-gradient(top left, #e95d0f, #d61f5f);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.is-gradient-3 {
+.gradient-3 {
   background: -webkit-linear-gradient(top left, #ffc900, #ffa101);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.link {
-  text-decoration: none;
-  color: var(--color-link);
-  font-size: 1rem;
-  font-weight: bold;
 }

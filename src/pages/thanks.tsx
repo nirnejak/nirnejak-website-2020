@@ -10,7 +10,7 @@ const IndexPage: React.FC = () => (
         <div className="container">
           <h1 className="text-7xl text-white">Thank You.</h1>
           <br />
-          <p className="text-3xl font-light">
+          <p className="text-3xl text-gray-500 mb-28">
             Thank you for your submission, I&apos;ll get back to you as soon as
             possible.
           </p>

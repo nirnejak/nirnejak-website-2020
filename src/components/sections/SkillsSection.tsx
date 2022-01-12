@@ -30,14 +30,13 @@ const SkillsSection: React.FC = () => {
     <section className="hero">
       <div className="hero-body">
         <div className="container">
-          <h2 className="text-9xl pb-10 font-bold">Skills</h2>
-          <div className="skills-container" ref={ref}>
+          <h2 className="text-9xl text-gray-500 pb-10 font-bold">Skills</h2>
+          <div className="flex justify-center" ref={ref}>
             <motion.div
               animate={controls}
               initial="hidden"
               transition={{ delay: 0, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img src={ReactLogo} alt="React.js" title="React.js" />
             </motion.div>
@@ -47,7 +46,6 @@ const SkillsSection: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.1, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img src={GatsbyLogo} alt="Gatsby" title="Gatsby" />
             </motion.div>
@@ -57,7 +55,6 @@ const SkillsSection: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.2, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img src={NodeLogo} alt="Node.js" title="Node.js" />
             </motion.div>
@@ -67,18 +64,16 @@ const SkillsSection: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.3, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img src={VueLogo} alt="Vue.js" title="Vue.js" />
             </motion.div>
           </div>
-          <div className="skills-container">
+          <div className="flex justify-center">
             <motion.div
               animate={controls}
               initial="hidden"
               transition={{ delay: 0.4, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img src={FigmaLogo} alt="Figma" title="Figma" />
             </motion.div>
@@ -88,7 +83,6 @@ const SkillsSection: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.5, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img src={AdobeXDLogo} alt="Adobe XD" title="Adobe XD" />
             </motion.div>
@@ -98,7 +92,6 @@ const SkillsSection: React.FC = () => {
               initial="hidden"
               transition={{ delay: 0.6, duration: 0.3 }}
               variants={variants}
-              className="skill-container"
             >
               <img
                 src={PhotoshopLogo}

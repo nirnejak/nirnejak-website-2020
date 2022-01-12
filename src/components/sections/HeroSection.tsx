@@ -4,19 +4,19 @@ import { motion } from "framer-motion"
 
 const HeroSection: React.FC = () => {
   return (
-    <section className="hero is-fullheight-with-navbar">
-      <div className="hero-body">
-        <div className="container">
+    <>
+      <section className="h-screen flex justify-center flex-col">
+        <div className="container pb-72">
           <h1 className="text-7xl font-bold text-white">
             Hi, <br />
             I&apos;m Jitendra Nirnejak.
           </h1>
           <br />
-          <p className="text-3xl font-light mb-5">
-            <span className="font-bold is-gradient-1">Developer</span>,{" "}
-            <span className="font-bold is-gradient-2">Designer</span>, and
+          <p className="text-3xl text-gray-500 mb-5">
+            <span className="font-bold gradient-1">Developer</span>,{" "}
+            <span className="font-bold gradient-2">Designer</span>, and
             definitely not a{" "}
-            <span className="font-bold is-gradient-3">Blogger</span>
+            <span className="font-bold gradient-3">Blogger</span>
           </p>
 
           <div style={{ margin: "30 0px" }}>
@@ -179,8 +179,8 @@ const HeroSection: React.FC = () => {
             </motion.div>
           </div>
         </div>
-      </div>
-      <div className="hero-foot text-center">
+      </section>
+      <section className="hero-foot text-center">
         <span>
           <svg
             aria-hidden="true"
@@ -200,8 +200,8 @@ const HeroSection: React.FC = () => {
         </span>
         <br />
         <br />
-      </div>
-    </section>
+      </section>
+    </>
   )
 }
 

@@ -27,7 +27,7 @@ const ContactSection: React.FC = () => {
     <section className="hero is-medium">
       <div className="hero-body">
         <div className="container">
-          <h2 className="text-9xl pb-10 font-bold">Contact</h2>
+          <h2 className="text-9xl text-gray-500 pb-10 font-bold">Contact</h2>
           <motion.div
             ref={ref}
             animate={controls}
@@ -50,7 +50,13 @@ const ContactSection: React.FC = () => {
               onSubmit={handleSubmit}
             >
               <div>
-                <input type="text" name="name" id="name" placeholder="Name" />
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Name"
+                  className="bg-transparent p-5 text-white"
+                />
                 <ValidationError
                   prefix="Name"
                   field="name"
@@ -63,6 +69,7 @@ const ContactSection: React.FC = () => {
                   name="email"
                   id="email"
                   placeholder="Email"
+                  className="bg-transparent p-5 text-white"
                 />
                 <ValidationError
                   prefix="Email"
@@ -71,7 +78,12 @@ const ContactSection: React.FC = () => {
                 />
               </div>
               <div>
-                <textarea name="message" id="message" placeholder="Message" />
+                <textarea
+                  name="message"
+                  id="message"
+                  placeholder="Message"
+                  className="bg-transparent p-5 text-white"
+                />
                 <ValidationError
                   prefix="Message"
                   field="message"
@@ -83,7 +95,7 @@ const ContactSection: React.FC = () => {
                 <button
                   type="submit"
                   disabled={state.submitting}
-                  className="font-bold bg-white text-black tracking-widest"
+                  className="font-bold bg-white text-black tracking-widest p-5"
                 >
                   SEND
                 </button>
@@ -93,10 +105,10 @@ const ContactSection: React.FC = () => {
             <br />
             <br />
             <br />
-            <p className="text-3xl text-white font-bold">or reach me at</p>
+            <p className="text-3xl text-white font-bold mb-5">or reach me at</p>
             <a
               href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
-              className="link text-3xl font-light"
+              className="text-3xl text-gray-500"
             >
               hello@nirnejak.com
             </a>
