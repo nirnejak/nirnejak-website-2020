@@ -34,7 +34,7 @@ const IndexPage: React.FC = () => {
             <h1 className="is-size-1 has-text-black">Uses.</h1>
             <br />
             <p className="is-size-3 has-text-weight-light">
-              What I&apos;m using for 2021
+              What I&apos;m using for 2022
             </p>
 
             <div style={{ margin: "30 0px" }}>
@@ -112,10 +112,10 @@ const IndexPage: React.FC = () => {
               className="is-size-2 has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
-              What&apos;s for 2021
+              What&apos;s for 2
             </h2>
             <p className="is-size-3 has-text-weight-light">
-              Typescript and GraphQL
+              Testing and Typescript
             </p>
           </motion.div>
         </div>
