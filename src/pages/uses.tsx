@@ -33,7 +33,7 @@ const IndexPage: React.FC = () => {
           >
             <h1 className="text-7xl font-bold text-white mb-3 mt-24">Uses.</h1>
 
-            <p className="text-3xl">What I&apos;m using for 2021</p>
+            <p className="text-3xl">What I&apos;m using for 2022</p>
 
             <div className="mt-5">
               <svg
@@ -102,9 +102,9 @@ const IndexPage: React.FC = () => {
               className="text-5xl font-bold text-white"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
-              What&apos;s for 2021
+              What&apos;s for 2
             </h2>
-            <p className="text-3xl">Typescript and GraphQL</p>
+            <p className="text-3xl">Testing and Typescript</p>
           </motion.div>
         </div>
       </section>
