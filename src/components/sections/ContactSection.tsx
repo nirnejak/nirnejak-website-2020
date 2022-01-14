@@ -50,7 +50,7 @@ const ContactSection: React.FC = () => {
                 name="name"
                 id="name"
                 placeholder="Name"
-                className="bg-transparent p-5 text-white"
+                className="bg-zinc-800 p-5 text-white rounded-lg mb-5 w-96"
               />
               <ValidationError
                 prefix="Name"
@@ -64,7 +64,7 @@ const ContactSection: React.FC = () => {
                 name="email"
                 id="email"
                 placeholder="Email"
-                className="bg-transparent p-5 text-white"
+                className="bg-zinc-800 p-5 text-white rounded-lg mb-5 w-96"
               />
               <ValidationError
                 prefix="Email"
@@ -77,7 +77,7 @@ const ContactSection: React.FC = () => {
                 name="message"
                 id="message"
                 placeholder="Message"
-                className="bg-transparent p-5 text-white"
+                className="bg-zinc-800 p-5 text-white rounded-lg mb-5 w-96"
               />
               <ValidationError
                 prefix="Message"
@@ -90,7 +90,7 @@ const ContactSection: React.FC = () => {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="font-bold bg-white text-black tracking-widest p-5"
+                className="font-bold bg-white text-black tracking-widest rounded-lg p-5 mb-5 w-96"
               >
                 SEND
               </button>
