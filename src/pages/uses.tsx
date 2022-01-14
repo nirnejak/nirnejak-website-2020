@@ -112,7 +112,7 @@ const IndexPage: React.FC = () => {
               className="is-size-2 has-text-black"
               style={{ marginBottom: 10, marginTop: 70 }}
             >
-              What&apos;s for 2
+              What&apos;s for 2022
             </h2>
             <p className="is-size-3 has-text-weight-light">
               Testing and Typescript
