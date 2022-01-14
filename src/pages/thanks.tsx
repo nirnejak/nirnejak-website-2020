@@ -2,7 +2,7 @@ import * as React from "react"
 
 import SEO from "../components/seo"
 
-const IndexPage: React.FC = () => (
+const ThanksPage: React.FC = () => (
   <>
     <SEO title="Thank You for Submission" />
     <section className="hero is-fullheight-with-navbar">
@@ -32,4 +32,4 @@ const IndexPage: React.FC = () => (
   </>
 )
 
-export default IndexPage
+export default ThanksPage

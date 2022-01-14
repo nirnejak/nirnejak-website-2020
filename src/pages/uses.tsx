@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion"
 
 import SEO from "../components/seo"
 
-const IndexPage: React.FC = () => {
+const UsesPage: React.FC = () => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
 
@@ -112,4 +112,4 @@ const IndexPage: React.FC = () => {
   )
 }
 
-export default IndexPage
+export default UsesPage
