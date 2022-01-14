@@ -18,7 +18,7 @@ const blogs = [
         alt="Gatsby v3 Image API"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title: "Gatsby 3 Image - A Deep-dive into the new image API features",
@@ -35,7 +35,7 @@ const blogs = [
         alt="Gatsby and Shopify"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title: "How to integrate Gatsby with Shopify Store",
@@ -52,7 +52,7 @@ const blogs = [
         alt="ESLint, Prettier and VSCode"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title: "Setup ESLint for React with Prettier, pre-commit and VSCode",
@@ -69,7 +69,7 @@ const blogs = [
         alt="Form"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title:
@@ -88,7 +88,7 @@ const blogs = [
         alt="Gatsby Plugins"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title: "Must have Gatsby plugins for a great blog",
@@ -106,7 +106,7 @@ const blogs = [
         alt="Vue Plugin"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title: "Building custom plugins for Vue.js | Supercharge Development",
@@ -123,7 +123,7 @@ const blogs = [
         alt="Vuesax"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title: "Vuesax - The all new Vue Component Library",
@@ -140,7 +140,7 @@ const blogs = [
         alt="JSDoc for React"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title:
@@ -158,7 +158,7 @@ const blogs = [
         alt="AdminBro"
         placeholder="blurred"
         width={400}
-        style={{ borderRadius: 7 }}
+        className="rounded-md mb-5"
       />
     ),
     title:
@@ -170,32 +170,30 @@ const blogs = [
 const BlogsPage: React.FC = () => (
   <>
     <SEO title="Blogs" />
-    <div className="hero is-fullheight">
-      <div className="hero-body">
-        <section className="container">
-          <h1 className="text-9xl text-gray-500 pb-10 font-bold">Blogs</h1>
-          <div className="grid grid-cols-3 gap-5">
-            {blogs.map((blog, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, translateY: -5 }}
-                animate={{ opacity: 1, translateY: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-              >
-                <a href={blog.url} target="_blank" rel="noopener noreferrer">
-                  {blog.image}
-                  <p className="text-white font-bold" style={{ marginTop: 20 }}>
-                    {blog.title}
-                  </p>
-                  <p className="text-gray-500 has-text-secondary">
-                    {blog.description}
-                  </p>
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-      </div>
+    <div className="mt-24">
+      <section className="container">
+        <h1 className="text-9xl text-gray-500 pb-10 font-bold">Blogs</h1>
+        <div className="grid grid-cols-3 gap-5">
+          {blogs.map((blog, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, translateY: -5 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <a href={blog.url} target="_blank" rel="noopener noreferrer">
+                {blog.image}
+                <p className="text-white font-bold" style={{ marginTop: 20 }}>
+                  {blog.title}
+                </p>
+                <p className="text-gray-500 has-text-secondary">
+                  {blog.description}
+                </p>
+              </a>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </div>
   </>
 )

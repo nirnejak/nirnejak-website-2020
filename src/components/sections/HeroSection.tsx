@@ -180,7 +180,7 @@ const HeroSection: React.FC = () => {
           </div>
         </div>
       </section>
-      <section className="hero-foot text-center">
+      <section className="text-center text-white">
         <span>
           <svg
             aria-hidden="true"

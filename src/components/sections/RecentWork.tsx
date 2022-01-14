@@ -21,89 +21,87 @@ const RecentWork: React.FC = () => {
   }
 
   return (
-    <section className="hero">
-      <div className="hero-body">
-        <div className="container">
-          <h2 className="text-9xl text-gray-500 pb-10 font-bold">Work</h2>
-          <div className="grid grid-cols-3 gap-5" ref={ref}>
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0, duration: 0.3 }}
-              variants={variants}
+    <section className="mt-24">
+      <div className="container">
+        <h2 className="text-9xl text-gray-500 pb-10 font-bold">Work</h2>
+        <div className="grid grid-cols-3 gap-5" ref={ref}>
+          <motion.div
+            animate={controls}
+            initial="hidden"
+            transition={{ delay: 0, duration: 0.3 }}
+            variants={variants}
+          >
+            <a
+              href="https://draxlr.com/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://draxlr.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StaticImage
-                  src="../../images/works/draxlr.png"
-                  alt="Draxlr Cover"
-                  placeholder="blurred"
-                  width={400}
-                  style={{ borderRadius: 7, marginBottom: 13 }}
-                />
-                <br />
-                <p className="text-white font-bold">Draxlr</p>
-                <p className="text-gray-500" style={{ marginBottom: 5 }}>
-                  A Platform to analyze and monitor your SQL Databases.
-                </p>
-              </a>
-            </motion.div>
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.1, duration: 0.3 }}
-              variants={variants}
+              <StaticImage
+                src="../../images/works/draxlr.png"
+                alt="Draxlr Cover"
+                placeholder="blurred"
+                width={400}
+                className="rounded-md mb-5"
+              />
+              <br />
+              <p className="text-white font-bold">Draxlr</p>
+              <p className="text-gray-500 mb-3">
+                A Platform to analyze and monitor your SQL Databases.
+              </p>
+            </a>
+          </motion.div>
+          <motion.div
+            animate={controls}
+            initial="hidden"
+            transition={{ delay: 0.1, duration: 0.3 }}
+            variants={variants}
+          >
+            <a
+              href="https://gitpro.app/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://gitpro.app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StaticImage
-                  src="../../images/works/gitpro.jpeg"
-                  alt="GitPro Screenshot"
-                  placeholder="blurred"
-                  width={400}
-                  style={{ borderRadius: 7, marginBottom: 13 }}
-                />
-                <br />
-                <p className="text-white font-bold">GitPro</p>
-                <p className="text-gray-500" style={{ marginBottom: 5 }}>
-                  A platform to make repository management and developer
-                  activity tracking easier.
-                </p>
-              </a>
-            </motion.div>
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.2, duration: 0.3 }}
-              variants={variants}
+              <StaticImage
+                src="../../images/works/gitpro.jpeg"
+                alt="GitPro Screenshot"
+                placeholder="blurred"
+                width={400}
+                className="rounded-md mb-5"
+              />
+              <br />
+              <p className="text-white font-bold">GitPro</p>
+              <p className="text-gray-500 mb-3">
+                A platform to make repository management and developer activity
+                tracking easier.
+              </p>
+            </a>
+          </motion.div>
+          <motion.div
+            animate={controls}
+            initial="hidden"
+            transition={{ delay: 0.2, duration: 0.3 }}
+            variants={variants}
+          >
+            <a
+              href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard/"
+              target="_blank"
+              rel="noopener noreferrer"
             >
-              <a
-                href="https://dribbble.com/shots/4645605-TellMe-UI-Dashboard/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StaticImage
-                  src="../../images/works/tellme.png"
-                  alt="TellMe App Screenshot"
-                  placeholder="blurred"
-                  width={400}
-                  style={{ borderRadius: 7, marginBottom: 13 }}
-                />
-                <br />
-                <p className="text-white font-bold">TellMe</p>
-                <p className="text-gray-500" style={{ marginBottom: 5 }}>
-                  Application to collect and analyse irrigation data to reduce
-                  water wastage.
-                </p>
-              </a>
-            </motion.div>
-          </div>
+              <StaticImage
+                src="../../images/works/tellme.png"
+                alt="TellMe App Screenshot"
+                placeholder="blurred"
+                width={400}
+                className="rounded-md mb-5"
+              />
+              <br />
+              <p className="text-white font-bold">TellMe</p>
+              <p className="text-gray-500 mb-3">
+                Application to collect and analyse irrigation data to reduce
+                water wastage.
+              </p>
+            </a>
+          </motion.div>
         </div>
       </div>
     </section>

@@ -4,8 +4,6 @@ import { Link } from "gatsby"
 
 import { motion } from "framer-motion"
 
-import "./header.scss"
-
 type HeaderProps = {
   isDark: boolean
   toggleIsDark: any
@@ -23,90 +21,89 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
   }, [isExpanded])
 
   return (
-    <nav className="navbar">
+    <nav className="mt-10">
       <div className="container">
-        <div className="navbar-container">
-          <div className="navbar-toggle-menu">
-            {isExpanded ? (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-white"
-                onClick={() => setExpanded(false)}
-              >
-                <path d="M20 20L4 4m16 0L4 20" />
-              </svg>
-            ) : (
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-white"
-                onClick={() => setExpanded(true)}
-              >
-                <path d="M3 6h18M3 12h18M3 18h18" />
-              </svg>
-            )}
-          </div>
-          <motion.div
-            className={`navbar-links ${isExpanded ? "is-visible" : ""}`}
-            initial={{ opacity: 0, translateY: -10 }}
-            animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+        <div className="md:hidden">
+          {isExpanded ? (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-white"
+              onClick={() => setExpanded(false)}
+            >
+              <path d="M20 20L4 4m16 0L4 20" />
+            </svg>
+          ) : (
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className="text-white"
+              onClick={() => setExpanded(true)}
+            >
+              <path d="M3 6h18M3 12h18M3 18h18" />
+            </svg>
+          )}
+        </div>
+        <motion.div
+          className={`flex ${isExpanded ? "flex" : ""}`}
+          initial={{ opacity: 0, translateY: -10 }}
+          animate={{ opacity: 1, translateY: 0 }}
+          transition={{ duration: 0.3, ease: "easeOut" }}
+        >
+          <Link
+            to="/"
+            className="text-white font-bold mr-12"
+            onClick={() => setExpanded(false)}
           >
-            <Link
-              to="/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
-              Home
-            </Link>
-            <Link
-              to="/blogs/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
-              Blogs
-            </Link>
-            <a
-              href="https://github.com/nirnejak/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-              rel="noreferrer"
-              target="_blank"
-            >
-              Projects
-            </a>
-            <Link
-              to="/uses/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
-              Uses
-            </Link>
-            <Link
-              to="/contact"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
-              Contact
-            </Link>
-          </motion.div>
-          <div className="navbar-toggle-theme">
-            {/* {isDark ? (
+            Home
+          </Link>
+          <Link
+            to="/blogs/"
+            className="text-white font-bold mr-12"
+            onClick={() => setExpanded(false)}
+          >
+            Blogs
+          </Link>
+          <a
+            href="https://github.com/nirnejak/"
+            className="text-white font-bold mr-12"
+            onClick={() => setExpanded(false)}
+            rel="noreferrer"
+            target="_blank"
+          >
+            Projects
+          </a>
+          <Link
+            to="/uses/"
+            className="text-white font-bold mr-12"
+            onClick={() => setExpanded(false)}
+          >
+            Uses
+          </Link>
+          <Link
+            to="/contact"
+            className="text-white font-bold mr-12"
+            onClick={() => setExpanded(false)}
+          >
+            Contact
+          </Link>
+        </motion.div>
+        <div className="navbar-toggle-theme">
+          {/* {isDark ? (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -139,7 +136,6 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
                 />
               </svg>
             )} */}
-          </div>
         </div>
       </div>
     </nav>
