@@ -36,6 +36,7 @@ const SkillsSection: React.FC = () => {
             initial="hidden"
             transition={{ delay: 0, duration: 0.3 }}
             variants={variants}
+            className="mr-10"
           >
             <img src={ReactLogo} alt="React.js" title="React.js" />
           </motion.div>
@@ -45,6 +46,7 @@ const SkillsSection: React.FC = () => {
             initial="hidden"
             transition={{ delay: 0.1, duration: 0.3 }}
             variants={variants}
+            className="mr-10"
           >
             <img src={GatsbyLogo} alt="Gatsby" title="Gatsby" />
           </motion.div>
@@ -54,6 +56,7 @@ const SkillsSection: React.FC = () => {
             initial="hidden"
             transition={{ delay: 0.2, duration: 0.3 }}
             variants={variants}
+            className="mr-10"
           >
             <img src={NodeLogo} alt="Node.js" title="Node.js" />
           </motion.div>
@@ -67,12 +70,13 @@ const SkillsSection: React.FC = () => {
             <img src={VueLogo} alt="Vue.js" title="Vue.js" />
           </motion.div>
         </div>
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
           <motion.div
             animate={controls}
             initial="hidden"
             transition={{ delay: 0.4, duration: 0.3 }}
             variants={variants}
+            className="mr-10"
           >
             <img src={FigmaLogo} alt="Figma" title="Figma" />
           </motion.div>
@@ -82,6 +86,7 @@ const SkillsSection: React.FC = () => {
             initial="hidden"
             transition={{ delay: 0.5, duration: 0.3 }}
             variants={variants}
+            className="mr-10"
           >
             <img src={AdobeXDLogo} alt="Adobe XD" title="Adobe XD" />
           </motion.div>

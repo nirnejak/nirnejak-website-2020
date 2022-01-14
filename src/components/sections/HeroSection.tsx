@@ -5,8 +5,8 @@ import { motion } from "framer-motion"
 const HeroSection: React.FC = () => {
   return (
     <>
-      <section className="h-screen flex justify-center flex-col">
-        <div className="container pb-72">
+      <section className="flex justify-center flex-col my-72">
+        <div className="container">
           <h1 className="text-7xl font-bold text-white">
             Hi, <br />
             I&apos;m Jitendra Nirnejak.
@@ -19,7 +19,7 @@ const HeroSection: React.FC = () => {
             <span className="font-bold gradient-3">Blogger</span>
           </p>
 
-          <div style={{ margin: "30 0px" }}>
+          <div className="my-5">
             <svg
               width="64"
               height="5"
@@ -31,7 +31,7 @@ const HeroSection: React.FC = () => {
             </svg>
           </div>
 
-          <div className="icons-container">
+          <div className="icons-container flex flex-wrap justify-start w-full">
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
@@ -44,7 +44,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="fa-2x">
+                <span className="text-3xl">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -73,7 +73,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="fa-2x">
+                <span className="text-3xl">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -102,7 +102,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="fa-2x">
+                <span className="text-3xl">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -131,7 +131,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="fa-2x">
+                <span className="text-3xl">
                   <svg
                     aria-hidden="true"
                     focusable="false"
@@ -160,7 +160,7 @@ const HeroSection: React.FC = () => {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <span className="fa-2x">
+                <span className="text-3xl">
                   <svg
                     aria-hidden="true"
                     focusable="false"

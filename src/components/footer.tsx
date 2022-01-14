@@ -35,8 +35,7 @@ const Footer: React.FC = () => {
       </div>
       <div
         ref={ref}
-        className="icons-container"
-        style={{ flexWrap: "wrap", justifyContent: "center" }}
+        className="icons-container flex flex-wrap justify-center w-full"
       >
         <motion.div
           animate={controls}
@@ -52,7 +51,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-2x">
+            <span className="text-3xl">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -85,7 +84,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-2x">
+            <span className="text-3xl">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -118,7 +117,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-2x">
+            <span className="text-3xl">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -151,7 +150,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-2x">
+            <span className="text-3xl">
               <svg
                 aria-hidden="true"
                 focusable="false"
@@ -184,7 +183,7 @@ const Footer: React.FC = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <span className="fa-2x">
+            <span className="text-3xl">
               <svg
                 aria-hidden="true"
                 focusable="false"

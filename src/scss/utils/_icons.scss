@@ -1,9 +1,4 @@
 .icons-container {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-
-  width: 100%;
   margin: 0 auto;
   & > .icon-container {
     padding: 0.8em 1em;
@@ -33,8 +28,4 @@ svg:not(:root).svg-inline--fa {
   height: 1em;
   overflow: visible;
   vertical-align: -0.125em;
-}
-
-.fa-2x {
-  font-size: 2em;
 }
