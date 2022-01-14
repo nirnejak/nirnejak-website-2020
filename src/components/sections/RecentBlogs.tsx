@@ -25,7 +25,10 @@ const RecentBlogs: React.FC = () => {
     <section className="mt-24">
       <div className="container">
         <h2 className="text-9xl text-gray-500 pb-10 font-bold">Blogs</h2>
-        <div className="grid grid-cols-3 gap-5" ref={ref}>
+        <div
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5"
+          ref={ref}
+        >
           <motion.div
             animate={controls}
             initial="hidden"

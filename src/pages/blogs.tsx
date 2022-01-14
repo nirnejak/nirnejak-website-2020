@@ -173,7 +173,7 @@ const BlogsPage: React.FC = () => (
     <div className="mt-24">
       <section className="container">
         <h1 className="text-9xl text-gray-500 pb-10 font-bold">Blogs</h1>
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {blogs.map((blog, index) => (
             <motion.div
               key={index}

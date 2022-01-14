@@ -36,7 +36,7 @@ const ContactSection: React.FC = () => {
             visible: { opacity: 1, translateY: -5 },
             hidden: { opacity: 0, translateY: 0 },
           }}
-          className="is-raised text-center rounded-lg p-24"
+          className="is-raised text-center rounded-lg py-24"
         >
           <form
             name="contact"
