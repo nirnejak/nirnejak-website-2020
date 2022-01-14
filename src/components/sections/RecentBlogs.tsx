@@ -42,7 +42,7 @@ const RecentBlogs: React.FC = () => {
                 alt="Gatsby v3 Image API"
                 placeholder="blurred"
                 width={400}
-                className="rounded-md mb-5"
+                className="rounded-md mb-4"
               />
               <p className="text-white font-bold">
                 Gatsby 3 Image - A Deep-dive into the new image API features
@@ -65,7 +65,7 @@ const RecentBlogs: React.FC = () => {
                 alt="Gatsby and Shopify"
                 placeholder="blurred"
                 width={400}
-                className="rounded-md mb-5"
+                className="rounded-md mb-4"
               />
               <p className="text-white font-bold">
                 How to integrate Gatsby with Shopify Store
@@ -88,7 +88,7 @@ const RecentBlogs: React.FC = () => {
                 alt="ESLint, Prettier and VSCode"
                 placeholder="blurred"
                 width={400}
-                className="rounded-md mb-5"
+                className="rounded-md mb-4"
               />
               <p className="text-white font-bold">
                 Setup ESLint for React with Prettier, pre-commit and VSCode

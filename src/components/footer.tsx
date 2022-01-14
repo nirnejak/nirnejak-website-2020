@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
   }
 
   return (
-    <div className="text-center" style={{ margin: "100px 10px 200px 10px" }}>
+    <div className="text-center my-96">
       <div className="text-3xl font-bold text-white">Follow Me on</div>
 
       <div className="flex justify-center my-5">
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
       </div>
       <div
         ref={ref}
-        className="icons-container flex flex-wrap justify-center w-full"
+        className="icons-container flex flex-wrap justify-center w-full gap-4"
       >
         <motion.div
           animate={controls}
@@ -43,7 +43,6 @@ const Footer: React.FC = () => {
           transition={{ delay: 0, duration: 0.3 }}
           variants={variants}
           className="icon-container"
-          style={{ margin: "20px 15px" }}
         >
           <a
             href="https://github.com/nirnejak/"
@@ -76,7 +75,6 @@ const Footer: React.FC = () => {
           transition={{ delay: 0.1, duration: 0.3 }}
           variants={variants}
           className="icon-container"
-          style={{ margin: "20px 15px" }}
         >
           <a
             href="https://codepen.io/nirnejak/"
@@ -109,7 +107,6 @@ const Footer: React.FC = () => {
           transition={{ delay: 0.2, duration: 0.3 }}
           variants={variants}
           className="icon-container"
-          style={{ margin: "20px 15px" }}
         >
           <a
             href="https://www.dribbble.com/nirnejak/"
@@ -142,7 +139,6 @@ const Footer: React.FC = () => {
           transition={{ delay: 0.3, duration: 0.3 }}
           variants={variants}
           className="icon-container"
-          style={{ margin: "20px 15px" }}
         >
           <a
             href="https://www.behance.net/nirnejak/"
@@ -175,7 +171,6 @@ const Footer: React.FC = () => {
           transition={{ delay: 0.4, duration: 0.3 }}
           variants={variants}
           className="icon-container"
-          style={{ margin: "20px 15px" }}
         >
           <a
             href="https://www.linkedin.com/in/nirnejak/"
