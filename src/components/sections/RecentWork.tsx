@@ -34,6 +34,35 @@ const RecentWork: React.FC = () => {
               className="image-content-container"
             >
               <a
+                href="https://draxlr.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <StaticImage
+                  src="../../images/works/draxlr.png"
+                  alt="Draxlr"
+                  placeholder="blurred"
+                  width={400}
+                  style={{ borderRadius: 7, marginBottom: 13 }}
+                />
+                <br />
+                <p className="has-text-black has-text-weight-bold">Draxlr</p>
+                <p
+                  className="has-text-weight-light"
+                  style={{ marginBottom: 5 }}
+                >
+                  A Platform to analyze and monitor your SQL Databases.
+                </p>
+              </a>
+            </motion.div>
+            <motion.div
+              animate={controls}
+              initial="hidden"
+              transition={{ delay: 0.1, duration: 0.3 }}
+              variants={variants}
+              className="image-content-container"
+            >
+              <a
                 href="http://gitpro.app/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -59,7 +88,7 @@ const RecentWork: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.1, duration: 0.3 }}
+              transition={{ delay: 0.2, duration: 0.3 }}
               variants={variants}
               className="image-content-container"
             >
@@ -83,37 +112,6 @@ const RecentWork: React.FC = () => {
                 >
                   Application to collect and analyse irrigation data to reduce
                   water wastage.
-                </p>
-              </a>
-            </motion.div>
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.2, duration: 0.3 }}
-              variants={variants}
-              className="image-content-container"
-            >
-              <a
-                href="https://github.com/nirnejak/swift-tab-app/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StaticImage
-                  src="../../images/works/swiftui.png"
-                  alt="SwiftUI App"
-                  placeholder="blurred"
-                  width={400}
-                  style={{ borderRadius: 7, marginBottom: 13 }}
-                />
-                <br />
-                <p className="has-text-black has-text-weight-bold">
-                  SwiftUI Tab App
-                </p>
-                <p
-                  className="has-text-weight-light"
-                  style={{ marginBottom: 5 }}
-                >
-                  A SwiftUI app for iOS for Task Management.
                 </p>
               </a>
             </motion.div>
