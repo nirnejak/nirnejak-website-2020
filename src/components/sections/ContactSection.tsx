@@ -5,11 +5,15 @@ import { navigate } from "gatsby"
 
 import { useForm, ValidationError } from "@formspree/react"
 import { motion, useAnimation } from "framer-motion"
+import useSound from "use-sound"
+
+import thunkSfx from "../../sounds/thunk.wav"
 
 const ContactSection: React.FC = () => {
   const [state, handleSubmit] = useForm("xgerdbkz")
   const controls = useAnimation()
   const [ref, inView] = useInView()
+  const [play] = useSound(thunkSfx)
 
   React.useEffect(() => {
     if (inView) {
@@ -80,7 +84,11 @@ const ContactSection: React.FC = () => {
               </div>
               <br />
               <div>
-                <button type="submit" disabled={state.submitting}>
+                <button
+                  type="submit"
+                  disabled={state.submitting}
+                  onClick={() => play()}
+                >
                   SEND
                 </button>
               </div>

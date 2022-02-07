@@ -3,6 +3,9 @@ import * as React from "react"
 import { Link } from "gatsby"
 
 import { motion } from "framer-motion"
+import useSound from "use-sound"
+
+import tickSfx from "../sounds/tick.wav"
 
 import "./header.scss"
 
@@ -13,6 +16,7 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
   const [isExpanded, setExpanded] = React.useState(false)
+  const [play] = useSound(tickSfx)
 
   React.useEffect(() => {
     if (isExpanded) {
@@ -21,6 +25,11 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
       document.body.style.overflowY = "visible"
     }
   }, [isExpanded])
+
+  const handleClick = () => {
+    setExpanded(false)
+    play()
+  }
 
   return (
     <nav className="navbar">
@@ -67,41 +76,25 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
             animate={{ opacity: 1, translateY: 0 }}
             transition={{ duration: 0.3, ease: "easeOut" }}
           >
-            <Link
-              to="/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
+            <Link to="/" className="navbar-link" onClick={handleClick}>
               Home
             </Link>
-            <Link
-              to="/blogs/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
+            <Link to="/blogs/" className="navbar-link" onClick={handleClick}>
               Blogs
             </Link>
             <a
               href="https://github.com/nirnejak/"
               className="navbar-link"
-              onClick={() => setExpanded(false)}
+              onClick={handleClick}
               rel="noreferrer"
               target="_blank"
             >
               Projects
             </a>
-            <Link
-              to="/uses/"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
+            <Link to="/uses/" className="navbar-link" onClick={handleClick}>
               Uses
             </Link>
-            <Link
-              to="/contact"
-              className="navbar-link"
-              onClick={() => setExpanded(false)}
-            >
+            <Link to="/contact" className="navbar-link" onClick={handleClick}>
               Contact
             </Link>
           </motion.div>

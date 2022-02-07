@@ -5,10 +5,15 @@ import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import { motion, useAnimation } from "framer-motion"
+import useSound from "use-sound"
+
+import tickSfx from "../../sounds/tick.wav"
 
 const RecentBlogs: React.FC = () => {
   const controls = useAnimation()
   const [ref, inView] = useInView()
+
+  const [play] = useSound(tickSfx)
 
   React.useEffect(() => {
     if (inView) {
@@ -101,7 +106,12 @@ const RecentBlogs: React.FC = () => {
             </motion.div>
           </div>
           <div style={{ margin: 50 }} className="has-text-centered">
-            <Link to="/blogs/" className="link" style={{ marginRight: 0 }}>
+            <Link
+              to="/blogs/"
+              className="link"
+              style={{ marginRight: 0 }}
+              onClick={() => play()}
+            >
               See All Blogs
             </Link>
             <br />
