@@ -17,6 +17,9 @@
     & > a {
       color: var(--color-link);
     }
+    & > svg > path {
+      color: var(--color-link);
+    }
   }
 }
 
