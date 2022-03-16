@@ -13,12 +13,11 @@ const HeroSection: React.FC = () => {
   const [iconColor, setIconColor] = React.useState("#000")
 
   React.useEffect(() => {
-    if (
-      window.matchMedia &&
-      window.matchMedia("(prefers-color-scheme: dark)").matches
-    ) {
-      setIconColor("#fff")
-    }
+    window
+      .matchMedia("(prefers-color-scheme: dark)")
+      .addEventListener("change", (event) => {
+        setIconColor(event.matches ? "#fff" : "#000")
+      })
   }, [])
 
   return (
