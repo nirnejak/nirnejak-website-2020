@@ -56,7 +56,7 @@ const IndexPage: React.FC = () => {
               Languages and Frameworks
             </h2>
             <p className="is-size-3 has-text-weight-light">
-              React, Vue, Gatsby and Node.js
+              TypeScript, React, Vue and Node.js
             </p>
 
             <h2
