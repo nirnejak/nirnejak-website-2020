@@ -5,7 +5,11 @@ import Header from "../components/header"
 
 import "../scss/main.scss"
 
-const Layout: React.FC = ({ children }) => {
+type Props = {
+  children: React.ReactNode
+}
+
+const Layout: React.FC<Props> = ({ children }) => {
   const [isDark, setIsDark] = React.useState(true)
 
   // const setDark = () => {
