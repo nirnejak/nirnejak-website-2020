@@ -8,7 +8,7 @@
     "akar-icons": "^1.9.18",
     "cross-env": "^7.0.3",
     "dotenv": "^16.0.1",
-    "framer-motion": "^6.3.12",
+    "framer-motion": "^6.3.13",
     "gatsby": "^4.17.0",
     "gatsby-plugin-catch-links": "^4.17.0",
     "gatsby-plugin-google-gtag": "^4.17.0",
