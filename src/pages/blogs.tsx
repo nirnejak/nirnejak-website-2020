@@ -9,6 +9,24 @@ import SEO from "../components/seo"
 const blogs = [
   {
     author: "Jitendra Nirnejak",
+    date: "19 July 2022",
+    description:
+      "Draxlr is the first BI tool with full support for PlanetScale Databases. Build Filter, Sort, Summarize and Visualize your MySQL Database from PlanetScale.",
+    image: (
+      <StaticImage
+        src="../images/blogs/planetscale_draxlr.png"
+        alt="PlanetScale Support for Draxlr"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
+    title:
+      "Build Dashboards and Setup Slack Alerts on your PlanetScale Database",
+    url: "https://www.draxlr.com/blogs/build-dashboards-and-setup-slack-alerts-on-your-planetScale-database/",
+  },
+  {
+    author: "Jitendra Nirnejak",
     date: "1 Jun 2021",
     description:
       "A closer look into the new image api of Gatsby 3. What's new, what's changed and what's gone.",

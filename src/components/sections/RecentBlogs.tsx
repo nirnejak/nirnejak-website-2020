@@ -40,6 +40,31 @@ const RecentBlogs: React.FC = () => {
               className="image-content-container"
             >
               <a
+                href="https://www.draxlr.com/blogs/build-dashboards-and-setup-slack-alerts-on-your-planetScale-database/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <StaticImage
+                  src="../../images/blogs/planetscale_draxlr.png"
+                  alt="PlanetScale Support for Draxlr"
+                  placeholder="blurred"
+                  width={400}
+                  style={{ borderRadius: 7, marginBottom: 13 }}
+                />
+                <p className="has-text-black has-text-weight-bold">
+                  Build Dashboards and Setup Slack Alerts on your PlanetScale
+                  Database
+                </p>
+              </a>
+            </motion.div>
+            <motion.div
+              animate={controls}
+              initial="hidden"
+              transition={{ delay: 0, duration: 0.3 }}
+              variants={variants}
+              className="image-content-container"
+            >
+              <a
                 href="https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -77,30 +102,6 @@ const RecentBlogs: React.FC = () => {
                 />
                 <p className="has-text-black has-text-weight-bold">
                   How to integrate Gatsby with Shopify Store
-                </p>
-              </a>
-            </motion.div>
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.2, duration: 0.3 }}
-              variants={variants}
-              className="image-content-container"
-            >
-              <a
-                href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StaticImage
-                  src="../../images/blogs/eslint.png"
-                  alt="ESLint, Prettier and VSCode"
-                  placeholder="blurred"
-                  width={400}
-                  style={{ borderRadius: 7, marginBottom: 13 }}
-                />
-                <p className="has-text-black has-text-weight-bold">
-                  Setup ESLint for React with Prettier, pre-commit and VSCode
                 </p>
               </a>
             </motion.div>
