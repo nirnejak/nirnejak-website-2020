@@ -26,22 +26,12 @@ const HeroSection: React.FC = () => {
     <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
-          <motion.h1
-            animate={{ opacity: 1, translateY: 0 }}
-            initial={{ opacity: 0, translateY: 15 }}
-            transition={{ delay: 0, duration: 0.3 }}
-            className="is-size-1 has-text-black"
-          >
+          <h1 className="is-size-1 has-text-black">
             Hi, <br />
             I&apos;m Jitendra Nirnejak.
-          </motion.h1>
+          </h1>
           <br />
-          <motion.p
-            className="is-size-3 has-text-weight-light"
-            animate={{ opacity: 1, translateY: 0 }}
-            initial={{ opacity: 0, translateY: 10 }}
-            transition={{ delay: 0.1, duration: 0.3 }}
-          >
+          <p className="is-size-3 has-text-weight-light">
             <span className="has-text-weight-bold is-gradient-1">
               Developer
             </span>
@@ -49,7 +39,7 @@ const HeroSection: React.FC = () => {
             <span className="has-text-weight-bold is-gradient-2">Designer</span>
             , and definitely not a{" "}
             <span className="has-text-weight-bold is-gradient-3">Blogger</span>
-          </motion.p>
+          </p>
 
           <div style={{ margin: "30 0px" }}>
             <svg
@@ -67,7 +57,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.3, duration: 0.3 }}
+              transition={{ delay: 0, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -92,7 +82,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.35, duration: 0.3 }}
+              transition={{ delay: 0.05, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -107,7 +97,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.4, duration: 0.3 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -122,7 +112,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.45, duration: 0.3 }}
+              transition={{ delay: 0.15, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -137,7 +127,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.2, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -152,7 +142,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.55, duration: 0.3 }}
+              transition={{ delay: 0.3, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -172,7 +162,7 @@ const HeroSection: React.FC = () => {
           <motion.svg
             animate={{ opacity: 1, translateY: 0 }}
             initial={{ opacity: 0, translateY: -10 }}
-            transition={{ delay: 0.3, duration: 0.3 }}
+            transition={{ duration: 0.3 }}
             aria-hidden="true"
             focusable="false"
             data-prefix="fas"
