@@ -89,7 +89,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
               rel="noreferrer"
               target="_blank"
             >
-              Projects
+              Work
             </a>
             <Link to="/uses/" className="navbar-link" onClick={handleClick}>
               Uses
