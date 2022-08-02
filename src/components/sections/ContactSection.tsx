@@ -3,17 +3,22 @@ import { useInView } from "react-intersection-observer"
 
 import { navigate } from "gatsby"
 
-import { useForm, ValidationError } from "@formspree/react"
 import { motion, useAnimation } from "framer-motion"
 import useSound from "use-sound"
 
 import thunkSfx from "../../sounds/thunk.wav"
 
 const ContactSection: React.FC = () => {
-  const [state, handleSubmit] = useForm("xgerdbkz")
   const controls = useAnimation()
   const [ref, inView] = useInView()
   const [play] = useSound(thunkSfx)
+
+  const [isSubmitting, setIsSubmitting] = React.useState(false)
+  const [state, setState] = React.useState<{
+    name: string
+    email: string
+    message: string
+  }>({ name: "", email: "", message: "" })
 
   React.useEffect(() => {
     if (inView) {
@@ -21,11 +26,27 @@ const ContactSection: React.FC = () => {
     }
   }, [controls, inView])
 
-  React.useEffect(() => {
-    if (state.succeeded) {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setState({ ...state, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault()
+    setIsSubmitting(true)
+    const response = await fetch("https://formspree.io/f/xgerdbkz", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(state),
+    })
+    const data = await response.json()
+    setIsSubmitting(false)
+
+    if (data.ok) {
       navigate("/thanks/")
     }
-  }, [state.succeeded])
+  }
 
   return (
     <section className="hero is-medium">
@@ -47,52 +68,43 @@ const ContactSection: React.FC = () => {
               padding: "100px 20px",
             }}
           >
-            <form
-              name="contact"
-              method="post"
-              action="/thanks/"
-              onSubmit={handleSubmit}
-            >
+            <form onSubmit={handleSubmit}>
               <div>
-                <input type="text" name="name" id="name" placeholder="Name" />
-                <ValidationError
-                  prefix="Name"
-                  field="name"
-                  errors={state.errors}
+                <input
+                  type="text"
+                  placeholder="Name"
+                  name="name"
+                  value={state.name}
+                  onChange={handleChange}
                 />
               </div>
               <div>
                 <input
                   type="email"
-                  name="email"
-                  id="email"
                   placeholder="Email"
-                />
-                <ValidationError
-                  prefix="Email"
-                  field="email"
-                  errors={state.errors}
+                  name="email"
+                  value={state.email}
+                  onChange={handleChange}
                 />
               </div>
               <div>
-                <textarea name="message" id="message" placeholder="Message" />
-                <ValidationError
-                  prefix="Message"
-                  field="message"
-                  errors={state.errors}
+                <textarea
+                  placeholder="Message"
+                  name="message"
+                  value={state.message}
+                  onChange={handleChange}
                 />
               </div>
               <br />
               <div>
                 <button
                   type="submit"
-                  disabled={state.submitting}
+                  disabled={isSubmitting}
                   onClick={() => play()}
                 >
-                  SEND
+                  {isSubmitting ? "SENDING..." : "SEND"}
                 </button>
               </div>
-              <ValidationError errors={state.errors} />
             </form>
             <br />
             <br />
@@ -104,7 +116,7 @@ const ContactSection: React.FC = () => {
               href="mailto:hello@nirnejak.com&subject=Website%20Enquiry"
               className="link is-size-3 has-text-weight-light"
             >
-              hello@nirnejak.com
+              jeetnirnejak@gmail.com
             </a>
           </motion.div>
         </div>
