@@ -74,7 +74,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
             className={`navbar-links ${isExpanded ? "is-visible" : ""}`}
             initial={{ opacity: 0, translateY: -10 }}
             animate={{ opacity: 1, translateY: 0 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
+            transition={{ delay: 0.3, duration: 0.3, ease: "easeOut" }}
           >
             <Link to="/" className="navbar-link" onClick={handleClick}>
               Home
