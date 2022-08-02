@@ -1,0 +1,17 @@
+svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#texture {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999;
+  width: 100%;
+  height: calc(100vh + 200px);
+  opacity: 0.25;
+  pointer-events: none;
+  transform: translateY(0px);
+  filter: contrast(30%) brightness(70%);
+}
