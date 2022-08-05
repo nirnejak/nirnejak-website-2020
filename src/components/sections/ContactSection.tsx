@@ -65,7 +65,7 @@ const ContactSection: React.FC = () => {
             className="is-raised has-text-centered"
             style={{
               borderRadius: "0.5em",
-              padding: "100px 20px",
+              padding: "60px 20px",
             }}
           >
             <form onSubmit={handleSubmit}>
