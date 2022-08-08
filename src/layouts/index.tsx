@@ -1,8 +1,8 @@
 import * as React from "react"
 
 import Background from "../components/atoms/Background"
-import Footer from "../components/footer"
-import Header from "../components/header"
+import Footer from "../components/molecules/Footer"
+import Header from "../components/molecules/Header"
 
 import "../scss/main.scss"
 
