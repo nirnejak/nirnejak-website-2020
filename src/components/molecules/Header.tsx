@@ -5,7 +5,7 @@ import { Link } from "gatsby"
 import { motion } from "framer-motion"
 import useSound from "use-sound"
 
-import tickSfx from "../sounds/tick.wav"
+import tickSfx from "../../sounds/tick.wav"
 
 import "./header.scss"
 
