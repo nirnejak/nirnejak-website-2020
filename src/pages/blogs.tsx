@@ -185,41 +185,42 @@ const blogs = [
   },
 ]
 
+export const Head: React.FC = () => {
+  return <SEO title="Blogs" />
+}
+
 const BlogsPage: React.FC = () => (
-  <>
-    <SEO title="Blogs" />
-    <div className="hero is-fullheight">
-      <div className="hero-body">
-        <section className="container">
-          <h1 className="is-huge">Blogs</h1>
-          <div className="image-contents-container">
-            {blogs.map((blog, index) => (
-              <motion.div
-                key={index}
-                className="image-content-container"
-                initial={{ opacity: 0, translateY: -5 }}
-                animate={{ opacity: 1, translateY: 0 }}
-                transition={{ duration: 0.3, delay: index * 0.1 }}
-              >
-                <a href={blog.url} target="_blank" rel="noopener noreferrer">
-                  {blog.image}
-                  <p
-                    className="has-text-black has-text-weight-bold"
-                    style={{ marginTop: 20 }}
-                  >
-                    {blog.title}
-                  </p>
-                  <p className="has-text-weight-light has-text-secondary">
-                    {blog.description}
-                  </p>
-                </a>
-              </motion.div>
-            ))}
-          </div>
-        </section>
-      </div>
+  <div className="hero is-fullheight">
+    <div className="hero-body">
+      <section className="container">
+        <h1 className="is-huge">Blogs</h1>
+        <div className="image-contents-container">
+          {blogs.map((blog, index) => (
+            <motion.div
+              key={index}
+              className="image-content-container"
+              initial={{ opacity: 0, translateY: -5 }}
+              animate={{ opacity: 1, translateY: 0 }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
+            >
+              <a href={blog.url} target="_blank" rel="noopener noreferrer">
+                {blog.image}
+                <p
+                  className="has-text-black has-text-weight-bold"
+                  style={{ marginTop: 20 }}
+                >
+                  {blog.title}
+                </p>
+                <p className="has-text-weight-light has-text-secondary">
+                  {blog.description}
+                </p>
+              </a>
+            </motion.div>
+          ))}
+        </div>
+      </section>
     </div>
-  </>
+  </div>
 )
 
 export default BlogsPage
