@@ -7,7 +7,7 @@ import useSound from "use-sound"
 
 import tickSfx from "../../sounds/tick.wav"
 
-import "./header.scss"
+import "./Header.scss"
 
 type HeaderProps = {
   isDark: boolean
