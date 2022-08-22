@@ -32,6 +32,16 @@
   &.is-fullheight {
     min-height: 100vh;
   }
+  &.is-large {
+    & > .hero-body {
+      padding: 18rem 6rem;
+    }
+  }
+  &.is-medium {
+    & > .hero-body {
+      padding: 9rem 4.5rem;
+    }
+  }
 
   .hero-head,
   .hero-foot {
