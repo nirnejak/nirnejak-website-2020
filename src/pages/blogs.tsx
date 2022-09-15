@@ -9,6 +9,23 @@ import SEO from "../components/seo"
 const blogs = [
   {
     author: "Jitendra Nirnejak",
+    date: "15 September 2022",
+    description:
+      "A guide to storing and querying json data in postgres, details of various postgres json operators and functions, when and how to use them.",
+    image: (
+      <StaticImage
+        src="../images/blogs/postgres_json.png"
+        alt="Postgres JSON data type"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
+    title: "Postgres JSON data type and how to query it?",
+    url: "https://www.draxlr.com/blogs/postgres-json-data-type-and-how-to-query-it/",
+  },
+  {
+    author: "Jitendra Nirnejak",
     date: "19 July 2022",
     description:
       "Draxlr is the first BI tool with full support for PlanetScale Databases. Build Filter, Sort, Summarize and Visualize your MySQL Database from PlanetScale.",

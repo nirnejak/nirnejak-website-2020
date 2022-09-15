@@ -40,6 +40,30 @@ const RecentBlogs: React.FC = () => {
               className="image-content-container"
             >
               <a
+                href="https://www.draxlr.com/blogs/postgres-json-data-type-and-how-to-query-it/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <StaticImage
+                  src="../../images/blogs/postgres_json.png"
+                  alt="PlanetScale Support for Draxlr"
+                  placeholder="blurred"
+                  width={400}
+                  style={{ borderRadius: 7, marginBottom: 13 }}
+                />
+                <p className="has-text-black has-text-weight-bold">
+                  Postgres JSON data type and how to query it?
+                </p>
+              </a>
+            </motion.div>
+            <motion.div
+              animate={controls}
+              initial="hidden"
+              transition={{ delay: 0, duration: 0.3 }}
+              variants={variants}
+              className="image-content-container"
+            >
+              <a
                 href="https://www.draxlr.com/blogs/build-dashboards-and-setup-slack-alerts-on-your-planetScale-database/"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -78,30 +102,6 @@ const RecentBlogs: React.FC = () => {
                 />
                 <p className="has-text-black has-text-weight-bold">
                   Gatsby 3 Image - A Deep-dive into the new image API features
-                </p>
-              </a>
-            </motion.div>
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.1, duration: 0.3 }}
-              variants={variants}
-              className="image-content-container"
-            >
-              <a
-                href="https://www.inkoop.io/blog/setup-eslint-for-react-with-prettier-pre-commit-and-vscode/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <StaticImage
-                  src="../../images/blogs/gatsby_shopify.png"
-                  alt="Gatsby and Shopify"
-                  placeholder="blurred"
-                  width={400}
-                  style={{ borderRadius: 7, marginBottom: 13 }}
-                />
-                <p className="has-text-black has-text-weight-bold">
-                  How to integrate Gatsby with Shopify Store
                 </p>
               </a>
             </motion.div>
