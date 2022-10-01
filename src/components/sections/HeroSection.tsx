@@ -6,6 +6,7 @@ import {
   DribbbleFill,
   BehanceFill,
   LinkedinFill,
+  ChevronDown,
 } from "akar-icons"
 import { motion } from "framer-motion"
 
@@ -158,28 +159,13 @@ const HeroSection: React.FC = () => {
         </div>
       </div>
       <div className="hero-foot has-text-centered">
-        <span>
-          <motion.svg
-            animate={{ opacity: 1, translateY: 0 }}
-            initial={{ opacity: 0, translateY: -10 }}
-            transition={{ duration: 0.3 }}
-            aria-hidden="true"
-            focusable="false"
-            data-prefix="fas"
-            data-icon="angle-double-down"
-            className="svg-inline--fa fa-angle-double-down fa-w-10"
-            role="img"
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 320 512"
-          >
-            <path
-              fill="currentColor"
-              d="M143 256.3L7 120.3c-9.4-9.4-9.4-24.6 0-33.9l22.6-22.6c9.4-9.4 24.6-9.4 33.9 0l96.4 96.4 96.4-96.4c9.4-9.4 24.6-9.4 33.9 0L313 86.3c9.4 9.4 9.4 24.6 0 33.9l-136 136c-9.4 9.5-24.6 9.5-34 .1zm34 192l136-136c9.4-9.4 9.4-24.6 0-33.9l-22.6-22.6c-9.4-9.4-24.6-9.4-33.9 0L160 352.1l-96.4-96.4c-9.4-9.4-24.6-9.4-33.9 0L7 278.3c-9.4 9.4-9.4 24.6 0 33.9l136 136c9.4 9.5 24.6 9.5 34 .1z"
-            />
-          </motion.svg>
-        </span>
-        <br />
-        <br />
+        <motion.span
+          animate={{ opacity: 1, translateY: 0 }}
+          initial={{ opacity: 0, translateY: -10 }}
+          transition={{ duration: 0.3 }}
+        >
+          <ChevronDown />
+        </motion.span>
       </div>
     </section>
   )
