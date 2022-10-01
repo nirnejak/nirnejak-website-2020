@@ -15,19 +15,17 @@
   }
 
   .image-content-container {
-    padding: 1em;
-
-    border-radius: 0.5em;
     background-color: var(--color-body-background);
-
     box-shadow: var(--box-shadow-primary);
+
+    padding: 1em;
+    border-radius: 0.5em;
+    line-height: 1.6;
 
     & > a {
       color: var(--color-link);
       text-decoration: none;
     }
-
-    line-height: 1.6;
 
     &:hover {
       box-shadow: none;
