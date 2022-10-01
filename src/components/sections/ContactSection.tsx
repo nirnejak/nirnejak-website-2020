@@ -49,7 +49,7 @@ const ContactSection: React.FC = () => {
   }
 
   return (
-    <section className="hero is-medium">
+    <section className="hero">
       <div className="hero-body">
         <div className="container">
           <h2 className="is-huge">Contact</h2>
