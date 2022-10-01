@@ -82,15 +82,9 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
             <Link to="/blogs/" className="navbar-link" onClick={handleClick}>
               Blogs
             </Link>
-            <a
-              href="https://github.com/nirnejak/"
-              className="navbar-link"
-              onClick={handleClick}
-              rel="noreferrer"
-              target="_blank"
-            >
+            <Link to="/work/" className="navbar-link" onClick={handleClick}>
               Work
-            </a>
+            </Link>
             <Link to="/uses/" className="navbar-link" onClick={handleClick}>
               Uses
             </Link>
