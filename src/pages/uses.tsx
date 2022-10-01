@@ -33,23 +33,10 @@ const UsesPage: React.FC = () => {
           }}
           className="container"
         >
-          <h1 className="is-size-1 has-text-black">Uses.</h1>
-          <br />
+          <h1 className="is-huge">Uses</h1>
           <p className="is-size-3 has-text-weight-light">
             What I&apos;m using for 2022
           </p>
-
-          <div style={{ margin: "30 0px" }}>
-            <svg
-              width="64"
-              height="5"
-              viewBox="0 0 64 5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="64" height="5" fill="#027BFF" />
-            </svg>
-          </div>
 
           <h2
             className="is-size-2 has-text-black"
