@@ -18,7 +18,7 @@ const projects = [
   },
   {
     title: "Draxlr Documentation",
-    description: "Wrote the entire documentation site for Draxlr",
+    description: "Wrote the product documentation for Draxlr",
     link: "https://www.draxlr.com/docs/",
     type: "Content",
   },
@@ -64,7 +64,7 @@ const WorkPage: React.FC = () => {
   }, [controls, inView])
 
   return (
-    <section className="hero">
+    <section className="hero is-fullheight">
       <div className="hero-body">
         <motion.div
           ref={ref}
@@ -77,22 +77,7 @@ const WorkPage: React.FC = () => {
           }}
           className="container"
         >
-          <h1 className="is-size-1 has-text-black">Work.</h1>
-          <br />
-          <p className="is-size-3 has-text-weight-light">
-            Some of the work I did.
-          </p>
-          <div style={{ margin: "30 0px" }}>
-            <svg
-              width="64"
-              height="5"
-              viewBox="0 0 64 5"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <rect width="64" height="5" fill="#027BFF" />
-            </svg>
-          </div>
+          <h1 className="is-huge">Work</h1>
           {projects.map((project, index) => (
             <div
               style={{
@@ -116,7 +101,7 @@ const WorkPage: React.FC = () => {
                     href={project.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="link is-size-4"
+                    className="link is-size-3"
                   >
                     Link
                   </a>
