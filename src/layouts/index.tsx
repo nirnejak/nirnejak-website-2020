@@ -1,6 +1,7 @@
 import * as React from "react"
 
 import Background from "../components/atoms/Background"
+import CommandBar from "../components/molecules/CommandBar"
 import Footer from "../components/molecules/Footer"
 import Header from "../components/molecules/Header"
 
@@ -73,6 +74,7 @@ const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <main>
+      <CommandBar />
       <Header isDark={isDark} toggleIsDark={toggleIsDark} />
       {children}
       <Footer />
