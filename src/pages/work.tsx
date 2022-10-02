@@ -3,6 +3,7 @@ import { useInView } from "react-intersection-observer"
 
 import { motion, useAnimation } from "framer-motion"
 
+import WorkRow from "../components/molecules/WorkRow"
 import SEO from "../components/seo"
 
 export const Head: React.FC = () => {
@@ -79,35 +80,13 @@ const WorkPage: React.FC = () => {
         >
           <h1 className="is-huge">Work</h1>
           {projects.map((project, index) => (
-            <div
-              style={{
-                display: "flex",
-                justifyContent: "space-between",
-                alignItems: "center",
-                marginBottom: 10,
-                marginTop: 70,
-              }}
+            <WorkRow
               key={index}
-            >
-              <div>
-                <h2 className="is-size-2 has-text-black">{project.title}</h2>
-                <p className="is-size-3 has-text-weight-light">
-                  {project.description}
-                </p>
-              </div>
-              <div>
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="link is-size-3"
-                  >
-                    Link
-                  </a>
-                )}
-              </div>
-            </div>
+              title={project.title}
+              description={project.description}
+              type={project.type}
+              link={project.link}
+            />
           ))}
         </motion.div>
       </div>
