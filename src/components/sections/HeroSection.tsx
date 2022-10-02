@@ -4,7 +4,6 @@ import {
   CodepenFill,
   GithubFill,
   DribbbleFill,
-  BehanceFill,
   LinkedinFill,
   ChevronDown,
 } from "akar-icons"
@@ -129,21 +128,6 @@ const HeroSection: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
               transition={{ delay: 0.2, duration: 0.3 }}
-              className="icon-container"
-            >
-              <a
-                href="https://www.behance.net/nirnejak/"
-                title="Jitendra Nirnejak's Behance Portfolio"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <BehanceFill />
-              </a>
-            </motion.div>
-            <motion.div
-              animate={{ opacity: 1, scale: 1 }}
-              initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.3, duration: 0.3 }}
               className="icon-container"
             >
               <a
