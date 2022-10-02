@@ -7,7 +7,7 @@ export const Head: React.FC = () => {
 }
 
 const ThanksPage: React.FC = () => (
-  <section className="hero is-fullheight-with-navbar">
+  <section className="hero is-medium">
     <div className="hero-body">
       <div className="container">
         <h1 className="is-size-1 has-text-black">Thank You.</h1>
