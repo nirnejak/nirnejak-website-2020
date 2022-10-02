@@ -1,5 +1,7 @@
 import React from "react"
 
+import { ArrowUpRight } from "akar-icons"
+
 import { styled } from "../../stitches.config"
 
 type ProjectType = {
@@ -38,7 +40,8 @@ const WorkRow: React.FC<ProjectType> = ({ title, description, link, type }) => {
             rel="noopener noreferrer"
             className="link is-size-3"
           >
-            Link
+            <span style={{ marginRight: 5 }}>Link</span>
+            <ArrowUpRight size={24} />
           </a>
         )}
       </div>
