@@ -17,8 +17,13 @@ const StyledWorkRow = styled("div", {
   alignItems: "center",
   marginTop: 60,
 
-  "&hover": {
-    backgroundColor: "red",
+  a: {
+    color: "white",
+    textDecoration: "none",
+
+    "&:hover": {
+      textDecoration: "underline",
+    },
   },
 })
 
@@ -38,7 +43,7 @@ const WorkRow: React.FC<ProjectType> = ({ title, description, link, type }) => {
             href={link}
             target="_blank"
             rel="noopener noreferrer"
-            className="link is-size-3"
+            className="is-size-3"
           >
             <span style={{ marginRight: 5 }}>Link</span>
             <ArrowUpRight size={24} />
