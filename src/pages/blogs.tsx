@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { motion } from "framer-motion"
 
+import Grid from "../components/atoms/Grid"
 import SEO from "../components/seo"
 
 const blogs = [
@@ -211,7 +212,7 @@ const BlogsPage: React.FC = () => (
     <div className="hero-body">
       <section className="container">
         <h1 className="is-huge">Blogs</h1>
-        <div className="image-contents-container">
+        <Grid>
           {blogs.map((blog, index) => (
             <motion.div
               key={index}
@@ -234,7 +235,7 @@ const BlogsPage: React.FC = () => (
               </a>
             </motion.div>
           ))}
-        </div>
+        </Grid>
       </section>
     </div>
   </div>
