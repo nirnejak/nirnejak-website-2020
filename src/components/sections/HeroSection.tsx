@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
   }, [])
 
   return (
-    <section className="hero is-fullheight-with-navbar">
+    <section className="hero is-medium">
       <div className="hero-body">
         <div className="container">
           <h1 className="is-size-1 has-text-black">
@@ -38,7 +38,7 @@ const HeroSection: React.FC = () => {
             ,{" "}
             <span className="has-text-weight-bold is-gradient-2">Designer</span>
             , and sometimes a{" "}
-            <span className="has-text-weight-bold is-gradient-3">Writer</span>
+            <span className="has-text-weight-bold is-gradient-3">Blogger</span>
           </p>
 
           <div style={{ margin: "30 0px" }}>
