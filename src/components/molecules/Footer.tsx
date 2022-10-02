@@ -1,13 +1,7 @@
 import * as React from "react"
 import { useInView } from "react-intersection-observer"
 
-import {
-  CodepenFill,
-  GithubFill,
-  DribbbleFill,
-  BehanceFill,
-  LinkedinFill,
-} from "akar-icons"
+import { CodepenFill, GithubFill, DribbbleFill, LinkedinFill } from "akar-icons"
 import { motion, useAnimation } from "framer-motion"
 
 const Footer: React.FC = () => {
@@ -105,23 +99,6 @@ const Footer: React.FC = () => {
           animate={controls}
           initial="hidden"
           transition={{ delay: 0.3, duration: 0.3 }}
-          variants={variants}
-          className="icon-container"
-          style={{ margin: "20px 15px" }}
-        >
-          <a
-            href="https://www.behance.net/nirnejak/"
-            title="Jitendra Nirnejak's Behance Portfolio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <BehanceFill />
-          </a>
-        </motion.div>
-        <motion.div
-          animate={controls}
-          initial="hidden"
-          transition={{ delay: 0.4, duration: 0.3 }}
           variants={variants}
           className="icon-container"
           style={{ margin: "20px 15px" }}
