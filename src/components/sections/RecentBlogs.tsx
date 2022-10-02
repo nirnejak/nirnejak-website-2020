@@ -8,6 +8,7 @@ import { motion, useAnimation } from "framer-motion"
 import useSound from "use-sound"
 
 import tickSfx from "../../sounds/tick.wav"
+import Card from "../atoms/Card"
 import Grid from "../atoms/Grid"
 
 const RecentBlogs: React.FC = () => {
@@ -34,79 +35,83 @@ const RecentBlogs: React.FC = () => {
           <h2 className="is-huge">Blogs</h2>
           <div ref={ref}>
             <Grid>
-              <motion.div
-                animate={controls}
-                initial="hidden"
-                transition={{ delay: 0, duration: 0.3 }}
-                variants={variants}
-                className="image-content-container"
-              >
-                <a
-                  href="https://www.draxlr.com/blogs/postgres-json-data-type-and-how-to-query-it/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              <Card>
+                <motion.div
+                  animate={controls}
+                  initial="hidden"
+                  transition={{ delay: 0, duration: 0.3 }}
+                  variants={variants}
                 >
-                  <StaticImage
-                    src="../../images/blogs/postgres_json.png"
-                    alt="PlanetScale Support for Draxlr"
-                    placeholder="blurred"
-                    width={400}
-                    style={{ borderRadius: 7, marginBottom: 13 }}
-                  />
-                  <p className="has-text-black has-text-weight-bold">
-                    Postgres JSON data type and how to query it?
-                  </p>
-                </a>
-              </motion.div>
-              <motion.div
-                animate={controls}
-                initial="hidden"
-                transition={{ delay: 0, duration: 0.3 }}
-                variants={variants}
-                className="image-content-container"
-              >
-                <a
-                  href="https://www.draxlr.com/blogs/build-dashboards-and-setup-slack-alerts-on-your-planetScale-database/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <a
+                    href="https://www.draxlr.com/blogs/postgres-json-data-type-and-how-to-query-it/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StaticImage
+                      src="../../images/blogs/postgres_json.png"
+                      alt="PlanetScale Support for Draxlr"
+                      placeholder="blurred"
+                      width={400}
+                      style={{ borderRadius: 7, marginBottom: 13 }}
+                    />
+                    <p className="has-text-black has-text-weight-bold">
+                      Postgres JSON data type and how to query it?
+                    </p>
+                  </a>
+                </motion.div>
+              </Card>
+              <Card>
+                <motion.div
+                  animate={controls}
+                  initial="hidden"
+                  transition={{ delay: 0, duration: 0.3 }}
+                  variants={variants}
                 >
-                  <StaticImage
-                    src="../../images/blogs/planetscale_draxlr.png"
-                    alt="PlanetScale Support for Draxlr"
-                    placeholder="blurred"
-                    width={400}
-                    style={{ borderRadius: 7, marginBottom: 13 }}
-                  />
-                  <p className="has-text-black has-text-weight-bold">
-                    Build Dashboards and Setup Slack Alerts on your PlanetScale
-                    Database
-                  </p>
-                </a>
-              </motion.div>
-              <motion.div
-                animate={controls}
-                initial="hidden"
-                transition={{ delay: 0, duration: 0.3 }}
-                variants={variants}
-                className="image-content-container"
-              >
-                <a
-                  href="https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  <a
+                    href="https://www.draxlr.com/blogs/build-dashboards-and-setup-slack-alerts-on-your-planetScale-database/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StaticImage
+                      src="../../images/blogs/planetscale_draxlr.png"
+                      alt="PlanetScale Support for Draxlr"
+                      placeholder="blurred"
+                      width={400}
+                      style={{ borderRadius: 7, marginBottom: 13 }}
+                    />
+                    <p className="has-text-black has-text-weight-bold">
+                      Build Dashboards and Setup Slack Alerts on your
+                      PlanetScale Database
+                    </p>
+                  </a>
+                </motion.div>
+              </Card>
+              <Card>
+                <motion.div
+                  animate={controls}
+                  initial="hidden"
+                  transition={{ delay: 0, duration: 0.3 }}
+                  variants={variants}
                 >
-                  <StaticImage
-                    src="../../images/blogs/gatsby_3_image.png"
-                    alt="Gatsby v3 Image API"
-                    placeholder="blurred"
-                    width={400}
-                    style={{ borderRadius: 7, marginBottom: 13 }}
-                  />
-                  <p className="has-text-black has-text-weight-bold">
-                    Gatsby 3 Image - A Deep-dive into the new image API features
-                  </p>
-                </a>
-              </motion.div>
+                  <a
+                    href="https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StaticImage
+                      src="../../images/blogs/gatsby_3_image.png"
+                      alt="Gatsby v3 Image API"
+                      placeholder="blurred"
+                      width={400}
+                      style={{ borderRadius: 7, marginBottom: 13 }}
+                    />
+                    <p className="has-text-black has-text-weight-bold">
+                      Gatsby 3 Image - A Deep-dive into the new image API
+                      features
+                    </p>
+                  </a>
+                </motion.div>
+              </Card>
             </Grid>
           </div>
           <div style={{ margin: 50 }} className="has-text-centered">

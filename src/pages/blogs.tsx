@@ -4,6 +4,7 @@ import { StaticImage } from "gatsby-plugin-image"
 
 import { motion } from "framer-motion"
 
+import Card from "../components/atoms/Card"
 import Grid from "../components/atoms/Grid"
 import SEO from "../components/seo"
 
@@ -214,26 +215,26 @@ const BlogsPage: React.FC = () => (
         <h1 className="is-huge">Blogs</h1>
         <Grid>
           {blogs.map((blog, index) => (
-            <motion.div
-              key={index}
-              className="image-content-container"
-              initial={{ opacity: 0, translateY: -5 }}
-              animate={{ opacity: 1, translateY: 0 }}
-              transition={{ duration: 0.3, delay: index * 0.1 }}
-            >
-              <a href={blog.url} target="_blank" rel="noopener noreferrer">
-                {blog.image}
-                <p
-                  className="has-text-black has-text-weight-bold"
-                  style={{ marginTop: 20 }}
-                >
-                  {blog.title}
-                </p>
-                <p className="has-text-weight-light has-text-secondary">
-                  {blog.description}
-                </p>
-              </a>
-            </motion.div>
+            <Card key={index}>
+              <motion.div
+                initial={{ opacity: 0, translateY: -5 }}
+                animate={{ opacity: 1, translateY: 0 }}
+                transition={{ duration: 0.3, delay: index * 0.1 }}
+              >
+                <a href={blog.url} target="_blank" rel="noopener noreferrer">
+                  {blog.image}
+                  <p
+                    className="has-text-black has-text-weight-bold"
+                    style={{ marginTop: 20 }}
+                  >
+                    {blog.title}
+                  </p>
+                  <p className="has-text-weight-light has-text-secondary">
+                    {blog.description}
+                  </p>
+                </a>
+              </motion.div>
+            </Card>
           ))}
         </Grid>
       </section>
