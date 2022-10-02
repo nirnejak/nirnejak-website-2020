@@ -33,7 +33,7 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-layout`,
     `gatsby-plugin-typescript`,
-    // `gatsby-plugin-purgecss`,
+    `gatsby-plugin-purgecss`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

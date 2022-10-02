@@ -23,7 +23,7 @@ const HeroSection: React.FC = () => {
   }, [])
 
   return (
-    <section className="hero is-medium">
+    <section className="hero is-fullheight-with-navbar">
       <div className="hero-body">
         <div className="container">
           <h1 className="is-size-1 has-text-black">
