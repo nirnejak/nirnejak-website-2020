@@ -12,6 +12,12 @@ export const Head: React.FC = () => {
 
 const projects = [
   {
+    title: "SQL Editor & Formatter",
+    description: "A Small tool to help you write SQL Queries and format them.",
+    link: "https://www.draxlr.com/tools/sql-formatter/",
+    type: "Code",
+  },
+  {
     title: "Draxlr 3.0",
     description: "Draxlr is an app to build dashboards and setup alerts.",
     link: "https://app.draxlr.com/",
