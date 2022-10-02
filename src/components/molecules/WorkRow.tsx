@@ -15,7 +15,7 @@ const StyledWorkRow = styled("div", {
   display: "flex",
   justifyContent: "space-between",
   alignItems: "center",
-  marginBottom: 60,
+  marginTop: 60,
 
   "&hover": {
     backgroundColor: "red",
