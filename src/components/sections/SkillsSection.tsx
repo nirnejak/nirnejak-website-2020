@@ -3,10 +3,7 @@ import { useInView } from "react-intersection-observer"
 
 import { motion, useAnimation } from "framer-motion"
 
-import PhotoshopLogo from "../../images/skills/adobe-photoshop.svg"
-import AdobeXDLogo from "../../images/skills/adobe-xd.svg"
 import FigmaLogo from "../../images/skills/figma.svg"
-import GatsbyLogo from "../../images/skills/gatsby.svg"
 import NodeLogo from "../../images/skills/nodejs.svg"
 import ReactLogo from "../../images/skills/reactjs.svg"
 import VueLogo from "../../images/skills/vuejs.svg"
@@ -35,31 +32,21 @@ const SkillsSection: React.FC = () => {
             <motion.div
               animate={controls}
               initial="hidden"
+              transition={{ delay: 0.4, duration: 0.3 }}
+              variants={variants}
+              className="skill-container"
+            >
+              <img src={FigmaLogo} alt="Figma" title="Figma" />
+            </motion.div>
+
+            <motion.div
+              animate={controls}
+              initial="hidden"
               transition={{ delay: 0, duration: 0.3 }}
               variants={variants}
               className="skill-container"
             >
               <img src={ReactLogo} alt="React.js" title="React.js" />
-            </motion.div>
-
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.1, duration: 0.3 }}
-              variants={variants}
-              className="skill-container"
-            >
-              <img src={GatsbyLogo} alt="Gatsby" title="Gatsby" />
-            </motion.div>
-
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.2, duration: 0.3 }}
-              variants={variants}
-              className="skill-container"
-            >
-              <img src={NodeLogo} alt="Node.js" title="Node.js" />
             </motion.div>
 
             <motion.div
@@ -71,40 +58,15 @@ const SkillsSection: React.FC = () => {
             >
               <img src={VueLogo} alt="Vue.js" title="Vue.js" />
             </motion.div>
-          </div>
-          <div className="skills-container">
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.4, duration: 0.3 }}
-              variants={variants}
-              className="skill-container"
-            >
-              <img src={FigmaLogo} alt="Figma" title="Figma" />
-            </motion.div>
 
             <motion.div
               animate={controls}
               initial="hidden"
-              transition={{ delay: 0.5, duration: 0.3 }}
+              transition={{ delay: 0.2, duration: 0.3 }}
               variants={variants}
               className="skill-container"
             >
-              <img src={AdobeXDLogo} alt="Adobe XD" title="Adobe XD" />
-            </motion.div>
-
-            <motion.div
-              animate={controls}
-              initial="hidden"
-              transition={{ delay: 0.6, duration: 0.3 }}
-              variants={variants}
-              className="skill-container"
-            >
-              <img
-                src={PhotoshopLogo}
-                alt="Adobe Photoshop"
-                title="Adobe Photoshop"
-              />
+              <img src={NodeLogo} alt="Node.js" title="Node.js" />
             </motion.div>
           </div>
         </div>
