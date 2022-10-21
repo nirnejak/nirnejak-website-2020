@@ -91,6 +91,15 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
             <Link to="/contact" className="navbar-link" onClick={handleClick}>
               Contact
             </Link>
+            <a
+              href="https://read.cv/nirnejak"
+              className="navbar-link"
+              onClick={handleClick}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Resume
+            </a>
           </motion.div>
           <div className="navbar-toggle-theme">
             {/* {isDark ? (
