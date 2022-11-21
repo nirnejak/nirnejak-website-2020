@@ -11,6 +11,23 @@ import SEO from "../components/seo"
 const blogs = [
   {
     author: "Jitendra Nirnejak",
+    date: "11 November 2022",
+    description:
+      "A guide to hstore data type in postgres, details of various postgres hstore operators and functions, when and how to use them.",
+    image: (
+      <StaticImage
+        src="../images/blogs/postgres_hstore.png"
+        alt="Postgres JSON data type"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
+    title: "Postgres HStore data type and how to use it?",
+    url: "https://www.draxlr.com/blogs/postgres-hstore-data-type-and-how-to-use-it/",
+  },
+  {
+    author: "Jitendra Nirnejak",
     date: "15 September 2022",
     description:
       "A guide to storing and querying json data in postgres, details of various postgres json operators and functions, when and how to use them.",

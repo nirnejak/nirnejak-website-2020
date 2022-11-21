@@ -43,6 +43,31 @@ const RecentBlogs: React.FC = () => {
                   variants={variants}
                 >
                   <a
+                    href="https://www.draxlr.com/blogs/postgres-hstore-data-type-and-how-to-use-it/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StaticImage
+                      src="../../images/blogs/postgres_hstore.png"
+                      alt="PlanetScale Support for Draxlr"
+                      placeholder="blurred"
+                      width={400}
+                      style={{ borderRadius: 7, marginBottom: 13 }}
+                    />
+                    <p className="has-text-black has-text-weight-bold">
+                      Postgres HStore data type and how to use it?
+                    </p>
+                  </a>
+                </motion.div>
+              </Card>
+              <Card>
+                <motion.div
+                  animate={controls}
+                  initial="hidden"
+                  transition={{ delay: 0, duration: 0.3 }}
+                  variants={variants}
+                >
+                  <a
                     href="https://www.draxlr.com/blogs/postgres-json-data-type-and-how-to-query-it/"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -82,32 +107,6 @@ const RecentBlogs: React.FC = () => {
                     <p className="has-text-black has-text-weight-bold">
                       Build Dashboards and Setup Slack Alerts on your
                       PlanetScale Database
-                    </p>
-                  </a>
-                </motion.div>
-              </Card>
-              <Card>
-                <motion.div
-                  animate={controls}
-                  initial="hidden"
-                  transition={{ delay: 0, duration: 0.3 }}
-                  variants={variants}
-                >
-                  <a
-                    href="https://www.inkoop.io/blog/gatsby-3-image-a-deep-dive-into-the-new-image-api-features/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <StaticImage
-                      src="../../images/blogs/gatsby_3_image.png"
-                      alt="Gatsby v3 Image API"
-                      placeholder="blurred"
-                      width={400}
-                      style={{ borderRadius: 7, marginBottom: 13 }}
-                    />
-                    <p className="has-text-black has-text-weight-bold">
-                      Gatsby 3 Image - A Deep-dive into the new image API
-                      features
                     </p>
                   </a>
                 </motion.div>
