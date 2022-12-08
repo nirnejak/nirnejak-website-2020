@@ -43,13 +43,39 @@ const RecentBlogs: React.FC = () => {
                   variants={variants}
                 >
                   <a
+                    href="https://www.draxlr.com/blogs/postgres-hstore-vs-json-comparing-different-unstructured-data-types-in-postgresql/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <StaticImage
+                      src="../../images/blogs/postgres-hstore-vs-json.png"
+                      alt="Postgres hstore vs JSON - comparing different unstructured data types in PostgreSQL"
+                      placeholder="blurred"
+                      width={400}
+                      style={{ borderRadius: 7, marginBottom: 13 }}
+                    />
+                    <p className="has-text-black has-text-weight-bold">
+                      Postgres hstore vs JSON - comparing different unstructured
+                      data types in PostgreSQL
+                    </p>
+                  </a>
+                </motion.div>
+              </Card>
+              <Card>
+                <motion.div
+                  animate={controls}
+                  initial="hidden"
+                  transition={{ delay: 0, duration: 0.3 }}
+                  variants={variants}
+                >
+                  <a
                     href="https://www.draxlr.com/blogs/postgres-hstore-data-type-and-how-to-use-it/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <StaticImage
                       src="../../images/blogs/postgres_hstore.png"
-                      alt="PlanetScale Support for Draxlr"
+                      alt="Postgres HStore"
                       placeholder="blurred"
                       width={400}
                       style={{ borderRadius: 7, marginBottom: 13 }}
@@ -74,39 +100,13 @@ const RecentBlogs: React.FC = () => {
                   >
                     <StaticImage
                       src="../../images/blogs/postgres_json.png"
-                      alt="PlanetScale Support for Draxlr"
+                      alt="Postgres JSON"
                       placeholder="blurred"
                       width={400}
                       style={{ borderRadius: 7, marginBottom: 13 }}
                     />
                     <p className="has-text-black has-text-weight-bold">
                       Postgres JSON data type and how to query it?
-                    </p>
-                  </a>
-                </motion.div>
-              </Card>
-              <Card>
-                <motion.div
-                  animate={controls}
-                  initial="hidden"
-                  transition={{ delay: 0, duration: 0.3 }}
-                  variants={variants}
-                >
-                  <a
-                    href="https://www.draxlr.com/blogs/build-dashboards-and-setup-slack-alerts-on-your-planetScale-database/"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <StaticImage
-                      src="../../images/blogs/planetscale_draxlr.png"
-                      alt="PlanetScale Support for Draxlr"
-                      placeholder="blurred"
-                      width={400}
-                      style={{ borderRadius: 7, marginBottom: 13 }}
-                    />
-                    <p className="has-text-black has-text-weight-bold">
-                      Build Dashboards and Setup Slack Alerts on your
-                      PlanetScale Database
                     </p>
                   </a>
                 </motion.div>

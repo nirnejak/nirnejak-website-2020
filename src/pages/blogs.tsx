@@ -11,6 +11,24 @@ import SEO from "../components/seo"
 const blogs = [
   {
     author: "Jitendra Nirnejak",
+    date: "25 November 2022",
+    description:
+      "A brief comparison of hstore and JSON data types in PostgreSQL. We learn about the pros and cons of both the data types and when to use them.",
+    image: (
+      <StaticImage
+        src="../images/blogs/postgres-hstore-vs-json.png"
+        alt="Postgres JSON data type"
+        placeholder="blurred"
+        width={400}
+        style={{ borderRadius: 7 }}
+      />
+    ),
+    title:
+      "Postgres hstore vs JSON - comparing different unstructured data types in PostgreSQL",
+    url: "https://www.draxlr.com/blogs/postgres-hstore-vs-json-comparing-different-unstructured-data-types-in-postgresql/",
+  },
+  {
+    author: "Jitendra Nirnejak",
     date: "11 November 2022",
     description:
       "A guide to hstore data type in postgres, details of various postgres hstore operators and functions, when and how to use them.",
