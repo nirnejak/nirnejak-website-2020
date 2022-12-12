@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
       style={{ margin: "100px 10px 200px 10px" }}
     >
       <div className="is-size-3 has-text-weight-bold has-text-black">
-        Follow Me on
+        Follow me on
       </div>
 
       <div style={{ marginBottom: 10, marginTop: 10 }}>
