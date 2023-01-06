@@ -5,6 +5,7 @@ import { motion, useAnimation } from "framer-motion"
 
 import FigmaLogo from "../../images/skills/figma.svg"
 import NodeLogo from "../../images/skills/nodejs.svg"
+import PostgreSQLLogo from "../../images/skills/postgresql.svg"
 import ReactLogo from "../../images/skills/reactjs.svg"
 import VueLogo from "../../images/skills/vuejs.svg"
 
@@ -67,6 +68,16 @@ const SkillsSection: React.FC = () => {
               className="skill-container"
             >
               <img src={NodeLogo} alt="Node.js" title="Node.js" />
+            </motion.div>
+
+            <motion.div
+              animate={controls}
+              initial="hidden"
+              transition={{ delay: 0.3, duration: 0.3 }}
+              variants={variants}
+              className="skill-container"
+            >
+              <img src={PostgreSQLLogo} alt="PostgreSQL" title="PostgreSQL" />
             </motion.div>
           </div>
         </div>
