@@ -45,7 +45,7 @@ const UsesPage: React.FC = () => {
             Languages and Frameworks
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            TypeScript, React, Vue and Node.js
+            TypeScript, React and Node.js
           </p>
 
           <h2
