@@ -35,7 +35,7 @@ const UsesPage: React.FC = () => {
         >
           <h1 className="is-huge">Uses</h1>
           <p className="is-size-3 has-text-weight-light">
-            What I&apos;m using for 2022
+            What I&apos;m using for 2023
           </p>
 
           <h2
@@ -54,9 +54,7 @@ const UsesPage: React.FC = () => {
           >
             Design Tools
           </h2>
-          <p className="is-size-3 has-text-weight-light">
-            Figma, Affinity Photos and Procreate
-          </p>
+          <p className="is-size-3 has-text-weight-light">Figma and Procreate</p>
 
           <h2
             className="is-size-2 has-text-black"
@@ -84,7 +82,7 @@ const UsesPage: React.FC = () => {
             Gear
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            iPhone XR, iPad Pro 11, MacBook Pro(M1)
+            iPhone 14 Pro, iPad Pro 11, MacBook Air(M2)
           </p>
 
           <h2
@@ -101,11 +99,19 @@ const UsesPage: React.FC = () => {
             className="is-size-2 has-text-black"
             style={{ marginBottom: 10, marginTop: 70 }}
           >
-            What&apos;s for 2022
+            What was 2022 about
           </h2>
           <p className="is-size-3 has-text-weight-light">
-            Testing and Typescript
+            Typescript and Testing
           </p>
+
+          <h2
+            className="is-size-2 has-text-black"
+            style={{ marginBottom: 10, marginTop: 70 }}
+          >
+            What&apos;s for 2023
+          </h2>
+          <p className="is-size-3 has-text-weight-light">Fastify and Prisma</p>
         </motion.div>
       </div>
     </section>
