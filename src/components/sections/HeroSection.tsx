@@ -57,7 +57,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.05, duration: 0.3 }}
+              transition={{ delay: 0, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -72,7 +72,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.1, duration: 0.3 }}
+              transition={{ delay: 0.05, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -87,7 +87,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.15, duration: 0.3 }}
+              transition={{ delay: 0.1, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -102,7 +102,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0.2, duration: 0.3 }}
+              transition={{ delay: 0.15, duration: 0.3 }}
               className="icon-container"
             >
               <a
@@ -117,7 +117,7 @@ const HeroSection: React.FC = () => {
             <motion.div
               animate={{ opacity: 1, scale: 1 }}
               initial={{ opacity: 0, scale: 0 }}
-              transition={{ delay: 0, duration: 0.3 }}
+              transition={{ delay: 0.2, duration: 0.3 }}
               className="icon-container"
             >
               <a
