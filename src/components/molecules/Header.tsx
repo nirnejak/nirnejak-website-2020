@@ -98,7 +98,7 @@ const Header: React.FC<HeaderProps> = ({ isDark, toggleIsDark }) => {
               target="_blank"
               rel="noreferrer"
             >
-              Resume
+              Resumé
             </a>
           </motion.div>
           <div className="navbar-toggle-theme">
