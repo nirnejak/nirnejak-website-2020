@@ -7,6 +7,7 @@ import FigmaLogo from "../../images/skills/figma.svg"
 import NodeLogo from "../../images/skills/nodejs.svg"
 import PostgreSQLLogo from "../../images/skills/postgresql.svg"
 import ReactLogo from "../../images/skills/reactjs.svg"
+import TypeScriptLogo from "../../images/skills/typescript.svg"
 import VueLogo from "../../images/skills/vuejs.svg"
 
 const SkillsSection: React.FC = () => {
@@ -38,6 +39,7 @@ const SkillsSection: React.FC = () => {
               className="skill-container"
             >
               <img src={FigmaLogo} alt="Figma" title="Figma" />
+              <h3>Figma</h3>
             </motion.div>
 
             <motion.div
@@ -48,6 +50,7 @@ const SkillsSection: React.FC = () => {
               className="skill-container"
             >
               <img src={ReactLogo} alt="React.js" title="React.js" />
+              <h3>React.js</h3>
             </motion.div>
 
             <motion.div
@@ -58,6 +61,19 @@ const SkillsSection: React.FC = () => {
               className="skill-container"
             >
               <img src={VueLogo} alt="Vue.js" title="Vue.js" />
+              <h3>Vue.js</h3>
+            </motion.div>
+          </div>
+          <div className="skills-container">
+            <motion.div
+              animate={controls}
+              initial="hidden"
+              transition={{ delay: 0.3, duration: 0.3 }}
+              variants={variants}
+              className="skill-container"
+            >
+              <img src={TypeScriptLogo} alt="TypeScript" title="TypeScript" />
+              <h3>TypeScript</h3>
             </motion.div>
 
             <motion.div
@@ -68,6 +84,7 @@ const SkillsSection: React.FC = () => {
               className="skill-container"
             >
               <img src={NodeLogo} alt="Node.js" title="Node.js" />
+              <h3>Node.js</h3>
             </motion.div>
 
             <motion.div
@@ -78,6 +95,7 @@ const SkillsSection: React.FC = () => {
               className="skill-container"
             >
               <img src={PostgreSQLLogo} alt="PostgreSQL" title="PostgreSQL" />
+              <h3>PostgreSQL</h3>
             </motion.div>
           </div>
         </div>
