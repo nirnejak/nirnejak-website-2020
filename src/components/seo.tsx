@@ -136,7 +136,13 @@ const SEO: React.FC<SEOProps> = ({ description, lang, meta, title }) => {
       title={metaTitle}
       titleTemplate={metaTitle}
       meta={metadata.concat(meta)}
-    />
+    >
+      <script
+        defer
+        data-domain="nirnejak.com"
+        src="https://plausible.io/js/script.js"
+      />
+    </Helmet>
   )
 }
 
