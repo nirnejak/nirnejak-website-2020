@@ -12,7 +12,6 @@
     "framer-motion": "^10.1.0",
     "gatsby": "^5.7.0",
     "gatsby-plugin-catch-links": "^5.7.0",
-    "gatsby-plugin-google-gtag": "^5.7.0",
     "gatsby-plugin-image": "^3.7.0",
     "gatsby-plugin-layout": "^4.7.0",
     "gatsby-plugin-manifest": "^5.7.0",
