@@ -60,6 +60,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-plausible`,
+      options: {
+        domain: `nirnejak.com`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Jitendra Nirnejak`,
