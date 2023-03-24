@@ -1,5 +1,5 @@
 {
-  "name": "nirnejak-website",
+  "name": "nirnejak-website-2020",
   "description": "Portfolio website of Jitendra Nirnejak",
   "version": "1.0.0",
   "author": "Jitendra Nirnejak <jeetnirnejak@gmail.com>",
@@ -81,10 +81,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nirnejak/nirnejak-website"
+    "url": "https://github.com/nirnejak/nirnejak-website-2020"
   },
   "bugs": {
-    "url": "https://github.com/nirnejak/nirnejak-website/issues"
+    "url": "https://github.com/nirnejak/nirnejak-website-2020/issues"
   },
   "volta": {
     "node": "18.12.1"
