@@ -11,4 +11,4 @@ My Portfolio website built with Gatsby, showcasing my blogs, designs and project
 
 [Visit Website](https://nirnejak.com/)
 
-<img alt="Nirnejak" src="https://raw.githubusercontent.com/nirnejak/nirnejak-website/master/static/sitecover.png" />
+<img alt="Nirnejak" src="https://raw.githubusercontent.com/nirnejak/nirnejak-website-2020/master/static/sitecover.png" />
